@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/Malentouen/static/js/main.b65b0008.js",
+    "static/js/38.0edaeb55.chunk.js": "/Malentouen/static/js/38.0edaeb55.chunk.js",
+    "index.html": "/Malentouen/index.html",
+    "main.b65b0008.js.map": "/Malentouen/static/js/main.b65b0008.js.map",
+    "38.0edaeb55.chunk.js.map": "/Malentouen/static/js/38.0edaeb55.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.b65b0008.js"
+  ]
+}
