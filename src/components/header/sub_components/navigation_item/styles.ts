@@ -1,10 +1,12 @@
+import { alpha } from "@mui/material";
 import type { SxProps, Theme } from "@mui/material";
 
+import { SECONDARY } from "@constants/colors";
 import type { NavigationItemVariant } from "./types";
 
 const item = (
   active: boolean,
-  variant: NavigationItemVariant
+  variant: NavigationItemVariant,
 ): SxProps<Theme> => ({
   position: "relative",
   display: "flex",
@@ -23,9 +25,7 @@ const item = (
   "&:hover": {
     color: "secondary.main",
     bgcolor:
-      variant === "desktop"
-        ? "rgba(200, 155, 60, 0.08)"
-        : "rgba(200, 155, 60, 0.12)",
+      variant === "desktop" ? alpha(SECONDARY, 0.08) : alpha(SECONDARY, 0.12),
   },
 
   ...(active &&
@@ -45,7 +45,7 @@ const item = (
 
   ...(active &&
     variant === "mobile" && {
-      bgcolor: "rgba(200, 155, 60, 0.14)",
+      bgcolor: alpha(SECONDARY, 0.14),
     }),
 });
 

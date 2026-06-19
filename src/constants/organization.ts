@@ -2,7 +2,6 @@ export const ORGANIZATION = {
   // ==========================================================
   // Identité
   // ==========================================================
-
   shortName: "Chefferie de Malentouen",
 
   fullName: "Chefferie Traditionnelle de Malentouen",
@@ -10,7 +9,7 @@ export const ORGANIZATION = {
   slogan: "Patrimoine • Tradition • Développement",
 
   description:
-    "Plateforme officielle de la Chefferie Traditionnelle de Malentouen.",
+    "Plateforme officielle de la Chefferie Traditionnelle de Malentouen dédiée à la valorisation du patrimoine culturel, à la préservation des traditions et au développement de la communauté.",
 
   logoAlt: "Logo officiel de la Chefferie Traditionnelle de Malentouen",
 
@@ -51,7 +50,7 @@ export const ORGANIZATION = {
   // ==========================================================
 
   keywords: [
-    "Chefferie Traditionnelle",
+    "Chefferie",
     "Malentouen",
     "Culture",
     "Patrimoine",

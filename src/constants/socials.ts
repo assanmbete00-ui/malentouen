@@ -1,39 +1,57 @@
-export type SocialItem = {
-  id: string;
-  label: string;
-  url: string;
-  visible: boolean;
-};
+import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import XIcon from "@mui/icons-material/X";
+import MusicNoteRoundedIcon from "@mui/icons-material/MusicNoteRounded";
 
-export const SOCIAL_ITEMS: SocialItem[] = [
+export const SOCIALS = [
   {
     id: "facebook",
     label: "Facebook",
+    icon: FacebookRoundedIcon,
     url: "",
-    visible: false,
+    visible: true,
+    enabled: true,
   },
   {
     id: "instagram",
     label: "Instagram",
+    icon: InstagramIcon,
     url: "",
-    visible: false,
+    visible: true,
+    enabled: true,
   },
   {
     id: "youtube",
     label: "YouTube",
+    icon: YouTubeIcon,
     url: "",
-    visible: false,
+    visible: true,
+    enabled: false,
   },
   {
     id: "linkedin",
     label: "LinkedIn",
+    icon: LinkedInIcon,
     url: "",
-    visible: false,
+    visible: true,
+    enabled: false,
   },
   {
     id: "x",
     label: "X",
+    icon: XIcon,
     url: "",
-    visible: false,
+    visible: true,
+    enabled: false,
   },
-];
+  {
+    id: "tiktok",
+    label: "TikTok",
+    icon: MusicNoteRoundedIcon,
+    url: "",
+    visible: true,
+    enabled: false,
+  },
+] as const;
