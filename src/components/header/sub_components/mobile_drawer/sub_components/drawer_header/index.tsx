@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 
-import Logo from "../../../logo";
+import Logo from "@components/logo";
 import { ORGANIZATION } from "@constants/organization";
 
 import styles from "./styles";

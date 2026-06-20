@@ -3,14 +3,36 @@ import Link from "@mui/material/Link";
 import ChevronRightRoundedIcon from "@mui/icons-material/ChevronRightRounded";
 
 import FooterSection from "../footer_section";
-import { NAVIGATION_ITEMS } from "@constants/navigation";
 
 import styles from "./styles";
 
-export default function FooterNavigation() {
+const PATRIMONY_LINKS = [
+  {
+    id: "history",
+    label: "Histoire",
+    path: "/about",
+  },
+  {
+    id: "culture",
+    label: "Culture",
+    path: "/cultures",
+  },
+  {
+    id: "traditions",
+    label: "Traditions",
+    path: "/cultures",
+  },
+  {
+    id: "gallery",
+    label: "Galerie",
+    path: "/gallery",
+  },
+];
+
+export default function FooterPatrimony() {
   return (
-    <FooterSection title="Découvrir">
-      {NAVIGATION_ITEMS.filter((item) => item.visible).map((item) => (
+    <FooterSection title="Notre patrimoine">
+      {PATRIMONY_LINKS.map((item) => (
         <Link
           key={item.id}
           component={RouterLink}

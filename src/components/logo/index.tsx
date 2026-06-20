@@ -10,7 +10,7 @@ export default function Logo({ variant = "default" }: LogoProps) {
       <Box sx={styles.emblem(variant)}>M</Box>
 
       <Box sx={styles.textWrapper}>
-        <Typography component="span" sx={styles.eyebrow}>
+        <Typography component="span" sx={styles.eyebrow(variant)}>
           Chefferie Traditionnelle
         </Typography>
 

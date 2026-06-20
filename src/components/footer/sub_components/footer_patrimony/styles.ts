@@ -1,32 +1,35 @@
 import type { SxProps, Theme } from "@mui/material";
 
-const item: SxProps<Theme> = {
+const link: SxProps<Theme> = {
   display: "flex",
-  alignItems: "flex-start",
-  gap: 1.8,
+  alignItems: "center",
   width: "fit-content",
+
   color: "primary.contrastText",
   opacity: 0.78,
-  fontSize: 14,
-  lineHeight: 1.7,
+
   textDecoration: "none",
+
+  fontSize: 14,
+  fontWeight: 500,
+
   transition: "all .25s ease",
 
   "&:hover": {
-    opacity: 1,
     color: "secondary.main",
+    opacity: 1,
     transform: "translateX(4px)",
   },
 };
 
 const icon: SxProps<Theme> = {
-  mt: 0.25,
-  fontSize: 20,
+  fontSize: 18,
+  mr: 0.4,
   color: "secondary.main",
-  flexShrink: 0,
+  transition: "inherit",
 };
 
 export default {
-  item,
+  link,
   icon,
 };

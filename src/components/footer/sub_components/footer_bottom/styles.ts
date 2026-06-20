@@ -1,42 +1,33 @@
 import type { SxProps, Theme } from "@mui/material";
 
 const container: SxProps<Theme> = {
+  mt: 6,
+  pt: 3,
   borderTop: "1px solid",
   borderColor: "divider",
-  py: 2.5,
-  mt: 4,
   display: "flex",
+  flexDirection: "column",
   alignItems: "center",
-  justifyContent: "space-between",
-  gap: 2,
-  flexDirection: {
-    xs: "column",
-    md: "row",
-  },
+  gap: .4,
 };
 
-const text: SxProps<Theme> = {
+const copyright: SxProps<Theme> = {
   color: "primary.contrastText",
-  opacity: 0.82,
+  opacity: 0.85,
   fontSize: 13,
-  textAlign: {
-    xs: "center",
-    md: "left",
-  },
+  textAlign: "center",
 };
 
-const credit: SxProps<Theme> = {
-  color: "primary.contrastText",
-  opacity: 0.72,
+const motto: SxProps<Theme> = {
+  color: "secondary.main",
   fontSize: 13,
-  textAlign: {
-    xs: "center",
-    md: "right",
-  },
+  fontWeight: 500,
+  textAlign: "center",
+  letterSpacing: "0.04em",
 };
 
 export default {
   container,
-  text,
-  credit,
+  copyright,
+  motto,
 };
