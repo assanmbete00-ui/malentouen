@@ -11,7 +11,7 @@ const routes: RouteObject[] = [
 ];
 
 const router = createBrowserRouter(routes, {
-  basename: process.env.PUBLIC_URL,
+  basename: process.env.PUBLIC_URL || "/",
 });
 
 export default router;
