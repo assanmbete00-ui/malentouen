@@ -1,6 +1,6 @@
 export const HEADER_CONFIG = {
   SHOW_TOP_BAR: true,
-  SHOW_LANGUAGE_SELECTOR: false,
+  SHOW_LANGUAGE_SELECTOR: true,
   SHOW_SEARCH_BUTTON: false,
   SHOW_ADMIN_BUTTON: true,
   SHOW_SOCIALS: false,

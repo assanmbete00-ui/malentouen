@@ -10,7 +10,7 @@ import styles from "./styles";
 import type { AdminButtonProps } from "./types";
 
 export default function AdminButton({
-  compact = false,
+  compact = true,
 }: AdminButtonProps) {
   const navigate = useNavigate();
 

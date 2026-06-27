@@ -4,6 +4,7 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import XIcon from "@mui/icons-material/X";
 import MusicNoteRoundedIcon from "@mui/icons-material/MusicNoteRounded";
+import WhatsappIcon from "@mui/icons-material/WhatsApp";
 
 export const SOCIALS = [
   {
@@ -50,6 +51,14 @@ export const SOCIALS = [
     id: "tiktok",
     label: "TikTok",
     icon: MusicNoteRoundedIcon,
+    url: "",
+    visible: true,
+    enabled: false,
+  },
+  {
+    id: "whatsapp",
+    label: "WhatsApp",
+    icon: WhatsappIcon,
     url: "",
     visible: true,
     enabled: false,

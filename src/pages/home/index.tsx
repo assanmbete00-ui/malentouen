@@ -1,10 +1,16 @@
 import { Box, Typography } from "@mui/material";
+import Hero from "./sub_components/hero";
+import ChiefMessage from "./sub_components/chief_message";
+import History from "./sub_components/history";
+import Culture from "./sub_components/culture";
 
 export default function HomePage() {
   return (
-    <Box sx={{ p: 3 }}>
-      <Typography variant="h1">Home Page</Typography>
-      {/* Add your home page content here */}
+    <Box component="main">
+      <Hero />
+      <ChiefMessage />
+      <History />
+      <Culture />
     </Box>
   );
 }

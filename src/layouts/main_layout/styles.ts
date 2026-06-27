@@ -19,6 +19,11 @@ const main: SxProps<Theme> = {
   width: "100%",
   overflowX: "hidden",
   overflowY: "visible",
+
+  pt: {
+    xs: "112px",
+    md: "124px",
+  },
 };
 
 export default {

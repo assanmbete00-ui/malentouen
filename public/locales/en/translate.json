@@ -1,0 +1,36 @@
+{
+  "HOME_HERO_BADGE": "Official Platform",
+  "HOME_HERO_TITLE": "Traditional Chiefdom of Malentouen",
+  "HOME_HERO_DESCRIPTION": "Discover a living heritage, centuries-old traditions, and a community looking toward the future.",
+  "HOME_HERO_PRIMARY_ACTION": "Discover our history",
+  "HOME_HERO_SECONDARY_ACTION": "Explore the gallery",
+  "HOME_HERO_STAT_HISTORY": "Years of history",
+  "HOME_HERO_STAT_VILLAGES": "Villages",
+  "HOME_HERO_STAT_EVENTS": "Cultural events",
+
+
+  "HOME_HISTORY_EYEBROW": "Our Heritage",
+  "HOME_HISTORY_TITLE": "Our History",
+  "HOME_HISTORY_DESCRIPTION": "For generations, the Traditional Chiefdom of Malentouen has preserved its heritage, values and traditions while supporting the development of its community.",
+  "HOME_HISTORY_ACTION": "Discover our full history",
+  "HOME_HISTORY_TIMELINE_ORIGINS_PERIOD": "17th Century",
+  "HOME_HISTORY_TIMELINE_ORIGINS_TITLE": "Origins of the Chiefdom",
+  "HOME_HISTORY_TIMELINE_TRANSMISSION_PERIOD": "Through the generations",
+  "HOME_HISTORY_TIMELINE_TRANSMISSION_TITLE": "Transmission of traditions",
+  "HOME_HISTORY_TIMELINE_TODAY_PERIOD": "Today",
+  "HOME_HISTORY_TIMELINE_TODAY_TITLE": "An institution looking toward the future",
+
+  "HOME_CULTURE_EYEBROW": "Our Culture",
+  "HOME_CULTURE_TITLE": "A living culture passed down through generations",
+  "HOME_CULTURE_DESCRIPTION": "The Traditional Chiefdom of Malentouen preserves and promotes a rich cultural heritage made up of traditions, craftsmanship, dances and ceremonies that continue to unite generations.",
+  "HOME_CULTURE_ACTION": "Discover our entire culture",
+  "HOME_CULTURE_TRADITIONS_CATEGORY": "Traditions",
+  "HOME_CULTURE_TRADITIONS_TITLE": "Traditions and ceremonies",
+  "HOME_CULTURE_TRADITIONS_DESCRIPTION": "Rituals, ceremonies and customs that shape the life of the Chiefdom.",
+  "HOME_CULTURE_CRAFT_CATEGORY": "Craftsmanship",
+  "HOME_CULTURE_CRAFT_TITLE": "Arts and craftsmanship",
+  "HOME_CULTURE_CRAFT_DESCRIPTION": "Traditional skills preserved through sculptures, handcrafted objects and artistic creations.",
+  "HOME_CULTURE_DANCE_CATEGORY": "Dance",
+  "HOME_CULTURE_DANCE_TITLE": "Dance and music",
+  "HOME_CULTURE_DANCE_DESCRIPTION": "Artistic expressions that tell our history, celebrate important moments and strengthen community ties."
+}

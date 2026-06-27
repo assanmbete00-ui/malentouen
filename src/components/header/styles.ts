@@ -1,7 +1,7 @@
 import type { SxProps, Theme } from "@mui/material";
 
 const root = (isSticky: boolean): SxProps<Theme> => ({
-  position: "sticky",
+  position: "fixed",
   top: 0,
   zIndex: 1200,
   width: "100%",
