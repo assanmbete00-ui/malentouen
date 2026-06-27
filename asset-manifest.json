@@ -1,12 +1,19 @@
 {
   "files": {
-    "main.js": "/Malentouen/static/js/main.151ae3fb.js",
+    "main.js": "/Malentouen/static/js/main.51ec64f9.js",
     "static/js/38.0edaeb55.chunk.js": "/Malentouen/static/js/38.0edaeb55.chunk.js",
+    "static/media/highlight.jpg": "/Malentouen/static/media/highlight.f80cc2875e5f1665948f.jpg",
+    "static/media/traditions.png": "/Malentouen/static/media/traditions.86b61173be9b907b7ecf.png",
+    "static/media/background.png": "/Malentouen/static/media/background.56f50895bab6d20a36fe.png",
+    "static/media/chief_portrait.png": "/Malentouen/static/media/chief_portrait.1257cec26f84db1375b5.png",
+    "static/media/dance.png": "/Malentouen/static/media/dance.f41bb025cd158f051079.png",
+    "static/media/craft.png": "/Malentouen/static/media/craft.236f1bb40c6aa54f4d74.png",
+    "static/media/history.jpg": "/Malentouen/static/media/history.799fb45c317f8aa2224f.jpg",
     "index.html": "/Malentouen/index.html",
-    "main.151ae3fb.js.map": "/Malentouen/static/js/main.151ae3fb.js.map",
+    "main.51ec64f9.js.map": "/Malentouen/static/js/main.51ec64f9.js.map",
     "38.0edaeb55.chunk.js.map": "/Malentouen/static/js/38.0edaeb55.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.151ae3fb.js"
+    "static/js/main.51ec64f9.js"
   ]
 }
