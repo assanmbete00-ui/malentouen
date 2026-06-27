@@ -1,21 +1,28 @@
 import { Box, Typography } from "@mui/material";
 
-import Logo from "../../../header/sub_components/logo";
+import FooterSocials from "../footer_socials";
 import { ORGANIZATION } from "@constants/organization";
 
 import styles from "./styles";
-import type { FooterBrandProps } from "./types";
 
-export default function FooterBrand({}: FooterBrandProps) {
+export default function FooterBrand() {
   return (
     <Box sx={styles.container}>
-      <Box sx={styles.logo}>
-        <Logo />
-      </Box>
+      <Box sx={styles.identityRow}>
+        <Box sx={styles.emblem}>
+          {ORGANIZATION.brandInitial}
+        </Box>
 
-      <Typography variant="h6" sx={styles.title}>
-        {ORGANIZATION.fullName}
-      </Typography>
+        <Box sx={styles.identityText}>
+          <Typography component="span" sx={styles.eyebrow}>
+            Chefferie Traditionnelle
+          </Typography>
+
+          <Typography component="span" sx={styles.title}>
+            Malentouen
+          </Typography>
+        </Box>
+      </Box>
 
       <Typography sx={styles.slogan}>
         {ORGANIZATION.slogan}
@@ -24,6 +31,8 @@ export default function FooterBrand({}: FooterBrandProps) {
       <Typography sx={styles.description}>
         {ORGANIZATION.description}
       </Typography>
+
+      <FooterSocials />
     </Box>
   );
 }

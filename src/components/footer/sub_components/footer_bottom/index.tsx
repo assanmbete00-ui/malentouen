@@ -7,12 +7,12 @@ import styles from "./styles";
 export default function FooterBottom() {
   return (
     <Box sx={styles.container}>
-      <Typography sx={styles.text}>
+      <Typography sx={styles.copyright}>
         {ORGANIZATION.copyright}
       </Typography>
 
-      <Typography sx={styles.credit}>
-        Préserver le patrimoine • Valoriser la tradition • Servir la communauté
+      <Typography sx={styles.motto}>
+        Préserver notre héritage • Valoriser notre culture • Construire notre avenir
       </Typography>
     </Box>
   );

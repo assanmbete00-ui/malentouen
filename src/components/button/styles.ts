@@ -9,6 +9,7 @@ const button = (appVariant: ButtonVariant): SxProps<Theme> => ({
   textTransform: "none",
   boxShadow: "none",
   whiteSpace: "nowrap",
+  transition: "all .25s ease",
 
   ...(appVariant === "primary" && {
     bgcolor: "primary.main",
@@ -23,7 +24,8 @@ const button = (appVariant: ButtonVariant): SxProps<Theme> => ({
     bgcolor: "secondary.main",
     color: "secondary.contrastText",
     "&:hover": {
-      bgcolor: "secondary.dark",
+      bgcolor: "secondary.main",
+      opacity: 0.9,
       boxShadow: "none",
     },
   }),
@@ -34,7 +36,9 @@ const button = (appVariant: ButtonVariant): SxProps<Theme> => ({
     border: "1px solid",
     borderColor: "primary.main",
     "&:hover": {
-      bgcolor: "rgba(93, 64, 55, 0.06)",
+      bgcolor: "background.paper",
+      color: "primary.dark",
+      borderColor: "primary.dark",
       boxShadow: "none",
     },
   }),
@@ -43,7 +47,8 @@ const button = (appVariant: ButtonVariant): SxProps<Theme> => ({
     bgcolor: "transparent",
     color: "text.primary",
     "&:hover": {
-      bgcolor: "rgba(93, 64, 55, 0.06)",
+      bgcolor: "background.paper",
+      color: "primary.main",
       boxShadow: "none",
     },
   }),

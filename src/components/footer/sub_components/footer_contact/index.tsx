@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import Link from "@mui/material/Link";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import PhoneOutlinedIcon from "@mui/icons-material/PhoneOutlined";
 import MailOutlineOutlinedIcon from "@mui/icons-material/MailOutlineOutlined";
@@ -12,25 +12,39 @@ import styles from "./styles";
 export default function FooterContact() {
   return (
     <FooterSection title="Contact">
-      <Typography sx={styles.item}>
+      <Link href="#" underline="none" sx={styles.item}>
         <LocationOnOutlinedIcon sx={styles.icon} />
         {ORGANIZATION.address}
-      </Typography>
+      </Link>
 
-      <Typography sx={styles.item}>
+      <Link
+        href={`tel:${ORGANIZATION.phone}`}
+        underline="none"
+        sx={styles.item}
+      >
         <PhoneOutlinedIcon sx={styles.icon} />
         {ORGANIZATION.phone}
-      </Typography>
+      </Link>
 
-      <Typography sx={styles.item}>
+      <Link
+        href={`mailto:${ORGANIZATION.email}`}
+        underline="none"
+        sx={styles.item}
+      >
         <MailOutlineOutlinedIcon sx={styles.icon} />
         {ORGANIZATION.email}
-      </Typography>
+      </Link>
 
-      <Typography sx={styles.item}>
+      <Link
+        href={ORGANIZATION.website}
+        target="_blank"
+        rel="noopener noreferrer"
+        underline="none"
+        sx={styles.item}
+      >
         <LanguageOutlinedIcon sx={styles.icon} />
-        {ORGANIZATION.website}
-      </Typography>
+        Site officiel
+      </Link>
     </FooterSection>
   );
 }

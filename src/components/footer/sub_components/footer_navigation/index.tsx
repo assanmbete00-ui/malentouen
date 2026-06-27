@@ -1,8 +1,8 @@
 import { Link as RouterLink } from "react-router-dom";
 import Link from "@mui/material/Link";
+import ChevronRightRoundedIcon from "@mui/icons-material/ChevronRightRounded";
 
 import FooterSection from "../footer_section";
-
 import { NAVIGATION_ITEMS } from "@constants/navigation";
 
 import styles from "./styles";
@@ -18,6 +18,7 @@ export default function FooterNavigation() {
           underline="none"
           sx={styles.link}
         >
+          <ChevronRightRoundedIcon sx={styles.icon} />
           {item.label}
         </Link>
       ))}

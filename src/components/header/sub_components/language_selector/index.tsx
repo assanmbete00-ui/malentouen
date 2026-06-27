@@ -4,7 +4,7 @@ import styles from "./styles";
 import type { LanguageSelectorProps } from "./types";
 
 export default function LanguageSelector({
-  compact = false,
+  compact = true,
 }: LanguageSelectorProps) {
   return (
     <Box sx={styles.container}>

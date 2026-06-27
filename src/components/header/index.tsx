@@ -3,7 +3,7 @@ import { Box } from "@mui/material";
 import { HEADER_CONFIG } from "./config/header_config";
 import useHeader from "./hooks/use_header";
 
-import Logo from "./sub_components/logo";
+import Logo from "@components/logo";
 import TopBar from "./sub_components/top_bar";
 import DesktopNavigation from "./sub_components/desktop_navigation";
 import HeaderActions from "./sub_components/header_actions";

@@ -1,21 +1,23 @@
-import { Container as MuiContainer, type ContainerProps } from "@mui/material";
+import { Container as MuiContainer } from "@mui/material";
+
+import styles from "./styles";
+import type { ContainerProps } from "./types";
 
 export default function Container({
   children,
   sx,
+  size = "default",
   ...props
 }: ContainerProps) {
   return (
     <MuiContainer
-      maxWidth="xl"
+      maxWidth={false}
       disableGutters
       {...props}
-      sx={{
-        width: "100%",
-        maxWidth: "1920px",
-        mx: "auto",
-        ...sx,
-      }}
+      sx={[
+        styles.root(size),
+        ...(Array.isArray(sx) ? sx : sx ? [sx] : []),
+      ]}
     >
       {children}
     </MuiContainer>

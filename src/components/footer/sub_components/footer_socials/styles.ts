@@ -3,25 +3,28 @@ import type { SxProps, Theme } from "@mui/material";
 const container: SxProps<Theme> = {
   display: "flex",
   alignItems: "center",
-  gap: 1,
-  mt: 2,
+  flexWrap: "wrap",
+  gap: 1.4,
+  mt: 1,
 };
 
 const button: SxProps<Theme> = {
-  width: 42,
-  height: 42,
+  width: 46,
+  height: 46,
   borderRadius: "50%",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  bgcolor: "action.hover",
+  border: "1px solid",
+  borderColor: "divider",
+  bgcolor: "transparent",
   color: "primary.contrastText",
   opacity: 0.82,
   transition: "all .25s ease",
 
   "&:hover": {
+    opacity: 1,
     bgcolor: "secondary.main",
-    transform: "translateY(-2px)",
+    color: "primary.main",
+    borderColor: "secondary.main",
+    transform: "translateY(-3px) scale(1.05)",
   },
 };
 

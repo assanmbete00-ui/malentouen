@@ -6,6 +6,8 @@ export const ORGANIZATION = {
 
   fullName: "Chefferie Traditionnelle de Malentouen",
 
+  brandInitial: "M",
+
   slogan: "Patrimoine • Tradition • Développement",
 
   description:
@@ -39,7 +41,7 @@ export const ORGANIZATION = {
   // Contact
   // ==========================================================
 
-  phone: "+237 XXX XX XX XX",
+  phone: "+237 657 53 43 92",
 
   email: "contact@chefferiemalentouen.cm",
 

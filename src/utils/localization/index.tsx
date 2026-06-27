@@ -8,14 +8,15 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: "en",
+    lng: "fr",
+    fallbackLng: "fr",
     debug: true,
     backend: {
-      loadPath: "/locales/{{lng}}/translate.json"
+      loadPath: "/Malentouen/locales/{{lng}}/translate.json",
     },
     interpolation: {
-      escapeValue: false
-    }
-  })
+      escapeValue: false,
+    },
+  });
 
 export default i18n
