@@ -14,15 +14,15 @@ export default function Culture() {
   const culture = useCulture();
 
   return (
-    <Section id="culture" variant="default" containerSize="wide">
+    <Section id="culture" variant="paper" containerSize="wide">
       <Box sx={styles.container}>
         <CultureContent {...culture.content} />
 
         {culture.options.showHighlight && (
           <CultureHighlight
-            image={culture.media.highlight}
-            title={culture.content.title}
-            description={culture.content.description}
+            image={culture.highlight.image}
+            title={culture.highlight.title}
+            description={culture.highlight.description}
             action={culture.action}
             showAction={culture.options.showAction}
           />

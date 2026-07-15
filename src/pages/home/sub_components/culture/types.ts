@@ -6,8 +6,10 @@ export type CultureContent = {
   description: ReactNode;
 };
 
-export type CultureMedia = {
-  highlight: string;
+export type CultureHighlight = {
+  image: string;
+  title: ReactNode;
+  description: ReactNode;
 };
 
 export type CultureAction = {

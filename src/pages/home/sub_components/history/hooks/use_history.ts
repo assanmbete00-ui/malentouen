@@ -9,10 +9,9 @@ export default function useHistory() {
 
   const content = {
     eyebrow: translate("HOME_HISTORY_EYEBROW"),
-
     title: translate("HOME_HISTORY_TITLE"),
-
     description: translate("HOME_HISTORY_DESCRIPTION"),
+    description2: translate("HOME_HISTORY_DESCRIPTION_2"),
   };
 
   const media = {
@@ -21,23 +20,18 @@ export default function useHistory() {
 
   const action = {
     label: translate("HOME_HISTORY_ACTION"),
-
     href: HISTORY_CONFIG.actionPath,
   };
 
   const timeline = HISTORY_TIMELINE.map((item) => ({
     id: item.id,
-
     period: translate(item.periodKey),
-
     title: translate(item.titleKey),
   }));
 
   const options = {
     showImage: HISTORY_CONFIG.showImage,
-
     showTimeline: HISTORY_CONFIG.showTimeline,
-
     showAction: HISTORY_CONFIG.showAction,
   };
 

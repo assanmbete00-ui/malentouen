@@ -7,16 +7,18 @@ const root = (variant: CardVariant): SxProps<Theme> => ({
   bgcolor: "background.paper",
   border: variant === "flat" ? "none" : "1px solid",
   borderColor: "divider",
-  borderRadius: 2,
+  borderRadius: 3,
   overflow: "hidden",
   boxShadow: "none",
   transition: "all .25s ease",
+
   cursor: variant === "interactive" ? "pointer" : "default",
 
   ...(variant === "interactive" && {
     "&:hover": {
-      transform: "translateY(-4px)",
+      transform: "translateY(-3px)",
       borderColor: "secondary.main",
+      boxShadow: "0 10px 24px rgba(0,0,0,0.06)",
     },
   }),
 });

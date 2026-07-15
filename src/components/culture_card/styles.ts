@@ -5,12 +5,17 @@ const link: SxProps<Theme> = {
   height: "100%",
   textDecoration: "none",
   color: "inherit",
+  transition: "transform .2s ease, box-shadow .2s ease",
+  "&:hover": {
+    transform: "translateY(-3px)",
+    boxShadow: "0 14px 28px rgba(0,0,0,0.08)",
+  },
 };
 
 const imageWrapper: SxProps<Theme> = {
   position: "relative",
   width: "100%",
-  aspectRatio: "4 / 3",
+  height: 240,
   overflow: "hidden",
 };
 
@@ -19,18 +24,11 @@ const image: SxProps<Theme> = {
   height: "100%",
   objectFit: "cover",
   display: "block",
-  transition: "transform .45s ease",
-
-  ".MuiCard-root:hover &": {
-    transform: "scale(1.06)",
-  },
+  transition: "opacity .35s ease",
 };
 
 const content: SxProps<Theme> = {
-  p: {
-    xs: 2.5,
-    md: 3,
-  },
+  p: 3,
 };
 
 const category: SxProps<Theme> = {
@@ -44,8 +42,8 @@ const category: SxProps<Theme> = {
 const title: SxProps<Theme> = {
   mt: 1.2,
   color: "text.primary",
-  fontSize: 20,
-  fontWeight: 900,
+  fontSize: 18,
+  fontWeight: 800,
   lineHeight: 1.35,
 };
 
@@ -53,7 +51,7 @@ const description: SxProps<Theme> = {
   mt: 1.5,
   color: "text.secondary",
   fontSize: 15,
-  lineHeight: 1.8,
+  lineHeight: 1.75,
 };
 
 export default {

@@ -8,13 +8,13 @@ const container: SxProps<Theme> = {
 const item: SxProps<Theme> = {
   position: "relative",
   pl: 3,
-  borderLeft: "2px solid",
+  borderLeft: "3px solid",
   borderColor: "secondary.main",
 };
 
 const period: SxProps<Theme> = {
   color: "secondary.main",
-  fontWeight: 900,
+  fontWeight: 700,
   fontSize: 14,
   letterSpacing: "0.08em",
   textTransform: "uppercase",
@@ -23,7 +23,7 @@ const period: SxProps<Theme> = {
 const title: SxProps<Theme> = {
   mt: 0.8,
   color: "text.primary",
-  fontWeight: 800,
+  fontWeight: 600,
   fontSize: 17,
   lineHeight: 1.5,
 };

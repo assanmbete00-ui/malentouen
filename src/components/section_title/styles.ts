@@ -1,5 +1,4 @@
 import type { SxProps, Theme } from "@mui/material";
-
 import type { SectionTitleAlign } from "./types";
 
 const container = (align: SectionTitleAlign): SxProps<Theme> => ({
@@ -13,9 +12,7 @@ const container = (align: SectionTitleAlign): SxProps<Theme> => ({
   },
 
   alignItems: align === "center" ? "center" : "flex-start",
-
   textAlign: align === "center" ? "center" : "left",
-
   maxWidth: align === "center" ? 760 : "100%",
 });
 
@@ -36,53 +33,35 @@ const textContent = (align: SectionTitleAlign): SxProps<Theme> => ({
 
 const eyebrow: SxProps<Theme> = {
   display: "inline-block",
-
   color: "secondary.main",
-
-  fontSize: 13,
-
+  fontSize: 14,
   fontWeight: 800,
-
-  letterSpacing: ".14em",
-
+  letterSpacing: ".18em",
   textTransform: "uppercase",
-
   mb: 1,
 };
 
 const title = (align: SectionTitleAlign): SxProps<Theme> => ({
   position: "relative",
-
   fontWeight: 900,
-
   lineHeight: 1.15,
-
   color: "text.primary",
 
   "&::after": {
     content: '""',
-
     display: "block",
-
     width: 44,
-
     height: 3,
-
     borderRadius: 999,
-
     bgcolor: "secondary.main",
-
     mt: 2,
-
     mx: align === "center" ? "auto" : 0,
   },
 });
 
 const subtitle: SxProps<Theme> = {
   mt: 2,
-
   color: "text.secondary",
-
   lineHeight: 1.8,
 
   fontSize: {

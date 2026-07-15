@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import type { SxProps, Theme } from "@mui/material";
 
-export type SectionVariant = "default" | "paper" | "primary";
+export type SectionVariant = "default" | "paper" | "primary" | "secondary";
 
 export type SectionContainerSize =
   | "narrow"

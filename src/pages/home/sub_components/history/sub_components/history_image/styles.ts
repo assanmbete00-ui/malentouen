@@ -16,6 +16,7 @@ const image: SxProps<Theme> = {
   display: "block",
   border: "1px solid",
   borderColor: "divider",
+  boxShadow: "0 18px 42px rgba(0,0,0,.08)",
 };
 
 export default {

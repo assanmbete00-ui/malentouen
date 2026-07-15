@@ -1,4 +1,5 @@
 import { Box, Typography } from "@mui/material";
+import type { SxProps, Theme } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 
 import Card from "@components/card";
@@ -14,8 +15,18 @@ export default function CultureCard({
   href,
   sx,
 }: CultureCardProps) {
+  const baseSx = {
+    height: "100%",
+    borderRadius: "16px",
+    overflow: "hidden",
+  };
+
+  const contentSx = sx
+    ? ([baseSx, ...(Array.isArray(sx) ? sx : [sx])] as SxProps<Theme>)
+    : baseSx;
+
   const content = (
-    <Card variant={href ? "interactive" : "default"} sx={sx}>
+    <Card variant={href ? "interactive" : "default"} sx={contentSx}>
       <Box sx={styles.imageWrapper}>
         <Box
           component="img"
@@ -34,9 +45,7 @@ export default function CultureCard({
           {title}
         </Typography>
 
-        <Typography sx={styles.description}>
-          {description}
-        </Typography>
+        <Typography sx={styles.description}>{description}</Typography>
       </Box>
     </Card>
   );

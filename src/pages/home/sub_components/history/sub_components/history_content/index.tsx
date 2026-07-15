@@ -10,19 +10,17 @@ export default function HistoryContent({
   eyebrow,
   title,
   description,
+  description2,
   action,
   showAction,
 }: HistoryContentProps) {
   return (
     <Box sx={styles.container}>
-      <SectionTitle
-        eyebrow={eyebrow}
-        title={title}
-      />
+      <SectionTitle eyebrow={eyebrow} title={title} />
 
-      <Typography sx={styles.description}>
-        {description}
-      </Typography>
+      <Typography sx={styles.description}>{description}</Typography>
+
+      <Typography sx={styles.description2}>{description2}</Typography>
 
       {showAction && action && (
         <Box sx={styles.action}>

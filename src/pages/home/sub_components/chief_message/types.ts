@@ -5,6 +5,7 @@ export type ChiefMessageContent = {
   title: ReactNode;
   quote: ReactNode;
   description: ReactNode;
+  description2: ReactNode;
   signature: {
     name: ReactNode;
     title: ReactNode;

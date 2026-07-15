@@ -8,16 +8,13 @@ export default function useChiefMessage() {
 
   const content = {
     eyebrow: translate("HOME_CHIEF_MESSAGE_EYEBROW"),
-
     title: translate("HOME_CHIEF_MESSAGE_TITLE"),
-
     quote: translate("HOME_CHIEF_MESSAGE_QUOTE"),
-
     description: translate("HOME_CHIEF_MESSAGE_TEXT"),
+    description2: translate("HOME_CHIEF_MESSAGE_TEXT_2"),
 
     signature: {
       name: translate("HOME_CHIEF_MESSAGE_SIGNATURE_NAME"),
-
       title: translate("HOME_CHIEF_MESSAGE_SIGNATURE_TITLE"),
     },
   };
@@ -28,17 +25,13 @@ export default function useChiefMessage() {
 
   const action = {
     label: translate("HOME_CHIEF_MESSAGE_ACTION"),
-
     href: CHIEF_MESSAGE_CONFIG.actionPath,
   };
 
   const options = {
     showPortrait: CHIEF_MESSAGE_CONFIG.showPortrait,
-
     showQuote: CHIEF_MESSAGE_CONFIG.showQuote,
-
     showSignature: CHIEF_MESSAGE_CONFIG.showSignature,
-
     showAction: CHIEF_MESSAGE_CONFIG.showAction,
   };
 
