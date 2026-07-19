@@ -9,7 +9,7 @@ import Gallery from "./sub_components/gallery";
 import Projects from "./sub_components/projects";
 import Partners from "./sub_components/partners";
 import Contact from "./sub_components/contact_section";
-import CTA from "./sub_components/cta";
+//import CTA from "./sub_components/cta";
 
 export default function HomePage() {
   return (
@@ -24,7 +24,7 @@ export default function HomePage() {
       <Projects />
       <Partners />
       <Contact />
-      <CTA />
+     {/* <CTA /> */}
     </Box>
   );
 }
