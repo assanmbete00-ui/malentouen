@@ -5,14 +5,13 @@ const container: SxProps<Theme> = {
 
   gridTemplateColumns: {
     xs: "1fr",
-    lg: "420px 1fr",
+    lg: "48% 52%",
   },
-
-  alignItems: "center",
+  alignItems: "stretch",
 
   gap: {
-    xs: 6,
-    md: 10,
+    xs: 5,
+    md: 11,
   },
 };
 

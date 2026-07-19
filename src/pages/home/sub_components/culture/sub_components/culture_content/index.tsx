@@ -15,11 +15,11 @@ export default function CultureContent({
       <SectionTitle
         eyebrow={eyebrow}
         title={title}
+        align="left"
+        sx={{ mb: { xs: 4, md: 4 } }}
       />
 
-      <Typography sx={styles.description}>
-        {description}
-      </Typography>
+      <Typography sx={styles.description}>{description}</Typography>
     </Box>
   );
 }

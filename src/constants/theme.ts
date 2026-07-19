@@ -55,39 +55,56 @@ const theme = createTheme({
   typography: {
     fontFamily: '"Inter", "Roboto", "Helvetica", "Arial", sans-serif',
     h1: {
-      fontWeight: 700,
+      fontWeight: 900,
+      letterSpacing: "-0.03em",
+      lineHeight: 1.05,
     },
     h2: {
-      fontWeight: 700,
+      fontWeight: 900,
+      letterSpacing: "-0.03em",
+      lineHeight: 1.1,
     },
     h3: {
-      fontWeight: 700,
+      fontWeight: 900,
+      lineHeight: 1.15,
     },
     h4: {
-      fontWeight: 700,
+      fontWeight: 800,
+      lineHeight: 1.2,
     },
     h5: {
-      fontWeight: 600,
+      fontWeight: 700,
+      lineHeight: 1.3,
     },
     h6: {
-      fontWeight: 600,
+      fontWeight: 700,
+      lineHeight: 1.35,
+    },
+    body1: {
+      lineHeight: 1.85,
+      letterSpacing: "0.01em",
+    },
+    body2: {
+      lineHeight: 1.8,
+      letterSpacing: "0.01em",
     },
     button: {
-      fontWeight: 600,
+      fontWeight: 700,
       textTransform: "none",
     },
   },
 
   shape: {
-    borderRadius: 12,
+    borderRadius: 14,
   },
 
   components: {
     MuiButton: {
       styleOverrides: {
         root: {
-          borderRadius: 10,
+          borderRadius: 14,
           boxShadow: "none",
+          transition: "transform .2s ease, box-shadow .2s ease",
         },
       },
     },
@@ -96,6 +113,7 @@ const theme = createTheme({
         root: {
           boxShadow: "none",
           border: `1px solid ${BORDER}`,
+          transition: "transform .25s ease, box-shadow .25s ease",
         },
       },
     },

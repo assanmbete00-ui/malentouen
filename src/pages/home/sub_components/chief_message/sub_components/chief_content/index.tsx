@@ -14,6 +14,7 @@ export default function ChiefContent({
   title,
   quote,
   description,
+  description2,
   signature,
   action,
   showQuote,
@@ -22,23 +23,15 @@ export default function ChiefContent({
 }: ChiefContentProps) {
   return (
     <Box sx={styles.container}>
-      <SectionTitle
-        eyebrow={eyebrow}
-        title={title}
-        sx={{ mb: 3 }}
-      />
+      <SectionTitle eyebrow={eyebrow} title={title} sx={styles.sectionTitle} />
 
       {showQuote && <ChiefQuote>{quote}</ChiefQuote>}
 
-      <Typography sx={styles.description}>
-        {description}
-      </Typography>
+      <Typography sx={styles.description}>{description}</Typography>
+      <Typography sx={styles.description2}>{description2}</Typography>
 
       {showSignature && (
-        <ChiefSignature
-          name={signature.name}
-          title={signature.title}
-        />
+        <ChiefSignature name={signature.name} title={signature.title} />
       )}
 
       {showAction && action && (

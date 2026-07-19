@@ -2,12 +2,15 @@ import type { SxProps, Theme } from "@mui/material";
 
 const container: SxProps<Theme> = {
   position: "relative",
-  mt: { xs: 5, md: 7 },
-  borderRadius: 4,
+  width: "100%",
+  maxWidth: 1120,
+  mx: 0,
+  mt: 0,
+  mb: { xs: 5, md: 6 },
+  borderRadius: "18px",
   overflow: "hidden",
-  minHeight: { xs: 360, md: 460 },
-  border: "1px solid",
-  borderColor: "divider",
+  height: { xs: 360, md: 430 },
+  boxShadow: "0 24px 60px rgba(0,0,0,.12)",
 };
 
 const image: SxProps<Theme> = {
@@ -21,38 +24,37 @@ const image: SxProps<Theme> = {
 const overlay: SxProps<Theme> = {
   position: "absolute",
   inset: 0,
-  background: (theme) =>
-    `linear-gradient(90deg, 
-        ${theme.palette.primary.main}E6 0%, 
-        ${theme.palette.primary.main}99 50%, 
-        ${theme.palette.primary.main}33 100%)` ,
+  background: "linear-gradient(90deg, rgba(0,0,0,.72), rgba(0,0,0,.28))",
 };
 
 const content: SxProps<Theme> = {
   position: "relative",
   zIndex: 1,
-  minHeight: { xs: 360, md: 460 },
+  width: "100%",
+  height: "100%",
   display: "flex",
   flexDirection: "column",
-  justifyContent: "flex-end",
+  justifyContent: "center",
   alignItems: "flex-start",
-  p: { xs: 3, md: 5 },
-  maxWidth: 680,
+  p: { xs: 4, md: 6 },
+  maxWidth: 520,
 };
 
 const title: SxProps<Theme> = {
   color: "primary.contrastText",
-  fontWeight: 900,
-  fontSize: { xs: 28, md: 42 },
+  fontWeight: 800,
+  fontSize: { xs: 30, md: 34 },
   lineHeight: 1.15,
+  maxWidth: "100%",
 };
 
 const description: SxProps<Theme> = {
   mt: 2,
   color: "primary.contrastText",
-  opacity: 0.9,
-  fontSize: { xs: 15, md: 17 },
-  lineHeight: 1.8,
+  opacity: 0.95,
+  fontSize: 16,
+  lineHeight: 1.85,
+  maxWidth: 520,
 };
 
 const actionWrapper: SxProps<Theme> = {

@@ -1,19 +1,19 @@
 import type { SxProps, Theme } from "@mui/material";
 
 const container: SxProps<Theme> = {
-  maxWidth: 760,
-  mx: "auto",
-  textAlign: "center",
+  width: "100%",
+  maxWidth: 1120,
+  mx: 0,
+  textAlign: "left",
+  mb: 0,
 };
 
 const description: SxProps<Theme> = {
-  mt: 3,
+  mt: 2.5,
+  maxWidth: 760,
   color: "text.secondary",
-  lineHeight: 1.9,
-  fontSize: {
-    xs: 16,
-    md: 17,
-  },
+  lineHeight: 1.85,
+  fontSize: 16,
 };
 
 export default {

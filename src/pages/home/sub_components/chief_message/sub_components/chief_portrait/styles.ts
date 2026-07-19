@@ -3,20 +3,18 @@ import type { SxProps, Theme } from "@mui/material";
 const container: SxProps<Theme> = {
   flex: 1,
   display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
+  justifyContent: "flex-start",
+  alignItems: "stretch",
+  height: "100%",
 };
 
 const image: SxProps<Theme> = {
   width: "100%",
-  maxWidth: 460,
-  aspectRatio: "4 / 5",
+  height: "100%",
   objectFit: "cover",
-  borderRadius: 4,
+  borderRadius: "18px",
   display: "block",
-
-  boxShadow: (theme) => `
-    0 24px 60px ${theme.palette.common.black}20 `,
+  boxShadow: "0 14px 36px rgba(0,0,0,0.08)",
 };
 
 export default {

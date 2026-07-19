@@ -13,11 +13,15 @@ export default function ChiefMessage() {
   const chief = useChiefMessage();
 
   return (
-    <Section>
-      <Box sx={styles.container}> 
-         {chief.options.showPortrait && (
+    <Section
+      variant="paper"
+      id="chief-message"
+      contentSx={{ py: 0, display: "flex", alignItems: "center" }}
+    >
+      <Box sx={styles.container}>
+        {chief.options.showPortrait && (
           <ChiefPortrait image={chief.media.portrait} />
-        )} 
+        )}
 
         <ChiefContent
           {...chief.content}

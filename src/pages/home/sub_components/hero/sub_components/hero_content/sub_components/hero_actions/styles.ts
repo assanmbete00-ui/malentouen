@@ -4,8 +4,10 @@ const container: SxProps<Theme> = {
   display: "flex",
   alignItems: "center",
   flexWrap: "wrap",
-  gap: 3,
+  gap: 2,
   mt: 5,
+  justifyContent: "flex-start",
+  width: "100%",
 };
 
 export default {

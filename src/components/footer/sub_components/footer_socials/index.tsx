@@ -1,9 +1,6 @@
 import { Box, IconButton } from "@mui/material";
-
 import FooterSection from "../footer_section";
-
 import { SOCIALS } from "@constants/socials";
-
 import styles from "./styles";
 
 export default function FooterSocials() {

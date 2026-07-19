@@ -11,7 +11,11 @@ const routes: RouteObject[] = [
 ];
 
 const router = createBrowserRouter(routes, {
-  basename: process.env.PUBLIC_URL || "/",
+  // GitHub Pages sert le site depuis un sous-chemin (/malentouen/ ici)
+  basename:
+    typeof window !== "undefined" && window.location.pathname
+      ? window.location.pathname.replace(/\/+$/, "")
+      : "/malentouen",
 });
 
 export default router;

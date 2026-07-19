@@ -23,4 +23,5 @@ export const CULTURE_ITEMS = [
     descriptionKey: "HOME_CULTURE_DANCE_DESCRIPTION",
     href: "/cultures",
   },
+  
 ] as const;

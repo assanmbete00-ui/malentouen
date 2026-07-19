@@ -1,217 +1,162 @@
-👑 Plateforme Officielle de la Chefferie Traditionnelle de Malentouen
+# Plateforme Officielle de la Chefferie Traditionnelle de Malentouen
 
-«Préserver notre héritage • Valoriser notre culture • Construire notre avenir»
-
----
-
-📖 Présentation
-
-La Plateforme Officielle de la Chefferie Traditionnelle de Malentouen est une plateforme numérique institutionnelle conçue pour préserver, valoriser et promouvoir le patrimoine culturel de la Chefferie tout en rapprochant la communauté grâce aux technologies modernes.
-
-Plus qu'un simple site internet, cette plateforme représente l'identité numérique officielle de la Chefferie. Elle met en valeur son histoire, ses traditions, ses projets de développement, ses événements et l'ensemble de son patrimoine culturel.
-
-Notre ambition est de construire une plateforme moderne, performante, accessible et durable, capable de devenir une référence pour les institutions traditionnelles africaines.
+> Une plateforme numérique institutionnelle dédiée à la préservation, à la valorisation et à la modernisation du patrimoine de la Chefferie Traditionnelle de Malentouen.
 
 ---
 
-🎯 Vision
+# Présentation
 
-Construire une plateforme numérique qui préserve le patrimoine, valorise la culture, inspire confiance et rapproche la communauté.
+La Plateforme Officielle de la Chefferie Traditionnelle de Malentouen constitue le portail numérique officiel de l'institution.
 
-Chaque décision technique, graphique et fonctionnelle doit servir cette vision.
+Elle a pour vocation de :
 
----
+- représenter officiellement la Chefferie ;
+- préserver et transmettre son patrimoine historique et culturel ;
+- diffuser les informations institutionnelles ;
+- valoriser les projets de développement ;
+- rapprocher la Chefferie de la population, de la diaspora et de ses partenaires.
 
-🏛️ Philosophie
-
-Nous ne développons pas simplement une application.
-
-Nous construisons un patrimoine numérique destiné à traverser les générations.
-
-Notre démarche repose sur quatre principes fondamentaux :
-
-- Préserver le patrimoine.
-- Valoriser la culture.
-- Attirer les visiteurs.
-- Construire une plateforme durable.
+Le projet est conçu comme un produit logiciel évolutif et non comme un simple site web.
 
 ---
 
-🏗️ Architecture du projet
+# Vision
 
-Le projet suit une architecture progressive.
-
-Vision
-        ↓
-Architecture
-        ↓
-Royal Heritage Design System (RHDS)
-        ↓
-Composants
-        ↓
-Pages
-        ↓
-Fonctionnalités
-
-Cette approche garantit une plateforme cohérente, évolutive et facilement maintenable.
+Construire une plateforme institutionnelle moderne capable de représenter durablement la Chefferie Traditionnelle de Malentouen tout en respectant son identité, son histoire et ses valeurs.
 
 ---
 
-🎨 Royal Heritage Design System (RHDS)
+# Technologies
 
-Le projet est développé selon le Royal Heritage Design System (RHDS).
-
-Le RHDS définit les standards du projet :
-
-- Architecture
-- Design
-- Couleurs
-- Typographie
-- Espacements
-- Animations
-- Composants
-- Documentation
-- Certification
-
-Chaque composant majeur est conçu, documenté et validé avant son intégration.
-
----
-
-🛠️ Stack technique
+Le projet repose principalement sur :
 
 - React
 - TypeScript
 - Material UI
 - React Router
 - Apollo Client
-- GraphQL
 - i18next
 
 ---
 
-📁 Structure du projet
+# Structure générale
 
+text
 src/
-│
+├── @types/
+├── api/
 ├── assets/
 ├── components/
 ├── constants/
 ├── contexts/
+├── design/
 ├── hooks/
 ├── layouts/
 ├── navigations/
 ├── pages/
+├── services/
 ├── theme/
 └── utils/
 
----
 
-📚 Documentation
+Cette architecture privilégie :
 
-La documentation du projet est disponible dans le dossier :
-
-docs/
-
-Elle couvre notamment :
-
-- Vision du projet
-- Royal Heritage Design System (RHDS)
-- Architecture
-- Composants
-- Bonnes pratiques de développement
+- la séparation des responsabilités ;
+- la réutilisation des composants ;
+- la modularité ;
+- la maintenabilité.
 
 ---
 
-🚀 État d'avancement
+# Documentation
 
-Fondations
+La documentation officielle du projet est disponible dans le dossier docs/.
 
-- ✅ Architecture principale
-- ✅ Thème Material UI
-- ✅ Palette de couleurs
-- ✅ Header
-- ✅ Footer
-- ✅ Documentation RHDS (Header & Footer)
+Elle comprend notamment :
 
-En cours
+- 00_PROJECT_MANIFESTO.md
+- 01_PRODUCT_VISION.md
+- 02_ARCHITECTURE.md (en cours de finalisation)
+- 03_RHDS.md
+- 04_HOME_PAGE.md
+- 05_COMPONENTS.md
+- 06_TRANSLATIONS.md
+- 07_DEVELOPMENT_RULES.md
+- 08_PERFORMANCE.md
+- 09_ACCESSIBILITY.md
+- 10_ROADMAP.md
+- CHANGELOG.md
 
-- 🚧 Home Page
-- 🚧 Hero
-- 🚧 Composants métier
-- 🚧 Documentation complète
-
----
-
-🔄 Méthode de développement
-
-Chaque nouvelle fonctionnalité suit le processus suivant :
-
-Vision
-      ↓
-Architecture
-      ↓
-Design System (RHDS)
-      ↓
-Développement
-      ↓
-Revue
-      ↓
-Documentation
-      ↓
-Certification RHDS
-
-Cette méthode garantit :
-
-- une architecture propre ;
-- des composants réutilisables ;
-- une documentation complète ;
-- une excellente maintenabilité.
+Avant toute contribution, il est recommandé de consulter ces documents.
 
 ---
 
-📖 Documentation RHDS
+# Royal Heritage Design System (RHDS)
 
-Chaque composant institutionnel possède son propre document de conception.
+La plateforme repose sur un Design System dédié : le *Royal Heritage Design System (RHDS)*.
 
-Exemples :
+Le RHDS garantit :
 
-docs/
-│
-├── vision/
-│   └── project_vision.md
-│
-└── rhds/
-    ├── footer.md
-    ├── header.md
-    └── ...
+- une identité visuelle cohérente ;
+- une expérience utilisateur homogène ;
+- une représentation institutionnelle fidèle à la Chefferie.
 
-Chaque document décrit :
-
-- la vision ;
-- l'architecture ;
-- les responsabilités ;
-- les règles de conception ;
-- les évolutions prévues ;
-- les critères de certification.
+Toutes les interfaces doivent respecter ses principes.
 
 ---
 
-🌍 Objectif
+# Internationalisation
 
-Notre ambition est de faire de cette plateforme une référence numérique pour les institutions traditionnelles africaines.
+La plateforme est conçue pour être multilingue.
 
-À terme, cette architecture pourra être adaptée à d'autres chefferies, musées, fondations et institutions culturelles souhaitant valoriser leur patrimoine.
+Toutes les chaînes destinées aux utilisateurs passent par le système d'internationalisation.
+
+Les textes ne doivent jamais être écrits directement dans les composants.
 
 ---
 
-📄 Licence
+# Architecture des composants
 
-© 2026 Chefferie Traditionnelle de Malentouen.
+Le projet privilégie des composants :
+
+- réutilisables ;
+- indépendants ;
+- spécialisés ;
+- cohérents avec le RHDS.
+
+Les composants complexes, comme le Header et le Footer, sont organisés sous forme de modules composés de sous-composants, de hooks et de configurations.
+
+---
+
+# Contribuer
+
+Avant toute modification :
+
+1. Comprendre le besoin fonctionnel.
+2. Vérifier les composants existants.
+3. Respecter le RHDS.
+4. Respecter les conventions de développement.
+5. Vérifier le responsive.
+6. Vérifier les traductions.
+7. Documenter les évolutions importantes si nécessaire.
+
+---
+
+# Philosophie de développement
+
+La plateforme privilégie :
+
+- la qualité plutôt que la rapidité ;
+- la simplicité plutôt que la complexité ;
+- la réutilisation plutôt que la duplication ;
+- la stabilité plutôt que les changements fréquents.
+
+Chaque évolution doit renforcer le produit sans compromettre ses fondations.
+
+---
+
+# Licence
+
+© Chefferie Traditionnelle de Malentouen.
 
 Tous droits réservés.
-
----
-
-✨ Citation du projet
-
-«"Nous ne développons pas uniquement une plateforme. Nous construisons un patrimoine numérique destiné à traverser les générations."»

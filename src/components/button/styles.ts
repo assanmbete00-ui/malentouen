@@ -2,14 +2,20 @@ import type { SxProps, Theme } from "@mui/material";
 import type { ButtonVariant } from "./types";
 
 const button = (appVariant: ButtonVariant): SxProps<Theme> => ({
-  minHeight: 44,
-  px: 3,
-  borderRadius: 999,
+  minHeight: 46,
+  px: 4,
+  borderRadius: "14px",
   fontWeight: 700,
   textTransform: "none",
   boxShadow: "none",
   whiteSpace: "nowrap",
-  transition: "all .25s ease",
+  transition:
+    "background-color .25s ease, color .25s ease, border-color .25s ease, opacity .25s ease, transform .25s ease, box-shadow .25s ease",
+
+  "&:focus-visible": {
+    outline: `2px solid rgba(200, 155, 60, 0.45)`,
+    outlineOffset: 3,
+  },
 
   ...(appVariant === "primary" && {
     bgcolor: "primary.main",

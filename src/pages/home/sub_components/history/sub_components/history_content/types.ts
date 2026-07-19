@@ -4,6 +4,7 @@ export type HistoryContentProps = {
   eyebrow: ReactNode;
   title: ReactNode;
   description: ReactNode;
+  description2: ReactNode;
 
   action?: {
     label: ReactNode;

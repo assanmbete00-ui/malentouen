@@ -5,6 +5,7 @@ export type ChiefContentProps = {
   title: ReactNode;
   quote: ReactNode;
   description: ReactNode;
+  description2: ReactNode;
 
   signature: {
     name: ReactNode;
