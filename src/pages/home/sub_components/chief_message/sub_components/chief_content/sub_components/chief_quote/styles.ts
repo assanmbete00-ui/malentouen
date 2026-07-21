@@ -2,25 +2,35 @@ import type { SxProps, Theme } from "@mui/material";
 
 const container: SxProps<Theme> = {
   position: "relative",
-  mb: 4,
-  py: "8px",
-  pl: "32px",
-  borderLeft: "4px solid",
+
+  maxWidth: 620,
+
+  mb: {
+    xs: 3,
+    md: 4,
+  },
+
+  py: "4px",
+  pl: {
+    xs: "20px",
+    md: "24px",
+  },
+
+  borderLeft: "3px solid",
   borderColor: "secondary.main",
-  maxWidth: 720,
-  /* simple vertical bar only */
 };
 
 const quote: SxProps<Theme> = {
+  color: "text.primary",
+
   fontSize: {
     xs: 20,
-    md: 26,
+    md: 23,
   },
+
   fontStyle: "italic",
   fontWeight: 700,
-  lineHeight: 1.55,
-  color: "text.primary",
-  /* use system/inter typography (no Playfair) */
+  lineHeight: 1.45,
 };
 
 export default {

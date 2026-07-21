@@ -1,29 +1,52 @@
 import type { SxProps, Theme } from "@mui/material";
 
 const container: SxProps<Theme> = {
+  width: "100%",
+  maxWidth: 620,
+
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "flex-start",
-  maxWidth: 620,
 };
 
 const description: SxProps<Theme> = {
-  mt: 3.5,
+  mt: {
+    xs: 3,
+    md: 3.5,
+  },
+
   color: "text.secondary",
-  lineHeight: 1.85,
-  fontSize: 16,
+
+  fontSize: {
+    xs: 15,
+    md: 16,
+  },
+
+  lineHeight: 1.8,
 };
 
 const description2: SxProps<Theme> = {
-  mt: 3,
+  mt: {
+    xs: 2.25,
+    md: 2.5,
+  },
+
   color: "text.secondary",
-  lineHeight: 1.85,
-  fontSize: 16,
+
+  fontSize: {
+    xs: 15,
+    md: 16,
+  },
+
+  lineHeight: 1.8,
 };
 
 const action: SxProps<Theme> = {
-  mt: 3.5,
+  mt: {
+    xs: 2.75,
+    md: 3,
+  },
 };
 
 export default {

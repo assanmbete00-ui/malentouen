@@ -14,17 +14,19 @@ export default function NewsContent({
 }: NewsContentProps) {
   return (
     <Box sx={styles.container}>
-      <SectionTitle
-        eyebrow={eyebrow}
-        title={title}
-        action={
-          action ? (
-            <TextLink to={action.href} sx={{ color: "text.secondary" }}>
+      <Box sx={styles.heading}>
+        <Box sx={styles.title}>
+          <SectionTitle eyebrow={eyebrow} title={title} />
+        </Box>
+
+        {action && (
+          <Box sx={styles.action}>
+            <TextLink to={action.href} sx={styles.actionLink}>
               {action.label}
             </TextLink>
-          ) : undefined
-        }
-      />
+          </Box>
+        )}
+      </Box>
 
       <Typography sx={styles.description}>{description}</Typography>
     </Box>

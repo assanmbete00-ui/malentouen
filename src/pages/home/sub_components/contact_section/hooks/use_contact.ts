@@ -24,6 +24,11 @@ export default function useContact() {
     value: translate(item.valueKey),
   }));
 
+  const map = {
+    query: CONTACT_CONFIG.map.query,
+    title: CONTACT_CONFIG.map.title,
+  };
+
   const options = {
     showInformation: CONTACT_CONFIG.showInformation,
     showAction: CONTACT_CONFIG.showAction,
@@ -33,6 +38,7 @@ export default function useContact() {
     content,
     action,
     items,
+    map,
     options,
   };
 }

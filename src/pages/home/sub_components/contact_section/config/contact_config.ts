@@ -3,4 +3,9 @@ export const CONTACT_CONFIG = {
   showAction: true,
 
   actionPath: "/contact",
+
+  map: {
+    query: "Malentouen, Noun, West Region, Cameroon",
+    title: "Localisation de Malentouen",
+  },
 } as const;

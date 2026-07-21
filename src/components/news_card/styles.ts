@@ -21,7 +21,7 @@ const image: SxProps<Theme> = {
   transition: "transform .45s ease",
 
   ".MuiCard-root:hover &": {
-    transform: "scale(1.05)",
+    transform: "scale(1.03)",
   },
 };
 

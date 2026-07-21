@@ -7,16 +7,24 @@ const container: SxProps<Theme> = {
 
 const image: SxProps<Theme> = {
   width: "100%",
+
   aspectRatio: {
     xs: "4 / 3",
-    md: "5 / 4",
+    md: "16 / 11",
+    lg: "3 / 2",
   },
+
   objectFit: "cover",
-  borderRadius: 4,
+  objectPosition: "center",
+
+  borderRadius: "18px",
+
   display: "block",
+
   border: "1px solid",
   borderColor: "divider",
-  boxShadow: "0 18px 42px rgba(0,0,0,.08)",
+
+  boxShadow: "0 16px 36px rgba(0, 0, 0, 0.07)",
 };
 
 export default {

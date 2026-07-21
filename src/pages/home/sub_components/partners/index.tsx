@@ -1,7 +1,5 @@
 import { Box } from "@mui/material";
-import { Link as RouterLink } from "react-router-dom";
 
-import Button from "@components/button";
 import Section from "@components/section";
 
 import usePartners from "./hooks/use_partners";
@@ -23,25 +21,15 @@ export default function Partners() {
       <Box sx={styles.container}>
         <PartnersContent
           {...partners.content}
+          action={
+            partners.options.showAction
+              ? partners.action
+              : undefined
+          }
         />
 
         {partners.options.showItems && (
-          <PartnersList
-            items={partners.items}
-          />
-        )}
-
-        {partners.options.showAction && (
-          <Box sx={styles.action}>
-            <RouterLink
-              to={partners.action.href}
-              style={{ textDecoration: "none" }}
-            >
-              <Button>
-                {partners.action.label}
-              </Button>
-            </RouterLink>
-          </Box>
+          <PartnersList items={partners.items} />
         )}
       </Box>
     </Section>

@@ -22,7 +22,9 @@ function getIcon(icon: ContactItemIcon) {
 export default function ContactInformation({
   items,
 }: ContactInformationProps) {
-  if (!items.length) return null;
+  if (!items.length) {
+    return null;
+  }
 
   return (
     <Box sx={styles.grid}>
@@ -32,7 +34,7 @@ export default function ContactInformation({
             {getIcon(item.icon)}
           </Box>
 
-          <Box>
+          <Box sx={{ minWidth: 0 }}>
             <Typography sx={styles.label}>
               {item.label}
             </Typography>

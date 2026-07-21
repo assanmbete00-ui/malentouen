@@ -1,17 +1,21 @@
 import type { SxProps, Theme } from "@mui/material";
 
 const container: SxProps<Theme> = {
+  width: "100%",
+
   display: "grid",
 
   gridTemplateColumns: {
     xs: "1fr",
-    lg: "48% 52%",
+    lg: "minmax(0, 0.82fr) minmax(0, 1.18fr)",
   },
-  alignItems: "stretch",
+
+  alignItems: "center",
 
   gap: {
-    xs: 5,
-    md: 11,
+    xs: 4,
+    md: 6,
+    lg: 8,
   },
 };
 

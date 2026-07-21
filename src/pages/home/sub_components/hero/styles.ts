@@ -5,8 +5,8 @@ const root: SxProps<Theme> = {
   width: "100%",
   minHeight: {
     xs: "60vh",
-    md: "68vh",
-    lg: "72vh",
+    md: "66vh",
+    lg: "68vh",
   },
   overflow: "hidden",
   isolation: "isolate",
@@ -20,8 +20,8 @@ const contentWrapper: SxProps<Theme> = {
   width: "100%",
   minHeight: {
     xs: "60vh",
-    md: "68vh",
-    lg: "72vh",
+    md: "66vh",
+    lg: "68vh",
   },
   display: "flex",
   alignItems: "center",
