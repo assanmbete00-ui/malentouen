@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/Malentouen/static/js/main.dd38f4dd.js",
+    "main.js": "/Malentouen/static/js/main.e21385fa.js",
     "static/js/38.0edaeb55.chunk.js": "/Malentouen/static/js/38.0edaeb55.chunk.js",
     "static/media/community.jpg": "/Malentouen/static/media/community.f80cc2875e5f1665948f.jpg",
     "static/media/highlight.jpg": "/Malentouen/static/media/highlight.f80cc2875e5f1665948f.jpg",
@@ -26,10 +26,10 @@
     "static/media/education.jpg": "/Malentouen/static/media/education.624aa7ad02e29726388d.jpg",
     "static/media/governance.jpg": "/Malentouen/static/media/governance.624aa7ad02e29726388d.jpg",
     "index.html": "/Malentouen/index.html",
-    "main.dd38f4dd.js.map": "/Malentouen/static/js/main.dd38f4dd.js.map",
+    "main.e21385fa.js.map": "/Malentouen/static/js/main.e21385fa.js.map",
     "38.0edaeb55.chunk.js.map": "/Malentouen/static/js/38.0edaeb55.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.dd38f4dd.js"
+    "static/js/main.e21385fa.js"
   ]
 }
