@@ -18,13 +18,17 @@ export default function EventCard({
   const content = (
     <Card variant={href ? "interactive" : "default"} sx={sx}>
       <Box sx={styles.content}>
-        <Box sx={styles.marker} />
+        <Box sx={styles.titleRow}>
+          <Box sx={styles.marker} aria-hidden="true" />
 
-        <Typography component="h3" sx={styles.title}>
-          {title}
+          <Typography component="h3" sx={styles.title}>
+            {title}
+          </Typography>
+        </Box>
+
+        <Typography sx={styles.date}>
+          {date}
         </Typography>
-
-        <Typography sx={styles.date}>{date}</Typography>
 
         <Typography sx={styles.meta}>
           {location} • {time}

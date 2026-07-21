@@ -1,3 +1,4 @@
 export type ContactMapProps = {
-  title?: string;
+  query: string;
+  title: string;
 };

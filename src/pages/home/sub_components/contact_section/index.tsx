@@ -1,7 +1,5 @@
 import { Box } from "@mui/material";
-
 import Section from "@components/section";
-
 import useContact from "./hooks/use_contact";
 
 import ContactActions from "./sub_components/contact_actions";
@@ -15,23 +13,27 @@ export default function Contact() {
   const contact = useContact();
 
   return (
-    <Section id="contact" variant="secondary" containerSize="wide">
+    <Section
+      id="contact"
+      variant="paper"
+      containerSize="wide"
+    >
       <Box sx={styles.container}>
         <ContactContent {...contact.content} />
 
-        {contact.options.showInformation && (
-          <Box sx={styles.information}>
-            <ContactInformation items={contact.items} />
-          </Box>
-        )}
+        <Box sx={styles.layout}>
+          <Box sx={styles.details}>
+            {contact.options.showInformation && (
+              <ContactInformation items={contact.items} />
+            )}
 
-        <ContactMap />
-
-        {contact.options.showAction && (
-          <Box sx={styles.action}>
-            <ContactActions action={contact.action} />
+            {contact.options.showAction && (
+              <ContactActions action={contact.action} />
+            )}
           </Box>
-        )}
+
+          <ContactMap {...contact.map} />
+        </Box>
       </Box>
     </Section>
   );

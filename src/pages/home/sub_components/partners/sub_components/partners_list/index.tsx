@@ -4,35 +4,67 @@ import { Link as RouterLink } from "react-router-dom";
 import styles from "./styles";
 import type { PartnersListProps } from "./types";
 
-export default function PartnersList({ items }: PartnersListProps) {
-  if (!items.length) return null;
+export default function PartnersList({
+  items,
+}: PartnersListProps) {
+  if (!items.length) {
+    return null;
+  }
 
   return (
-    <Box sx={styles.grid}>
-      {items.map((item) => (
-        <Box
-          key={item.id}
-          component={RouterLink}
-          to={item.href || "/contact"}
-          className="partner-item"
-          sx={styles.item}
-        >
-          <Box
-            component="img"
-            src={item.image}
-            alt={typeof item.name === "string" ? item.name : "Partenaire"}
-            sx={styles.logo}
-          />
+    <Box sx={styles.wrapper}>
+      <Box sx={styles.grid}>
+        {items.map((item) => {
+          const content = (
+            <>
+              <Box sx={styles.logoWrapper}>
+                <Box
+                  component="img"
+                  src={item.image}
+                  alt={
+                    typeof item.name === "string"
+                      ? item.name
+                      : "Partenaire de la Chefferie"
+                  }
+                  sx={styles.logo}
+                />
+              </Box>
 
-          <Typography sx={styles.name}>
-            {item.name}
-          </Typography>
+              <Box sx={styles.content}>
+                <Typography
+                  component="h3"
+                  sx={styles.name}
+                >
+                  {item.name}
+                </Typography>
 
-          <Typography sx={styles.type}>
-            {item.type}
-          </Typography>
-        </Box>
-      ))}
+                <Typography sx={styles.type}>
+                  {item.type}
+                </Typography>
+              </Box>
+            </>
+          );
+
+          if (!item.href) {
+            return (
+              <Box key={item.id} sx={styles.item}>
+                {content}
+              </Box>
+            );
+          }
+
+          return (
+            <Box
+              key={item.id}
+              component={RouterLink}
+              to={item.href}
+              sx={styles.item}
+            >
+              {content}
+            </Box>
+          );
+        })}
+      </Box>
     </Box>
   );
 }

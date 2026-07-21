@@ -5,17 +5,6 @@ const container: SxProps<Theme> = {
   flexDirection: "column",
 };
 
-const action: SxProps<Theme> = {
-  display: "flex",
-  justifyContent: "center",
-
-  mt: {
-    xs: 5,
-    md: 6,
-  },
-};
-
 export default {
   container,
-  action,
 };

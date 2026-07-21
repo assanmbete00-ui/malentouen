@@ -8,44 +8,45 @@ const link: SxProps<Theme> = {
 };
 
 const content: SxProps<Theme> = {
-  position: "relative",
   p: {
     xs: 2.5,
     md: 3,
   },
-  pl: {
-    xs: 3,
-    md: 3.5,
-  },
+};
+
+const titleRow: SxProps<Theme> = {
+  display: "flex",
+  alignItems: "flex-start",
+  gap: 1.5,
 };
 
 const marker: SxProps<Theme> = {
-  position: "absolute",
-  top: {
-    xs: 26,
-    md: 30,
+  flex: "0 0 auto",
+  width: 8,
+  height: 8,
+  mt: {
+    xs: "8px",
+    md: "10px",
   },
-  left: 0,
-  width: 10,
-  height: 10,
   borderRadius: "50%",
   bgcolor: "secondary.main",
 };
 
 const title: SxProps<Theme> = {
+  minWidth: 0,
   color: "text.primary",
   fontSize: {
     xs: 18,
-    md: 21,
+    md: 20,
   },
   fontWeight: 900,
   lineHeight: 1.35,
 };
 
 const date: SxProps<Theme> = {
-  mt: 1.2,
+  mt: 1.5,
   color: "secondary.main",
-  fontSize: 14,
+  fontSize: 13,
   fontWeight: 900,
   letterSpacing: "0.08em",
   textTransform: "uppercase",
@@ -55,7 +56,7 @@ const meta: SxProps<Theme> = {
   mt: 1,
   color: "text.secondary",
   fontSize: 14,
-  lineHeight: 1.7,
+  lineHeight: 1.65,
 };
 
 const category: SxProps<Theme> = {
@@ -71,6 +72,7 @@ const category: SxProps<Theme> = {
 export default {
   link,
   content,
+  titleRow,
   marker,
   title,
   date,
