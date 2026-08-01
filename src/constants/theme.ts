@@ -46,7 +46,7 @@ const theme = createTheme({
     error: {
       main: ERROR,
     },
-    info: {
+    info: {   
       main: INFO,
     },
     divider: BORDER,

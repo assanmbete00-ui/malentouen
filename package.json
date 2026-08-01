@@ -1,7 +1,7 @@
 {
   "name": "malentouen",
   "version": "0.1.0",
-  "homepage": "https://assanmbete00-ui.github.io/Malentouen",
+  "homepage": "https://assanmbete00-ui.github.io/malentouen",   
   "private": true,
   "dependencies": {
     "@craco/craco": "^7.1.0",

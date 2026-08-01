@@ -1,35 +1,78 @@
-import Breadcrumbs from "@mui/material/Breadcrumbs";
-import Link from "@mui/material/Link";
-import Typography from "@mui/material/Typography";
+import { Box, Link, Typography } from "@mui/material";
+import { Link as RouterLink } from "react-router-dom";
 
 import styles from "./styles";
 import type { BreadcrumbProps } from "./types";
 
-export default function Breadcrumb({ links }: BreadcrumbProps) {
+export default function Breadcrumb({
+  items,
+  separator = "/",
+  sx,
+}: BreadcrumbProps) {
   return (
-    <Breadcrumbs separator="›" sx={styles.container}>
-      {links.map((item, index) => {
-        const isLast = index === links.length - 1;
+    <Box
+      component="nav"
+      aria-label="breadcrumb"
+      sx={[
+        styles.root,
+        ...(Array.isArray(sx) ? sx : sx ? [sx] : []),
+      ]}
+    >
+      {items.map((item, index) => {
+        const isLast = index === items.length - 1;
 
-        if (isLast || !item.href) {
-          return (
-            <Typography key={item.label} sx={styles.link(true)}>
+        const content = (
+          <Box sx={styles.item}>
+            {item.icon && (
+              <Box
+                component="span"
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
+                {item.icon}
+              </Box>
+            )}
+
+            <Typography
+              component="span"
+              sx={isLast ? styles.current : styles.linkText}
+            >
               {item.label}
             </Typography>
-          );
-        }
+          </Box>
+        );
 
         return (
-          <Link
-            key={item.label}
-            href={item.href}
-            underline="hover"
-            sx={styles.link(false)}
+          <Box
+            key={item.href ?? String(item.label)}
+            sx={styles.itemWrapper}
           >
-            {item.label}
-          </Link>
+            {item.href && !isLast ? (
+              <Link
+                component={RouterLink}
+                to={item.href}
+                underline="none"
+                sx={styles.link}
+              >
+                {content}
+              </Link>
+            ) : (
+              content
+            )}
+
+            {!isLast && (
+              <Typography
+                component="span"
+                sx={styles.separator}
+              >
+                {separator}
+              </Typography>
+            )}
+          </Box>
         );
       })}
-    </Breadcrumbs>
+    </Box>
   );
 }

@@ -137,5 +137,47 @@
   "HOME_CTA_TITLE": "Préserver notre héritage. Construire notre avenir.",
   "HOME_CTA_DESCRIPTION": "La Chefferie Traditionnelle de Malentouen vous invite à découvrir son histoire, soutenir ses initiatives et contribuer au rayonnement de son patrimoine.",
   "HOME_CTA_PRIMARY_ACTION": "Nous contacter",
-  "HOME_CTA_SECONDARY_ACTION": "Découvrir la Chefferie"
+  "HOME_CTA_SECONDARY_ACTION": "Découvrir la Chefferie",
+
+  "NAVIGATION_HOME": "Accueil",
+  "NAVIGATION_ABOUT": "À propos",
+
+  "ABOUT_BANNER_EYEBROW": "À propos de l’institution",
+  "ABOUT_BANNER_TITLE": "La Chefferie Traditionnelle de Malentouen",
+  "ABOUT_BANNER_DESCRIPTION": "Découvrez une institution enracinée dans l’histoire, gardienne des traditions et engagée au service de l’unité, du patrimoine et du développement de sa communauté.",
+
+  "ABOUT_IDENTITY_EYEBROW": "Notre identité",
+  "ABOUT_IDENTITY_TITLE": "Une institution traditionnelle au cœur de Malentouen",
+  "ABOUT_IDENTITY_DESCRIPTION": "La Chefferie Traditionnelle de Malentouen est une institution coutumière qui incarne l’autorité traditionnelle, la mémoire collective et l’identité culturelle de la communauté.",
+  "ABOUT_IDENTITY_DESCRIPTION_SECONDARY": "Enracinée dans les traditions tout en restant attentive aux évolutions de son époque, elle contribue à la cohésion sociale, à la transmission des savoirs et au développement harmonieux du territoire.",
+
+  "ABOUT_IDENTITY_HIGHLIGHTS_INSTITUTION_TITLE": "Institution",
+  "ABOUT_IDENTITY_HIGHLIGHTS_INSTITUTION_DESCRIPTION": "Une autorité traditionnelle reconnue, au service de la communauté et de la préservation des coutumes.",
+
+  "ABOUT_IDENTITY_HIGHLIGHTS_TERRITORY_TITLE": "Territoire",
+  "ABOUT_IDENTITY_HIGHLIGHTS_TERRITORY_DESCRIPTION": "Une chefferie située dans l’arrondissement de Malentouen, département du Noun, région de l’Ouest Cameroun.",
+
+  "ABOUT_IDENTITY_HIGHLIGHTS_HERITAGE_TITLE": "Héritage",
+  "ABOUT_IDENTITY_HIGHLIGHTS_HERITAGE_DESCRIPTION": "Un patrimoine vivant transmis de génération en génération à travers les rites, les savoir-faire et les traditions.",
+
+  "ABOUT_HISTORY_EYEBROW": "Notre héritage",
+  "ABOUT_HISTORY_TITLE": "Notre histoire",
+  "ABOUT_HISTORY_DESCRIPTION": "Depuis plusieurs siècles, la Chefferie Traditionnelle de Malentouen incarne un héritage vivant transmis de génération en génération. Gardienne des coutumes, de l’autorité traditionnelle et de la mémoire collective, elle demeure un symbole d’unité, de stabilité et d’identité pour toute la communauté.",
+  "ABOUT_HISTORY_DESCRIPTION_SECONDARY": "Fidèle à ses traditions tout en accompagnant les évolutions de son époque, la Chefferie poursuit sa mission de préservation du patrimoine, de cohésion sociale et de développement harmonieux du territoire.",
+
+  "ABOUT_HISTORY_ORIGINS_PERIOD": "XVIIe siècle",
+  "ABOUT_HISTORY_ORIGINS_TITLE": "Les origines de la Chefferie",
+  "ABOUT_HISTORY_ORIGINS_DESCRIPTION": "Les fondations de la Chefferie se construisent autour de l’autorité coutumière, de la protection du territoire et de l’organisation de la communauté.",
+
+  "ABOUT_HISTORY_TRANSMISSION_PERIOD": "Au fil des générations",
+  "ABOUT_HISTORY_TRANSMISSION_TITLE": "Transmission des traditions",
+  "ABOUT_HISTORY_TRANSMISSION_DESCRIPTION": "Les rites, les valeurs, les connaissances et les responsabilités traditionnelles sont transmis afin de préserver la continuité de l’institution.",
+
+  "ABOUT_HISTORY_EVOLUTION_PERIOD": "Évolution institutionnelle",
+  "ABOUT_HISTORY_EVOLUTION_TITLE": "Une institution qui accompagne son époque",
+  "ABOUT_HISTORY_EVOLUTION_DESCRIPTION": "La Chefferie adapte progressivement son rôle aux réalités contemporaines tout en maintenant les fondements de son autorité et de son identité culturelle.",
+
+  "ABOUT_HISTORY_TODAY_PERIOD": "Aujourd’hui",
+  "ABOUT_HISTORY_TODAY_TITLE": "Une institution tournée vers l’avenir",
+  "ABOUT_HISTORY_TODAY_DESCRIPTION": "Aujourd’hui, la Chefferie agit pour la préservation du patrimoine, la cohésion de la communauté et la transmission d’un héritage digne aux générations futures."
 }

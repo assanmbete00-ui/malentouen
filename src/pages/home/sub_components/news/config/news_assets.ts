@@ -1,7 +1,7 @@
-import NewsCommunityImage from "@assets/images/news/community.png";
-import NewsCultureImage from "@assets/images/news/culture.png";
-import NewsDevelopmentImage from "@assets/images/news/development.png";
-import NewsGovernanceImage from "@assets/images/news/governance.jpg";
+import NewsCommunityImage from "@assets/images/home/news/community.png";
+import NewsCultureImage from "@assets/images/home/news/culture.png";
+import NewsDevelopmentImage from "@assets/images/home/news/development.png";
+import NewsGovernanceImage from "@assets/images/home/news/governance.jpg";
 
 export const NEWS_ASSETS = {
   items: {

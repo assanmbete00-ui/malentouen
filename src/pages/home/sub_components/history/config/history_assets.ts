@@ -1,4 +1,4 @@
-import HistoryImage from "@assets/images/history/history.jpg";
+import HistoryImage from "@assets/images/home/history/history.jpg";
 
 export const HISTORY_ASSETS = {
   image: HistoryImage,

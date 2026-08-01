@@ -12,8 +12,8 @@ i18n
     fallbackLng: "fr",
     debug: true,
     backend: {
-      loadPath: "/Malentouen/locales/{{lng}}/translate.json",
-    },
+          loadPath: `${process.env.PUBLIC_URL}/locales/{{lng}}/translate.json`,
+        },
     interpolation: {
       escapeValue: false,
     },

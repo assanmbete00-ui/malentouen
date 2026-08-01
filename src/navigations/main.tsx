@@ -26,7 +26,7 @@ const mainNavigation: RouteObject[] = [
   {
     path: "/about",
     element: (
-      <MainLayout bgColor="secondary" ContextProvider={MainPageContextProvider}>
+      <MainLayout bgColor="secondary" ContextProvider={MainPageContextProvider}disableContainer>
         <About />
       </MainLayout>
     ),

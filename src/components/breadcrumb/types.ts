@@ -1,8 +1,14 @@
-export interface BreadcrumbItem {
-  label: string;
-  href?: string;
-}
+import type { ReactNode } from "react";
+import type { SxProps, Theme } from "@mui/material";
 
-export interface BreadcrumbProps {
-  links: BreadcrumbItem[];
-}
+export type BreadcrumbItem = {
+  label: ReactNode;
+  href?: string;
+  icon?: ReactNode;
+};
+
+export type BreadcrumbProps = {
+  items: BreadcrumbItem[];
+  separator?: ReactNode;
+  sx?: SxProps<Theme>;
+};

@@ -128,5 +128,47 @@
   "HOME_CTA_TITLE": "Preserving Our Heritage. Building Our Future.",
   "HOME_CTA_DESCRIPTION": "The Traditional Chiefdom of Malentouen invites you to discover its history, support its initiatives and contribute to the promotion of its heritage.",
   "HOME_CTA_PRIMARY_ACTION": "Contact Us",
-  "HOME_CTA_SECONDARY_ACTION": "Discover the Chiefdom"
+  "HOME_CTA_SECONDARY_ACTION": "Discover the Chiefdom",
+
+  "NAVIGATION_HOME": "Home",
+  "NAVIGATION_ABOUT": "About",
+
+  "ABOUT_BANNER_EYEBROW": "About the Institution",
+  "ABOUT_BANNER_TITLE": "The Traditional Chiefdom of Malentouen",
+  "ABOUT_BANNER_DESCRIPTION": "Discover an institution deeply rooted in history, preserving traditions while promoting unity, cultural heritage, and the sustainable development of its community.",
+
+  "ABOUT_IDENTITY_EYEBROW": "Our Identity",
+  "ABOUT_IDENTITY_TITLE": "A Traditional Institution at the Heart of Malentouen",
+  "ABOUT_IDENTITY_DESCRIPTION": "The Traditional Chiefdom of Malentouen is a customary institution that embodies traditional authority, collective memory, and the cultural identity of its community.",
+  "ABOUT_IDENTITY_DESCRIPTION_SECONDARY": "Rooted in ancestral traditions while embracing the realities of the modern world, the Chiefdom promotes social cohesion, preserves cultural heritage, and contributes to the harmonious development of its territory.",
+
+  "ABOUT_IDENTITY_HIGHLIGHTS_INSTITUTION_TITLE": "Institution",
+  "ABOUT_IDENTITY_HIGHLIGHTS_INSTITUTION_DESCRIPTION": "A recognized traditional authority dedicated to serving the community and preserving its customs.",
+
+  "ABOUT_IDENTITY_HIGHLIGHTS_TERRITORY_TITLE": "Territory",
+  "ABOUT_IDENTITY_HIGHLIGHTS_TERRITORY_DESCRIPTION": "Located in the Malentouen Subdivision, Noun Division, West Region of Cameroon.",
+
+  "ABOUT_IDENTITY_HIGHLIGHTS_HERITAGE_TITLE": "Heritage",
+  "ABOUT_IDENTITY_HIGHLIGHTS_HERITAGE_DESCRIPTION": "A living cultural heritage passed down from generation to generation through traditions, customs, and ancestral knowledge.",
+
+  "ABOUT_HISTORY_EYEBROW": "Our Heritage",
+  "ABOUT_HISTORY_TITLE": "Our History",
+  "ABOUT_HISTORY_DESCRIPTION": "For centuries, the Traditional Chiefdom of Malentouen has embodied a living heritage passed down through generations. As the guardian of customs, traditional authority, and collective memory, it remains a symbol of unity, stability, and cultural identity for the entire community.",
+  "ABOUT_HISTORY_DESCRIPTION_SECONDARY": "While remaining faithful to its traditions and adapting to the evolution of society, the Chiefdom continues its mission of preserving heritage, strengthening social cohesion, and promoting the sustainable development of its territory.",
+
+  "ABOUT_HISTORY_ORIGINS_PERIOD": "17th Century",
+  "ABOUT_HISTORY_ORIGINS_TITLE": "The Origins of the Chiefdom",
+  "ABOUT_HISTORY_ORIGINS_DESCRIPTION": "The foundations of the Chiefdom were established around traditional leadership, territorial protection, and the organization of community life.",
+
+  "ABOUT_HISTORY_TRANSMISSION_PERIOD": "Across Generations",
+  "ABOUT_HISTORY_TRANSMISSION_TITLE": "Passing Down Traditions",
+  "ABOUT_HISTORY_TRANSMISSION_DESCRIPTION": "Customs, values, knowledge, and traditional responsibilities have been carefully transmitted from one generation to another, ensuring the continuity of the institution.",
+
+  "ABOUT_HISTORY_EVOLUTION_PERIOD": "Institutional Evolution",
+  "ABOUT_HISTORY_EVOLUTION_TITLE": "An Institution Growing with Its Time",
+  "ABOUT_HISTORY_EVOLUTION_DESCRIPTION": "The Chiefdom has continuously adapted its role to contemporary realities while preserving the foundations of its authority and cultural identity.",
+
+  "ABOUT_HISTORY_TODAY_PERIOD": "Today",
+  "ABOUT_HISTORY_TODAY_TITLE": "An Institution Looking Toward the Future",
+  "ABOUT_HISTORY_TODAY_DESCRIPTION": "Today, the Traditional Chiefdom of Malentouen remains committed to preserving cultural heritage, strengthening community unity, and passing on a meaningful legacy to future generations."
 }
