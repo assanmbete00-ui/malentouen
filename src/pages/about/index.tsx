@@ -1,10 +1,24 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 
-export default function AboutPage() {
+import PageBanner from "@components/page_banner";
+
+import useAbout from "./hooks/use_about";
+
+import Identity from "./sub_components/identity";
+import History from "./sub_components/history";
+
+import styles from "./styles";
+
+export default function About() {
+  const about = useAbout();
+
   return (
-    <Box sx={{ p: 3 }}>
-      <Typography variant="h1">About Page</Typography>
-      {/* Add your about page content here */}
+    <Box component="main" sx={styles.root}>
+      <PageBanner {...about.banner} />
+
+      <Identity {...about.identity} />
+
+      <History {...about.history} />
     </Box>
   );
 }

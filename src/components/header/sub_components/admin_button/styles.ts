@@ -13,7 +13,7 @@ const button = (compact: boolean): SxProps<Theme> => ({
   minWidth: compact ? 120 : 145,
   height: compact ? 42 : 46,
   px: 3,
-  borderRadius: 999,
+  borderRadius: "14px",
   fontWeight: 700,
   fontSize: 14,
   textTransform: "none",

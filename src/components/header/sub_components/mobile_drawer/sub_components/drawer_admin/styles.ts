@@ -8,7 +8,7 @@ const container: SxProps<Theme> = {
 const button: SxProps<Theme> = {
   width: "100%",
   height: 46,
-  borderRadius: 999,
+  borderRadius: "14px",
   fontWeight: 700,
 };
 

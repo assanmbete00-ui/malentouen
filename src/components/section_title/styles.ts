@@ -14,6 +14,7 @@ const container = (align: SectionTitleAlign): SxProps<Theme> => ({
   alignItems: align === "center" ? "center" : "flex-start",
   textAlign: align === "center" ? "center" : "left",
   maxWidth: align === "center" ? 760 : "100%",
+  mx: align === "center" ? "auto" : 0,
 });
 
 const top: SxProps<Theme> = {
