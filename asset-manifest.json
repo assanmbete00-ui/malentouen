@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.js": "/malentouen/static/js/main.8fc07900.js",
+    "main.js": "/malentouen/static/js/main.ee5561cf.js",
     "static/js/38.0edaeb55.chunk.js": "/malentouen/static/js/38.0edaeb55.chunk.js",
     "static/media/community.jpg": "/malentouen/static/media/community.f80cc2875e5f1665948f.jpg",
     "static/media/highlight.jpg": "/malentouen/static/media/highlight.f80cc2875e5f1665948f.jpg",
+    "static/media/identity.webp": "/malentouen/static/media/identity.f80cc2875e5f1665948f.webp",
     "static/media/traditions.png": "/malentouen/static/media/traditions.86b61173be9b907b7ecf.png",
     "static/media/culture.png": "/malentouen/static/media/culture.f452513174b6b8b90ddd.png",
+    "static/media/heritage_culture.webp": "/malentouen/static/media/heritage_culture.686e6a01535f2b50a846.webp",
     "static/media/heritage.jpg": "/malentouen/static/media/heritage.00d42a6ed495d6bef758.jpg",
     "static/media/background.png": "/malentouen/static/media/background.56f50895bab6d20a36fe.png",
+    "static/media/heritage_palace.webp": "/malentouen/static/media/heritage_palace.82f2d9e386c8ee76e31a.webp",
     "static/media/palace.png": "/malentouen/static/media/palace.82f2d9e386c8ee76e31a.png",
     "static/media/development.png": "/malentouen/static/media/development.372040b48775d637d379.png",
+    "static/media/heritage_territory.webp": "/malentouen/static/media/heritage_territory.8895933cc806ee37c78c.webp",
     "static/media/landscape.png": "/malentouen/static/media/landscape.8895933cc806ee37c78c.png",
+    "static/media/chief.webp": "/malentouen/static/media/chief.1257cec26f84db1375b5.webp",
     "static/media/chief_portrait.png": "/malentouen/static/media/chief_portrait.1257cec26f84db1375b5.png",
     "static/media/ceremony.png": "/malentouen/static/media/ceremony.8d150838b107bf738417.png",
     "static/media/community.png": "/malentouen/static/media/community.9c1f5a41cd080919572a.png",
@@ -23,13 +28,16 @@
     "static/media/development.jpg": "/malentouen/static/media/development.6e750832b052adf60ebd.jpg",
     "static/media/craft.png": "/malentouen/static/media/craft.236f1bb40c6aa54f4d74.png",
     "static/media/history.jpg": "/malentouen/static/media/history.799fb45c317f8aa2224f.jpg",
+    "static/media/history.png": "/malentouen/static/media/history.799fb45c317f8aa2224f.png",
+    "static/media/mission_vision.webp": "/malentouen/static/media/mission_vision.799fb45c317f8aa2224f.webp",
+    "static/media/banner.jpg": "/malentouen/static/media/banner.a0aee7e2e5be424ac5ad.jpg",
     "static/media/education.jpg": "/malentouen/static/media/education.624aa7ad02e29726388d.jpg",
     "static/media/governance.jpg": "/malentouen/static/media/governance.624aa7ad02e29726388d.jpg",
     "index.html": "/malentouen/index.html",
-    "main.8fc07900.js.map": "/malentouen/static/js/main.8fc07900.js.map",
+    "main.ee5561cf.js.map": "/malentouen/static/js/main.ee5561cf.js.map",
     "38.0edaeb55.chunk.js.map": "/malentouen/static/js/38.0edaeb55.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.8fc07900.js"
+    "static/js/main.ee5561cf.js"
   ]
 }
