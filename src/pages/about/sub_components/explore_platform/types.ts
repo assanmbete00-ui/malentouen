@@ -12,5 +12,6 @@ export type ExplorePlatformSectionProps = {
   eyebrow: ReactNode;
   title: ReactNode;
   description: ReactNode;
+  actionLabel: ReactNode;
   items: ExplorePlatformItem[];
 };

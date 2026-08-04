@@ -83,11 +83,17 @@ export default function useAbout(): AboutPageData {
     title: translate(ABOUT_MISSION_VISION.titleKey),
     description: translate(ABOUT_MISSION_VISION.descriptionKey),
 
-    items: ABOUT_MISSION_VISION.items.map((item) => ({
-      id: item.id,
-      title: translate(item.titleKey),
-      description: translate(item.descriptionKey),
-    })),
+    mission: {
+      title: translate(ABOUT_MISSION_VISION.mission.titleKey),
+      description: translate(ABOUT_MISSION_VISION.mission.descriptionKey),
+      descriptionSecondary: translate(ABOUT_MISSION_VISION.mission.descriptionSecondaryKey),
+    },
+
+    vision: {
+      title: translate(ABOUT_MISSION_VISION.vision.titleKey),
+      description: translate(ABOUT_MISSION_VISION.vision.descriptionKey),
+      descriptionSecondary: translate(ABOUT_MISSION_VISION.vision.descriptionSecondaryKey),
+    },
   };
 
   const values: AboutPageData["values"] = {
@@ -169,21 +175,26 @@ export default function useAbout(): AboutPageData {
     })),
   };
 
-  const explorePlatform: AboutPageData["explorePlatform"] = {
+  const explorePlatform:
+  AboutPageData["explorePlatform"] = {
     id: ABOUT_EXPLORE_PLATFORM.id,
 
     eyebrow: translate(ABOUT_EXPLORE_PLATFORM.eyebrowKey),
-    title: translate(ABOUT_EXPLORE_PLATFORM.titleKey),
-    description: translate(
-      ABOUT_EXPLORE_PLATFORM.descriptionKey,
+    title: translate(ABOUT_EXPLORE_PLATFORM.titleKey,),
+    description: translate(ABOUT_EXPLORE_PLATFORM.descriptionKey,),
+    actionLabel: translate(ABOUT_EXPLORE_PLATFORM.actionLabelKey,
     ),
 
-    items: ABOUT_EXPLORE_PLATFORM.items.map((item) => ({
-      id: item.id,
-      title: translate(item.titleKey),
-      description: translate(item.descriptionKey),
-      href: item.href,
-    })),
+    items: ABOUT_EXPLORE_PLATFORM.items.map(
+      (item) => ({
+        id: item.id,
+        title: translate(item.titleKey),
+        description: translate(
+          item.descriptionKey,
+        ),
+        href: item.href,
+      }),
+    ),
   };
 
   return {

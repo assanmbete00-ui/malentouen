@@ -45,7 +45,7 @@ export const ORGANIZATION = {
 
   email: "contact@chefferiemalentouen.cm",
 
-  website: "https://chefferiemalentouen.cm",
+  website: "https://assanmbete00-ui.github.io/malentouen/",
 
   // ==========================================================
   // SEO

@@ -5,7 +5,11 @@ export const ABOUT_EXPLORE_PLATFORM = {
 
   titleKey: "ABOUT_EXPLORE_PLATFORM_TITLE",
 
-  descriptionKey: "ABOUT_EXPLORE_PLATFORM_DESCRIPTION",
+  descriptionKey:
+    "ABOUT_EXPLORE_PLATFORM_DESCRIPTION",
+
+  actionLabelKey:
+    "ABOUT_EXPLORE_PLATFORM_ACTION",
 
   items: [
     {

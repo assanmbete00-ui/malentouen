@@ -1,17 +1,15 @@
 import type { ReactNode } from "react";
 
-export type MissionVisionItem = {
+export type GovernanceItem = {
   id: string;
   title: ReactNode;
   description: ReactNode;
 };
 
-export type MissionVisionSectionProps = {
+export type GovernanceSectionProps = {
   id: string;
-  image: string;
-  imageAlt: string;
   eyebrow: ReactNode;
   title: ReactNode;
   description: ReactNode;
-  items: MissionVisionItem[];
+  items: GovernanceItem[];
 };
