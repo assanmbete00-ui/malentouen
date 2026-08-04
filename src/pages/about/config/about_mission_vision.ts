@@ -13,19 +13,21 @@ export const ABOUT_MISSION_VISION = {
 
   descriptionKey: "ABOUT_MISSION_VISION_DESCRIPTION",
 
-  items: [
-    {
-      id: "mission",
-      titleKey: "ABOUT_MISSION_VISION_ITEMS_MISSION_TITLE",
-      descriptionKey:
-        "ABOUT_MISSION_VISION_ITEMS_MISSION_DESCRIPTION",
-    },
+  mission: {
+    titleKey: "ABOUT_MISSION_TITLE",
 
-    {
-      id: "vision",
-      titleKey: "ABOUT_MISSION_VISION_ITEMS_VISION_TITLE",
-      descriptionKey:
-        "ABOUT_MISSION_VISION_ITEMS_VISION_DESCRIPTION",
-    },
-  ],
+    descriptionKey: "ABOUT_MISSION_DESCRIPTION",
+
+    descriptionSecondaryKey:
+      "ABOUT_MISSION_DESCRIPTION_SECONDARY",
+  },
+
+  vision: {
+    titleKey: "ABOUT_VISION_TITLE",
+
+    descriptionKey: "ABOUT_VISION_DESCRIPTION",
+
+    descriptionSecondaryKey:
+      "ABOUT_VISION_DESCRIPTION_SECONDARY",
+  },
 } as const;

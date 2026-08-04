@@ -1,10 +1,9 @@
 import type { ReactNode } from "react";
-import type { OverridableComponent } from "@mui/material/OverridableComponent";
-import type { SvgIconTypeMap } from "@mui/material";
+import type { SvgIconComponent } from "@mui/icons-material";
 
-export type ValuesItem = {
+export type ValueItem = {
   id: string;
-  icon: OverridableComponent<SvgIconTypeMap<{}, "svg">>;
+  icon: SvgIconComponent;
   title: ReactNode;
   description: ReactNode;
 };
@@ -14,5 +13,5 @@ export type ValuesSectionProps = {
   eyebrow: ReactNode;
   title: ReactNode;
   description: ReactNode;
-  items: ValuesItem[];
+  items: ValueItem[];
 };

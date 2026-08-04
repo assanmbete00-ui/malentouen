@@ -1,5 +1,4 @@
 import type { ReactNode } from "react";
-
 export type ChiefSignature = {
   name: ReactNode;
   title: ReactNode;
@@ -12,6 +11,6 @@ export type ChiefSectionProps = {
   eyebrow: ReactNode;
   title: ReactNode;
   description: ReactNode;
-  descriptionSecondary?: ReactNode;
+  descriptionSecondary: ReactNode;
   signature: ChiefSignature;
 };

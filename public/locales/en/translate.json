@@ -8,6 +8,7 @@
   "HOME_HERO_STAT_VILLAGES": "Villages",
   "HOME_HERO_STAT_EVENTS": "Cultural events",
 
+
   "HOME_HISTORY_EYEBROW": "Our Heritage",
   "HOME_HISTORY_TITLE": "Our History",
   "HOME_HISTORY_DESCRIPTION": "For several centuries, the Traditional Chiefdom of Malentouen has embodied a living heritage passed down from generation to generation. Guardian of our customs, our traditional authority and our collective memory, it remains a symbol of unity, stability and identity for the entire community.",
@@ -19,6 +20,7 @@
   "HOME_HISTORY_TIMELINE_TRANSMISSION_TITLE": "Transmission of traditions",
   "HOME_HISTORY_TIMELINE_TODAY_PERIOD": "Today",
   "HOME_HISTORY_TIMELINE_TODAY_TITLE": "An institution looking toward the future",
+
 
   "HOME_CULTURE_EYEBROW": "Our Culture",
   "HOME_CULTURE_TITLE": "A living culture passed down through generations",
@@ -35,6 +37,7 @@
   "HOME_CULTURE_DANCE_CATEGORY": "Dance",
   "HOME_CULTURE_DANCE_TITLE": "Dance and music",
   "HOME_CULTURE_DANCE_DESCRIPTION": "Artistic expressions that tell our history, celebrate important moments and strengthen community ties.",
+
 
   "HOME_NEWS_EYEBROW": "News",
   "HOME_NEWS_TITLE": "Latest News from the Chiefdom",
@@ -57,6 +60,7 @@
   "HOME_NEWS_GOVERNANCE_TITLE": "Strengthening traditional governance",
   "HOME_NEWS_GOVERNANCE_DESCRIPTION": "A consultation between traditional authorities defined new priorities to preserve cultural values and strengthen social cohesion.",
 
+
   "HOME_EVENTS_EYEBROW": "Events",
   "HOME_EVENTS_TITLE": "Take Part in the Life of the Chiefdom",
   "HOME_EVENTS_DESCRIPTION": "Discover ceremonies, official meetings, cultural celebrations and community events that bring the Traditional Chiefdom of Malentouen to life.",
@@ -77,6 +81,7 @@
   "HOME_EVENTS_CULTURE_LOCATION": "Chiefdom Esplanade",
   "HOME_EVENTS_CULTURE_TIME": "08:30 AM",
 
+
   "HOME_GALLERY_EYEBROW": "Gallery",
   "HOME_GALLERY_TITLE": "Discover Malentouen Through Images",
   "HOME_GALLERY_DESCRIPTION": "Explore memorable moments, cultural heritage, ceremonies, landscapes and traditions that showcase the richness of the Traditional Chiefdom of Malentouen.",
@@ -88,6 +93,7 @@
   "HOME_GALLERY_TRADITION_TITLE": "Ancestral Traditions",
   "HOME_GALLERY_LANDSCAPE_TITLE": "Landscapes of Malentouen",
 
+
   "HOME_PROJECTS_EYEBROW": "Projects",
   "HOME_PROJECTS_TITLE": "Building the Future of Malentouen",
   "HOME_PROJECTS_DESCRIPTION": "Through sustainable initiatives, the Chiefdom promotes local development, preserves its heritage and improves the well-being of its community.",
@@ -98,6 +104,7 @@
   "HOME_PROJECTS_HERITAGE_DESCRIPTION": "Preserving, promoting and passing on the cultural and historical heritage of the Chiefdom.",
   "HOME_PROJECTS_DEVELOPMENT_TITLE": "Local Development",
   "HOME_PROJECTS_DEVELOPMENT_DESCRIPTION": "Implementing initiatives that foster economic, social and environmental development.",
+
 
   "HOME_PARTNERS_EYEBROW": "Partners",
   "HOME_PARTNERS_TITLE": "Supporting Our Mission",
@@ -112,6 +119,7 @@
   "HOME_PARTNERS_DEVELOPMENT_ACTORS_NAME": "Development Partner",
   "HOME_PARTNERS_DEVELOPMENT_ACTORS_TYPE": "Development Organization",
 
+
   "HOME_CONTACT_EYEBROW": "Contact",
   "HOME_CONTACT_TITLE": "Let's Stay Connected",
   "HOME_CONTACT_DESCRIPTION": "The Traditional Chiefdom of Malentouen is here to assist you. Feel free to contact us for information, collaboration or partnership opportunities.",
@@ -125,50 +133,115 @@
   "HOME_CONTACT_HOURS_LABEL": "Opening Hours",
   "HOME_CONTACT_HOURS_VALUE": "Monday - Friday • 08:00 AM - 05:00 PM",
 
-  "HOME_CTA_TITLE": "Preserving Our Heritage. Building Our Future.",
-  "HOME_CTA_DESCRIPTION": "The Traditional Chiefdom of Malentouen invites you to discover its history, support its initiatives and contribute to the promotion of its heritage.",
-  "HOME_CTA_PRIMARY_ACTION": "Contact Us",
-  "HOME_CTA_SECONDARY_ACTION": "Discover the Chiefdom",
 
   "NAVIGATION_HOME": "Home",
   "NAVIGATION_ABOUT": "About",
-
   "ABOUT_BANNER_EYEBROW": "About the Institution",
   "ABOUT_BANNER_TITLE": "The Traditional Chiefdom of Malentouen",
   "ABOUT_BANNER_DESCRIPTION": "Discover an institution deeply rooted in history, preserving traditions while promoting unity, cultural heritage, and the sustainable development of its community.",
+
 
   "ABOUT_IDENTITY_EYEBROW": "Our Identity",
   "ABOUT_IDENTITY_TITLE": "A Traditional Institution at the Heart of Malentouen",
   "ABOUT_IDENTITY_DESCRIPTION": "The Traditional Chiefdom of Malentouen is a customary institution that embodies traditional authority, collective memory, and the cultural identity of its community.",
   "ABOUT_IDENTITY_DESCRIPTION_SECONDARY": "Rooted in ancestral traditions while embracing the realities of the modern world, the Chiefdom promotes social cohesion, preserves cultural heritage, and contributes to the harmonious development of its territory.",
-
   "ABOUT_IDENTITY_HIGHLIGHTS_INSTITUTION_TITLE": "Institution",
   "ABOUT_IDENTITY_HIGHLIGHTS_INSTITUTION_DESCRIPTION": "A recognized traditional authority dedicated to serving the community and preserving its customs.",
-
   "ABOUT_IDENTITY_HIGHLIGHTS_TERRITORY_TITLE": "Territory",
   "ABOUT_IDENTITY_HIGHLIGHTS_TERRITORY_DESCRIPTION": "Located in the Malentouen Subdivision, Noun Division, West Region of Cameroon.",
-
   "ABOUT_IDENTITY_HIGHLIGHTS_HERITAGE_TITLE": "Heritage",
   "ABOUT_IDENTITY_HIGHLIGHTS_HERITAGE_DESCRIPTION": "A living cultural heritage passed down from generation to generation through traditions, customs, and ancestral knowledge.",
+
 
   "ABOUT_HISTORY_EYEBROW": "Our Heritage",
   "ABOUT_HISTORY_TITLE": "Our History",
   "ABOUT_HISTORY_DESCRIPTION": "For centuries, the Traditional Chiefdom of Malentouen has embodied a living heritage passed down through generations. As the guardian of customs, traditional authority, and collective memory, it remains a symbol of unity, stability, and cultural identity for the entire community.",
   "ABOUT_HISTORY_DESCRIPTION_SECONDARY": "While remaining faithful to its traditions and adapting to the evolution of society, the Chiefdom continues its mission of preserving heritage, strengthening social cohesion, and promoting the sustainable development of its territory.",
-
   "ABOUT_HISTORY_ORIGINS_PERIOD": "17th Century",
   "ABOUT_HISTORY_ORIGINS_TITLE": "The Origins of the Chiefdom",
   "ABOUT_HISTORY_ORIGINS_DESCRIPTION": "The foundations of the Chiefdom were established around traditional leadership, territorial protection, and the organization of community life.",
-
   "ABOUT_HISTORY_TRANSMISSION_PERIOD": "Across Generations",
   "ABOUT_HISTORY_TRANSMISSION_TITLE": "Passing Down Traditions",
   "ABOUT_HISTORY_TRANSMISSION_DESCRIPTION": "Customs, values, knowledge, and traditional responsibilities have been carefully transmitted from one generation to another, ensuring the continuity of the institution.",
-
   "ABOUT_HISTORY_EVOLUTION_PERIOD": "Institutional Evolution",
   "ABOUT_HISTORY_EVOLUTION_TITLE": "An Institution Growing with Its Time",
   "ABOUT_HISTORY_EVOLUTION_DESCRIPTION": "The Chiefdom has continuously adapted its role to contemporary realities while preserving the foundations of its authority and cultural identity.",
-
   "ABOUT_HISTORY_TODAY_PERIOD": "Today",
   "ABOUT_HISTORY_TODAY_TITLE": "An Institution Looking Toward the Future",
-  "ABOUT_HISTORY_TODAY_DESCRIPTION": "Today, the Traditional Chiefdom of Malentouen remains committed to preserving cultural heritage, strengthening community unity, and passing on a meaningful legacy to future generations."
+  "ABOUT_HISTORY_TODAY_DESCRIPTION": "Today, the Traditional Chiefdom of Malentouen remains committed to preserving cultural heritage, strengthening community unity, and passing on a meaningful legacy to future generations.",
+
+
+  "ABOUT_MISSION_VISION_IMAGE_ALT": "Institutional illustration of the mission and vision of the Traditional Chiefdom of Malentouen",
+  "ABOUT_MISSION_VISION_EYEBROW": "Mission and Vision",
+  "ABOUT_MISSION_VISION_TITLE": "Our Mission and Vision for Future Generations",
+  "ABOUT_MISSION_VISION_DESCRIPTION": "Faithful to its heritage and fully aware of its responsibility toward present and future generations, the Traditional Chiefdom of Malentouen works to preserve the identity of the community, strengthen its unity, and support its development in accordance with ancestral values.",
+  "ABOUT_MISSION_TITLE": "Preserving a Heritage, Serving a Community",
+  "ABOUT_MISSION_DESCRIPTION": "The mission of the Traditional Chiefdom of Malentouen is to preserve and pass on the cultural, historical, and spiritual heritage that forms the foundation of its people’s identity. It safeguards customary institutions, promotes the values of respect, solidarity, and responsibility, and strengthens cohesion across generations.",
+  "ABOUT_MISSION_DESCRIPTION_SECONDARY": "Through its traditional authority and close relationship with the community, the Chiefdom supports initiatives that strengthen local development, encourage community participation, and contribute to building a united, resilient territory deeply rooted in its heritage.",
+  "ABOUT_VISION_TITLE": "Building the Future While Honouring Tradition",
+  "ABOUT_VISION_DESCRIPTION": "The Chiefdom envisions a modern traditional institution capable of combining the richness of its heritage with the opportunities of the contemporary world. It seeks to become a leading institution in cultural promotion, historical preservation, and the advancement of sustainable, inclusive development that respects local identity.",
+  "ABOUT_VISION_DESCRIPTION_SECONDARY": "By bringing generations closer together, supporting innovation that remains compatible with ancestral values, and encouraging openness to the world, the Chiefdom aims to pass on to future generations a living, dynamic, and hopeful heritage.",
+
+
+  "ABOUT_VALUES_EYEBROW": "Our Values",
+  "ABOUT_VALUES_TITLE": "The Principles That Guide Every Action We Take",
+  "ABOUT_VALUES_DESCRIPTION": "For generations, the Traditional Chiefdom of Malentouen has based its work on strong values that ensure institutional stability, strengthen community cohesion, and inspire every decision. These principles form the foundation of a living heritage passed down from one generation to the next.",
+  "ABOUT_VALUES_ITEMS_TRADITION_TITLE": "Tradition",
+  "ABOUT_VALUES_ITEMS_TRADITION_DESCRIPTION": "Tradition is the living bond between generations. It preserves the customs, knowledge, rites, and cultural references that give the Malentouen community its identity and continuity.",
+  "ABOUT_VALUES_ITEMS_UNITY_TITLE": "Unity",
+  "ABOUT_VALUES_ITEMS_UNITY_DESCRIPTION": "Unity brings families, generations, and all parts of the community together around a shared identity, a common history, and a collective commitment to building the future.",
+  "ABOUT_VALUES_ITEMS_INTEGRITY_TITLE": "Integrity",
+  "ABOUT_VALUES_ITEMS_INTEGRITY_DESCRIPTION": "Integrity guides the exercise of traditional authority through justice, fairness, transparency, and a deep sense of responsibility toward the community.",
+  "ABOUT_VALUES_ITEMS_DEVELOPMENT_TITLE": "Development",
+  "ABOUT_VALUES_ITEMS_DEVELOPMENT_DESCRIPTION": "Development is driven by a shared ambition to improve living conditions sustainably, support local initiatives, and prepare a future that respects the identity and heritage of Malentouen.",
+
+
+  "ABOUT_GOVERNANCE_EYEBROW": "Our Governance",
+  "ABOUT_GOVERNANCE_TITLE": "An Organization Dedicated to the Community",
+  "ABOUT_GOVERNANCE_DESCRIPTION": "The Traditional Chiefdom of Malentouen is built upon customary principles, consultation, and a strong sense of responsibility. Each governing body plays a complementary role in preserving traditions, strengthening social cohesion, and supporting the sustainable development of the community.",
+  "ABOUT_GOVERNANCE_ITEMS_CHIEF_TITLE": "The Traditional Chief",
+  "ABOUT_GOVERNANCE_ITEMS_CHIEF_DESCRIPTION": "As the holder of customary authority, the Traditional Chief safeguards traditions, strengthens community unity, and guides major decisions in the collective interest while embodying the historical identity of the Chiefdom.",
+  "ABOUT_GOVERNANCE_ITEMS_COUNCIL_TITLE": "The Traditional Council",
+  "ABOUT_GOVERNANCE_ITEMS_COUNCIL_DESCRIPTION": "As an advisory body, the Council supports the Chief in examining important matters, fostering consensus, and preserving the values that ensure the stability of the institution.",
+  "ABOUT_GOVERNANCE_ITEMS_NOTABLES_TITLE": "The Notables",
+  "ABOUT_GOVERNANCE_ITEMS_NOTABLES_DESCRIPTION": "The Notables are the guardians of customs and collective memory. Their wisdom and experience help preserve traditions and reinforce the moral authority of the Chiefdom.",
+  "ABOUT_GOVERNANCE_ITEMS_ADMINISTRATION_TITLE": "The Administration",
+  "ABOUT_GOVERNANCE_ITEMS_ADMINISTRATION_DESCRIPTION": "The Administration coordinates daily activities, oversees projects, manages institutional services, and implements initiatives that contribute to the sustainable development of the community.",
+
+
+  "ABOUT_CHIEF_IMAGE_ALT": "Official portrait of the Traditional Chief of Malentouen",
+  "ABOUT_CHIEF_EYEBROW": "Traditional Authority",
+  "ABOUT_CHIEF_TITLE": "An Authority Dedicated to Unity, Tradition, and the Future",
+  "ABOUT_CHIEF_DESCRIPTION": "At the head of the Traditional Chiefdom of Malentouen, the Chief embodies the continuity of customary authority, the memory of the institution, and a profound moral responsibility toward the entire community. As guardian of traditions and guarantor of unity, he preserves the principles that shape collective identity while guiding the institution through the changes of the modern world.",
+  "ABOUT_CHIEF_DESCRIPTION_SECONDARY": "His leadership is founded on listening, consultation, and a strong sense of duty. Through mediation, guidance, and representation, he works to strengthen social cohesion, pass on ancestral values, and promote harmonious development that respects cultural heritage while remaining open to the future.",
+  "ABOUT_CHIEF_SIGNATURE_NAME": "His Majesty Momafon Mohamed Madini",
+  "ABOUT_CHIEF_SIGNATURE_TITLE": "Traditional Chief of Malentouen", 
+
+
+  "ABOUT_COMMITMENTS_EYEBROW": "Our Commitments",
+  "ABOUT_COMMITMENTS_TITLE": "Commitments for Present and Future Generations",
+  "ABOUT_COMMITMENTS_DESCRIPTION": "The Traditional Chiefdom of Malentouen works every day to preserve its heritage, strengthen community cohesion, and promote sustainable development rooted in ancestral values. These commitments reflect its determination to serve the community responsibly while preparing a better future.",
+  "ABOUT_COMMITMENTS_ITEMS_HERITAGE_TITLE": "Preserving Cultural Heritage",
+  "ABOUT_COMMITMENTS_ITEMS_HERITAGE_DESCRIPTION": "Safeguarding traditions, customs, ancestral knowledge, and historical sites to pass on a living, authentic, and meaningful heritage to future generations.",
+  "ABOUT_COMMITMENTS_ITEMS_DEVELOPMENT_TITLE": "Supporting Local Development",
+  "ABOUT_COMMITMENTS_ITEMS_DEVELOPMENT_DESCRIPTION": "Encouraging economic, social, and cultural initiatives that sustainably improve living conditions while respecting the values and identity of the Chiefdom.",
+  "ABOUT_COMMITMENTS_ITEMS_YOUTH_TITLE": "Investing in Youth",
+  "ABOUT_COMMITMENTS_ITEMS_YOUTH_DESCRIPTION": "Supporting young people through education, civic engagement, professional integration, and personal development so they can become the future leaders of Malentouen.",
+  "ABOUT_COMMITMENTS_ITEMS_COHESION_TITLE": "Strengthening Social Cohesion",
+  "ABOUT_COMMITMENTS_ITEMS_COHESION_DESCRIPTION": "Promoting dialogue, solidarity, mutual respect, and active community participation to preserve lasting peace, unity, and fraternity throughout the community.",
+
+  
+  "ABOUT_HERITAGE_LANDMARKS_EYEBROW": "Heritage and Landmarks",
+  "ABOUT_HERITAGE_LANDMARKS_TITLE": "Living Symbols of Malentouen’s Identity",
+  "ABOUT_HERITAGE_LANDMARKS_DESCRIPTION": "The heritage of Malentouen is expressed through its places, traditions, and territory. These landmarks tell the story of the Chiefdom, preserve collective memory, and reflect a rich cultural legacy passed down from generation to generation.",
+  "ABOUT_HERITAGE_LANDMARKS_PALACE_IMAGE_ALT": "View of the palace of the Traditional Chiefdom of Malentouen",
+  "ABOUT_HERITAGE_LANDMARKS_PALACE_TITLE": "The Traditional Palace",
+  "ABOUT_HERITAGE_LANDMARKS_PALACE_DESCRIPTION": "As a place of memory, authority, and gathering, the traditional palace embodies the continuity of the institution. It remains central to major decisions, customary ceremonies, and the transmission of traditions.",
+  "ABOUT_HERITAGE_LANDMARKS_CULTURE_IMAGE_ALT": "Cultural and traditional expression of the Malentouen community",
+  "ABOUT_HERITAGE_LANDMARKS_CULTURE_TITLE": "A Living Culture",
+  "ABOUT_HERITAGE_LANDMARKS_CULTURE_DESCRIPTION": "Rites, dances, symbols, craftsmanship, and community practices form a living heritage. They strengthen the sense of belonging and ensure the continuity of Malentouen’s cultural identity.",
+  "ABOUT_HERITAGE_LANDMARKS_TERRITORY_IMAGE_ALT": "Landscape of the Malentouen territory in the Noun Division",
+  "ABOUT_HERITAGE_LANDMARKS_TERRITORY_TITLE": "A Territory of History and Opportunity",
+  "ABOUT_HERITAGE_LANDMARKS_TERRITORY_DESCRIPTION": "Located in the Malentouen Subdivision, at the heart of the Noun Division, this territory provides the setting for community life, ancestral heritage, and the Chiefdom’s ambitions for sustainable development."
+
 }
