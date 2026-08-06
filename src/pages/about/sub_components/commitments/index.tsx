@@ -2,6 +2,7 @@ import type { ReactElement } from "react";
 import { Box, Typography } from "@mui/material";
 
 import Badge from "@components/badge";
+import Card from "@components/card";
 import Section from "@components/section";
 import SectionTitle from "@components/section_title";
 
@@ -22,48 +23,47 @@ export default function Commitments({
   return (
     <Section
       id={id}
-      variant="default"
+      variant="paper"
       containerSize="wide"
     >
-      <SectionTitle
-        eyebrow={eyebrow}
-        title={title}
-        subtitle={description}
-        align="left"
-      />
+      <Box sx={styles.wrapper}>
+        <SectionTitle
+          eyebrow={eyebrow}
+          title={title}
+          subtitle={description}
+          align="center"
+          sx={styles.sectionTitle}
+          
+        />
 
-      <Box sx={styles.list}>
-        {items.map((item, index) => {
-          const order = String(index + 1).padStart(2, "0");
-
-          return (
-            <Box
+        <Box sx={styles.grid}>
+          {items.map((item, index) => (
+            <Card
               key={item.id}
-              sx={styles.item}
+              variant="default"
+              sx={styles.card}
             >
-              <Box sx={styles.heading}>
-                <Badge variant="secondary">
-                  {order}
-                </Badge>
-
-                <Typography
-                  component="h3"
-                  variant="h4"
-                  sx={styles.title}
-                >
-                  {item.title}
-                </Typography>
-              </Box>
+              <Badge variant="secondary">
+                {String(index + 1).padStart(2, "0")}
+              </Badge>
 
               <Typography
-                variant="body1"
+                component="h3"
+                variant="h5"
+                sx={styles.title}
+              >
+                {item.title}
+              </Typography>
+
+              <Typography
+                variant="body2"
                 sx={styles.description}
               >
                 {item.description}
               </Typography>
-            </Box>
-          );
-        })}
+            </Card>
+          ))}
+        </Box>
       </Box>
     </Section>
   );

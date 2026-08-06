@@ -1,45 +1,41 @@
-import type {
-  SxProps,
-  Theme,
-} from "@mui/material";
+import type { SxProps, Theme } from "@mui/material";
 
-const list: SxProps<Theme> = {
-  display: "flex",
-  flexDirection: "column",
-
-  borderTop: "1px solid",
-  borderColor: "divider",
-};
-
-const item: SxProps<Theme> = {
+const grid: SxProps<Theme> = {
   display: "grid",
 
   gridTemplateColumns: {
     xs: "1fr",
-    lg: "1fr auto",
+    sm: "repeat(2, minmax(0, 1fr))",
+    lg: "repeat(3, minmax(0, 1fr))",
   },
 
   gap: {
-    xs: 2,
-    lg: 5,
+    xs: 3,
+    md: 4,
   },
+};
 
-  alignItems: "center",
+const card: SxProps<Theme> = {
+  height: "100%",
 
-  py: {
-    xs: 4,
-    md: 5,
+  "&:last-of-type": {
+    gridColumn: {
+      lg: "2 / 3",
+    },
   },
-
-  borderBottom: "1px solid",
-  borderColor: "divider",
 };
 
 const content: SxProps<Theme> = {
   display: "flex",
   flexDirection: "column",
+  alignItems: "flex-start",
 
-  gap: 1.5,
+  height: "100%",
+
+  p: {
+    xs: 3,
+    md: 4,
+  },
 };
 
 const title: SxProps<Theme> = {
@@ -47,25 +43,25 @@ const title: SxProps<Theme> = {
 };
 
 const description: SxProps<Theme> = {
-  maxWidth: 720,
+  mt: 1.5,
+  mb: 3,
 
   color: "text.secondary",
 };
 
 const link: SxProps<Theme> = {
-  mt: {
-    xs: 2,
-    lg: 0,
-  },
+  mt: "auto",
 
-  justifySelf: {
-    lg: "end",
+  color: "primary.main",
+
+  "&:hover": {
+    color: "secondary.dark",
   },
 };
 
 export default {
-  list,
-  item,
+  grid,
+  card,
   content,
   title,
   description,
