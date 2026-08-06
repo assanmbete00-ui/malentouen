@@ -1,5 +1,5 @@
 import type { ReactElement } from "react";
-import { Box, Card, CardContent, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 import Section from "@components/section";
 import SectionTitle from "@components/section_title";
@@ -18,7 +18,11 @@ export default function MissionVision({
   vision,
 }: MissionVisionSectionProps): ReactElement {
   return (
-    <Section id={id} variant="default" containerSize="wide">
+    <Section
+      id={id}
+      variant="default"
+      containerSize="wide"
+    >
       <SectionTitle
         eyebrow={eyebrow}
         title={title}
@@ -26,46 +30,80 @@ export default function MissionVision({
         align="center"
       />
 
-      <Box sx={styles.content}>
-        <Card sx={styles.block}>
-          <CardContent>
-            <Typography variant="h4" sx={styles.blockTitle}>
-              {mission.title}
-            </Typography>
+      <Box sx={styles.media}>
+        <Box
+          component="img"
+          src={image}
+          alt={imageAlt}
+          sx={styles.image}
+        />
+      </Box>
 
-            <Typography variant="body1" sx={styles.blockDescription}>
+      <Box sx={styles.content}>
+        <Box sx={styles.block}>
+          <Box sx={styles.accent} />
+
+          <Typography
+            component="h3"
+            variant="h3"
+            sx={styles.blockTitle}
+          >
+            {mission.title}
+          </Typography>
+
+          <Box sx={styles.descriptions}>
+            <Typography
+              variant="body1"
+              sx={styles.blockDescription}
+            >
               {mission.description}
             </Typography>
 
             {mission.descriptionSecondary && (
-              <Typography variant="body1" sx={styles.blockDescription}>
+              <Typography
+                variant="body1"
+                sx={styles.blockDescription}
+              >
                 {mission.descriptionSecondary}
               </Typography>
             )}
-          </CardContent>
-        </Card>
+          </Box>
+        </Box>
 
-        <Card sx={styles.block}>
-          <CardContent>
-            <Typography variant="h4" sx={styles.blockTitle}>
-              {vision.title}
-            </Typography>
+        <Box
+          sx={[
+            styles.block,
+            styles.visionBlock,
+          ]}
+        >
+          <Box sx={styles.accent} />
 
-            <Typography variant="body1" sx={styles.blockDescription}>
+          <Typography
+            component="h3"
+            variant="h3"
+            sx={styles.blockTitle}
+          >
+            {vision.title}
+          </Typography>
+
+          <Box sx={styles.descriptions}>
+            <Typography
+              variant="body1"
+              sx={styles.blockDescription}
+            >
               {vision.description}
             </Typography>
 
             {vision.descriptionSecondary && (
-              <Typography variant="body1" sx={styles.blockDescription}>
+              <Typography
+                variant="body1"
+                sx={styles.blockDescription}
+              >
                 {vision.descriptionSecondary}
               </Typography>
             )}
-          </CardContent>
-        </Card>
-      </Box>
-
-      <Box sx={styles.imageWrapper}>
-        <Box component="img" src={image} alt={imageAlt} sx={styles.image} />
+          </Box>
+        </Box>
       </Box>
     </Section>
   );

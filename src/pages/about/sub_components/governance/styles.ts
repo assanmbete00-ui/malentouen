@@ -52,14 +52,12 @@ const divider: SxProps<Theme> = {
 
 const grid: SxProps<Theme> = {
   display: "grid",
-
   gridTemplateColumns: {
     xs: "1fr",
     md: "repeat(3, minmax(0, 1fr))",
   },
 
   width: "100%",
-
   gap: {
     xs: 3,
     md: 4,

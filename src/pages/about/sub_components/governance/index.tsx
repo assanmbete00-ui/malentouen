@@ -4,7 +4,6 @@ import { Box, Typography } from "@mui/material";
 import Card from "@components/card";
 import Section from "@components/section";
 import SectionTitle from "@components/section_title";
-
 import styles from "./styles";
 import type { GovernanceSectionProps } from "./types";
 

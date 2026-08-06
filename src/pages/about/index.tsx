@@ -8,7 +8,7 @@ import Governance from "./sub_components/governance";
 import Chief from "./sub_components/chief";
 import Commitments from "./sub_components/commitments";
 import HeritageLandmarks from "./sub_components/heritage_landmarks";
-import ExplorePlatform from "./sub_components/explore_platform";
+import ExplorePlatform from "./sub_components/explore_platform"; 
 
 export default function AboutPage() {
   const { 

@@ -1,51 +1,56 @@
-import type {
-  SxProps,
-  Theme,
-} from "@mui/material";
+import type { SxProps, Theme } from "@mui/material";
 
 const list: SxProps<Theme> = {
-  display: "flex",
-  flexDirection: "column",
+  width: "100%",
 
-  gap: {
-    xs: 3,
-    md: 4,
-  },
+  borderBottom: "1px solid",
+  borderColor: "divider",
 };
 
 const item: SxProps<Theme> = {
+  display: "grid",
+
+  gridTemplateColumns: {
+    xs: "1fr",
+    lg: "0.9fr 1.1fr",
+  },
+
+  gap: {
+    xs: 3,
+    md: 5,
+    lg: 8,
+  },
+
+  alignItems: "start",
+
+  py: {
+    xs: 4,
+    md: 5,
+  },
+
+  borderTop: "1px solid",
+  borderColor: "divider",
+};
+
+const heading: SxProps<Theme> = {
   display: "flex",
+  flexDirection: "column",
+  alignItems: "flex-start",
 
   gap: {
     xs: 2,
-    md: 3,
+    md: 2.5,
   },
-
-  alignItems: "flex-start",
-
-  p: {
-    xs: 3,
-    md: 4,
-  },
-
-  borderLeft: "4px solid",
-  borderColor: "secondary.main",
-
-  bgcolor: "background.paper",
-
-  borderRadius: 3,
-};
-
-const content: SxProps<Theme> = {
-  flex: 1,
 };
 
 const title: SxProps<Theme> = {
+  maxWidth: 520,
+
   color: "text.primary",
 };
 
 const description: SxProps<Theme> = {
-  mt: 1.5,
+  maxWidth: 680,
 
   color: "text.secondary",
 };
@@ -53,7 +58,7 @@ const description: SxProps<Theme> = {
 export default {
   list,
   item,
-  content,
+  heading,
   title,
   description,
 };

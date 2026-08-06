@@ -1,7 +1,10 @@
 import type { ReactElement } from "react";
-import { Box, Typography } from "@mui/material";
 
-import Card from "@components/card";
+import {
+  Box,
+  Typography,
+} from "@mui/material";
+
 import Section from "@components/section";
 import SectionTitle from "@components/section_title";
 import TextLink from "@components/text_link";
@@ -18,8 +21,7 @@ export default function ExplorePlatform({
   description,
   actionLabel,
   items,
-}: ExplorePlatformSectionProps):
-  ReactElement | null {
+}: ExplorePlatformSectionProps): ReactElement | null {
   if (!items.length) {
     return null;
   }
@@ -37,12 +39,11 @@ export default function ExplorePlatform({
         align="center"
       />
 
-      <Box sx={styles.grid}>
+      <Box sx={styles.list}>
         {items.map((item) => (
-          <Card
+          <Box
             key={item.id}
-            variant="default"
-            sx={styles.card}
+            sx={styles.item}
           >
             <Box sx={styles.content}>
               <Typography
@@ -54,20 +55,20 @@ export default function ExplorePlatform({
               </Typography>
 
               <Typography
-                variant="body2"
+                variant="body1"
                 sx={styles.description}
               >
                 {item.description}
               </Typography>
-
-              <TextLink
-                to={item.href}
-                sx={styles.link}
-              >
-                {actionLabel}
-              </TextLink>
             </Box>
-          </Card>
+
+            <TextLink
+              to={item.href}
+              sx={styles.link}
+            >
+              {actionLabel}
+            </TextLink>
+          </Box>
         ))}
       </Box>
     </Section>

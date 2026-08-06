@@ -1,81 +1,13 @@
 import type { SxProps, Theme } from "@mui/material";
 
-const content: SxProps<Theme> = {
-  display: "grid",
-
-  gridTemplateColumns: {
-    xs: "1fr",
-    lg: "repeat(2, minmax(0, 1fr))",
-  },
-
-  gap: {
-    xs: 3,
-    md: 4,
-    lg: 5,
-  },
-
-  alignItems: "stretch",
-
-  mb: {
-    xs: 5,
-    md: 7,
-  },
-};
-
-const block: SxProps<Theme> = {
-  height: "100%",
-  bgcolor: "background.paper",
-};
-
-const blockContent: SxProps<Theme> = {
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "flex-start",
-  height: "100%",
-
-  gap: {
-    xs: 2,
-    md: 2.5,
-  },
-
-  p: {
-    xs: 3,
-    md: 4,
-  },
-
-  "&:last-child": {
-    pb: {
-      xs: 3,
-      md: 4,
-    },
-  },
-};
-
-const blockTitle: SxProps<Theme> = {
-  position: "relative",
-  color: "primary.main",
-
-  "&::after": {
-    content: '""',
-    display: "block",
-    width: 40,
-    height: 3,
-    mt: 2,
-    borderRadius: 999,
-    bgcolor: "secondary.main",
-  },
-};
-
-const blockDescription: SxProps<Theme> = {
-  color: "text.secondary",
-};
-
-const imageWrapper: SxProps<Theme> = {
+const media: SxProps<Theme> = {
   width: "100%",
   overflow: "hidden",
+
   borderRadius: 4,
   border: "1px solid",
   borderColor: "divider",
+
   bgcolor: "background.paper",
 };
 
@@ -86,19 +18,105 @@ const image: SxProps<Theme> = {
   aspectRatio: {
     xs: "4 / 3",
     sm: "16 / 10",
-    md: "16 / 8",
+    md: "16 / 7",
   },
 
   objectFit: "cover",
   objectPosition: "center",
 };
 
+const content: SxProps<Theme> = {
+  display: "grid",
+
+  gridTemplateColumns: {
+    xs: "1fr",
+    lg: "repeat(2, minmax(0, 1fr))",
+  },
+
+  mt: {
+    xs: 5,
+    md: 7,
+  },
+
+  gap: {
+    xs: 5,
+    lg: 0,
+  },
+};
+
+const block: SxProps<Theme> = {
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "flex-start",
+
+  px: {
+    xs: 0,
+    lg: 6,
+  },
+
+  py: {
+    xs: 0,
+    lg: 1,
+  },
+
+  "&:first-of-type": {
+    pl: {
+      lg: 0,
+    },
+  },
+};
+
+const visionBlock: SxProps<Theme> = {
+  borderLeft: {
+    xs: "none",
+    lg: "1px solid",
+  },
+
+  borderColor: {
+    lg: "divider",
+  },
+
+  pr: {
+    lg: 0,
+  },
+};
+
+const accent: SxProps<Theme> = {
+  width: 56,
+  height: 3,
+
+  mb: 3,
+
+  borderRadius: 999,
+  bgcolor: "secondary.main",
+};
+
+const blockTitle: SxProps<Theme> = {
+  maxWidth: 520,
+  color: "text.primary",
+};
+
+const descriptions: SxProps<Theme> = {
+  display: "flex",
+  flexDirection: "column",
+
+  gap: 2.5,
+
+  mt: 3,
+};
+
+const blockDescription: SxProps<Theme> = {
+  color: "text.secondary",
+};
+
 export default {
+  media,
+  image,
   content,
   block,
-  blockContent,
+  visionBlock,
+  accent,
   blockTitle,
+  descriptions,
   blockDescription,
-  imageWrapper,
-  image,
 };
