@@ -1,8 +1,8 @@
 import type { ReactElement } from "react";
-
 import { Box, Typography } from "@mui/material";
 
 import Badge from "@components/badge";
+import MediaWithSkeleton from "@components/media_with_skeleton";
 import Section from "@components/section";
 import SectionTitle from "@components/section_title";
 
@@ -28,13 +28,15 @@ export default function History({
       <SectionTitle
         eyebrow={eyebrow}
         title={title}
+        align="left"
       />
 
       <Box sx={styles.hero}>
-        <Box
-          component="img"
+        <MediaWithSkeleton
           src={image}
           alt={imageAlt}
+          objectFit="cover"
+          objectPosition="center"
           sx={styles.image}
         />
 
@@ -57,36 +59,42 @@ export default function History({
         </Box>
       </Box>
 
-      <Box sx={styles.chapters}>
-        {timeline.map((item, index) => (
-          <Box
-            key={item.id}
-            sx={styles.chapter}
-          >
-            {index > 0 && (
-              <Box sx={styles.separator} />
-            )}
-
-            <Badge>
-              {item.period}
-            </Badge>
-
-            <Typography
-              variant="h4"
-              sx={styles.chapterTitle}
+      {timeline.length > 0 && (
+        <Box sx={styles.chapters}>
+          {timeline.map((item, index) => (
+            <Box
+              key={item.id}
+              sx={styles.chapter}
             >
-              {item.title}
-            </Typography>
+              {index > 0 && (
+                <Box
+                  aria-hidden="true"
+                  sx={styles.separator}
+                />
+              )}
 
-            <Typography
-              variant="body1"
-              sx={styles.chapterDescription}
-            >
-              {item.description}
-            </Typography>
-          </Box>
-        ))}
-      </Box>
+              <Badge variant="secondary">
+                {item.period}
+              </Badge>
+
+              <Typography
+                component="h3"
+                variant="h4"
+                sx={styles.chapterTitle}
+              >
+                {item.title}
+              </Typography>
+
+              <Typography
+                variant="body1"
+                sx={styles.chapterDescription}
+              >
+                {item.description}
+              </Typography>
+            </Box>
+          ))}
+        </Box>
+      )}
     </Section>
   );
 }
