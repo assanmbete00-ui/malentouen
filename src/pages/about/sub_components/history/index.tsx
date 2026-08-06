@@ -1,5 +1,8 @@
+import type { ReactElement } from "react";
+
 import { Box, Typography } from "@mui/material";
 
+import Badge from "@components/badge";
 import Section from "@components/section";
 import SectionTitle from "@components/section_title";
 
@@ -15,7 +18,7 @@ export default function History({
   description,
   descriptionSecondary,
   timeline,
-}: HistorySectionProps) {
+}: HistorySectionProps): ReactElement {
   return (
     <Section
       id={id}
@@ -27,59 +30,63 @@ export default function History({
         title={title}
       />
 
-      <Box sx={styles.content}>
-        <Box sx={styles.editorial}>
-          <Box sx={styles.descriptions}>
-            <Typography variant="body1" sx={styles.description}>
-              {description}
+      <Box sx={styles.hero}>
+        <Box
+          component="img"
+          src={image}
+          alt={imageAlt}
+          sx={styles.image}
+        />
+
+        <Box sx={styles.introduction}>
+          <Typography
+            variant="body1"
+            sx={styles.description}
+          >
+            {description}
+          </Typography>
+
+          {descriptionSecondary && (
+            <Typography
+              variant="body1"
+              sx={styles.description}
+            >
+              {descriptionSecondary}
             </Typography>
-
-            {descriptionSecondary && (
-              <Typography variant="body1" sx={styles.description}>
-                {descriptionSecondary}
-              </Typography>
-            )}
-          </Box>
-        </Box>
-
-        <Box sx={styles.media}>
-          <Box
-            component="img"
-            src={image}
-            alt={imageAlt}
-            sx={styles.image}
-          />
+          )}
         </Box>
       </Box>
 
-      {timeline.length > 0 && (
-        <Box sx={styles.timeline}>
-          {timeline.map((item) => (
-            <Box key={item.id} sx={styles.timelineItem}>
-              <Typography component="p" sx={styles.period}>
-                {item.period}
-              </Typography>
+      <Box sx={styles.chapters}>
+        {timeline.map((item, index) => (
+          <Box
+            key={item.id}
+            sx={styles.chapter}
+          >
+            {index > 0 && (
+              <Box sx={styles.separator} />
+            )}
 
-              <Box sx={styles.timelineContent}>
-                <Typography
-                  component="h3"
-                  variant="h5"
-                  sx={styles.timelineTitle}
-                >
-                  {item.title}
-                </Typography>
+            <Badge>
+              {item.period}
+            </Badge>
 
-                <Typography
-                  variant="body2"
-                  sx={styles.timelineDescription}
-                >
-                  {item.description}
-                </Typography>
-              </Box>
-            </Box>
-          ))}
-        </Box>
-      )}
+            <Typography
+              variant="h4"
+              sx={styles.chapterTitle}
+            >
+              {item.title}
+            </Typography>
+
+            <Typography
+              variant="body1"
+              sx={styles.chapterDescription}
+            >
+              {item.description}
+            </Typography>
+          </Box>
+        ))}
+      </Box>
     </Section>
   );
 }

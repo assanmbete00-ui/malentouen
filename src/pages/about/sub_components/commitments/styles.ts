@@ -1,59 +1,94 @@
-import type {
-  SxProps,
-  Theme,
-} from "@mui/material";
+import type { SxProps, Theme } from "@mui/material";
 
-const list: SxProps<Theme> = {
-  display: "flex",
-  flexDirection: "column",
+const wrapper: SxProps<Theme> = {
+  px: {
+    xs: 4,
+    md: 6,
+    lg: 8,
+  },
+
+  py: {
+    xs: 7,
+    md: 8,
+    lg: 9,
+  },
+
+  borderRadius: 4,
+
+  bgcolor: "primary.main",
+
+  overflow: "hidden",
+};
+
+const sectionTitle: SxProps<Theme> = {
+  color: "primary.contrastText",
+
+  "& .MuiTypography-root": {
+    color: "inherit",
+  },
+
+  "& span": {
+    color: "secondary.main",
+  },
+};
+
+const grid: SxProps<Theme> = {
+  display: "grid",
+
+  gridTemplateColumns: {
+    xs: "1fr",
+    sm: "repeat(2,1fr)",
+    xl: "repeat(4,1fr)",
+  },
 
   gap: {
     xs: 3,
     md: 4,
   },
+
+  mt: {
+    xs: 5,
+    md: 6,
+  },
 };
 
-const item: SxProps<Theme> = {
+const card: SxProps<Theme> = {
+  height: "100%",
+
   display: "flex",
+  flexDirection: "column",
 
-  gap: {
-    xs: 2,
-    md: 3,
-  },
-
-  alignItems: "flex-start",
+  gap: 2.5,
 
   p: {
     xs: 3,
     md: 4,
   },
 
-  borderLeft: "4px solid",
-  borderColor: "secondary.main",
+  borderRadius: 3,
 
   bgcolor: "background.paper",
-
-  borderRadius: 3,
-};
-
-const content: SxProps<Theme> = {
-  flex: 1,
 };
 
 const title: SxProps<Theme> = {
-  color: "text.primary",
+  color: "primary.main",
+
+  fontWeight: 700,
+
+  lineHeight: 1.3,
 };
 
 const description: SxProps<Theme> = {
-  mt: 1.5,
-
   color: "text.secondary",
+
+  flex: 1,
 };
 
 export default {
-  list,
-  item,
-  content,
+  wrapper,
+  sectionTitle,
+  grid,
+  card,
   title,
   description,
 };

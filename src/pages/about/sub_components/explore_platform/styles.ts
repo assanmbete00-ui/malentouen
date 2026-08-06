@@ -17,6 +17,12 @@ const grid: SxProps<Theme> = {
 
 const card: SxProps<Theme> = {
   height: "100%",
+
+  "&:last-of-type": {
+    gridColumn: {
+      lg: "2 / 3",
+    },
+  },
 };
 
 const content: SxProps<Theme> = {
@@ -45,7 +51,12 @@ const description: SxProps<Theme> = {
 
 const link: SxProps<Theme> = {
   mt: "auto",
+
   color: "primary.main",
+
+  "&:hover": {
+    color: "secondary.dark",
+  },
 };
 
 export default {

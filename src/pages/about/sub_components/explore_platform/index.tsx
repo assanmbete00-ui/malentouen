@@ -41,7 +41,7 @@ export default function ExplorePlatform({
         {items.map((item) => (
           <Card
             key={item.id}
-            variant="default"
+            variant="interactive"
             sx={styles.card}
           >
             <Box sx={styles.content}>
