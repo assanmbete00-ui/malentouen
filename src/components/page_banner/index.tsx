@@ -2,6 +2,7 @@ import { Box, Typography } from "@mui/material";
 
 import Breadcrumb from "../breadcrumb";
 import Container from "../container";
+import MediaWithSkeleton from "@components/media_with_skeleton";
 
 import styles from "./styles";
 import type { PageBannerProps } from "./types";
@@ -22,16 +23,23 @@ export default function PageBanner({
       component="header"
       sx={[
         styles.root,
-        ...(Array.isArray(sx) ? sx : sx ? [sx] : []),
+        ...(Array.isArray(sx)
+          ? sx
+          : sx
+            ? [sx]
+            : []),
       ]}
     >
-      <Box
-        component="img"
+      <MediaWithSkeleton
         src={background.image}
         alt={background.alt ?? ""}
-        aria-hidden={background.alt ? undefined : true}
-        draggable={false}
-        sx={styles.background(background.position ?? "center")}
+        objectFit="cover"
+        objectPosition={
+          background.position ?? "center"
+        }
+        sx={styles.background(
+          background.position ?? "center",
+        )}
       />
 
       <Box

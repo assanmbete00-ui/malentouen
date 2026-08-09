@@ -1,10 +1,21 @@
-import { Box, Typography } from "@mui/material";
+import PageBanner from "@components/page_banner";
 
-export default function CulturesPage() {
+import useCultures from "./hooks/use_cultures";
+
+import Introduction from
+  "./sub_components/introduction";
+
+export default function Cultures() {
+  const {
+    banner,
+    introduction,
+  } = useCultures();
+
   return (
-    <Box sx={{ p: 3 }}>
-      <Typography variant="h1">Cultures Page</Typography>
-      {/* Add your cultures page content here */}
-    </Box>
+    <>
+      <PageBanner {...banner} />
+
+      <Introduction {...introduction} />
+    </>
   );
 }

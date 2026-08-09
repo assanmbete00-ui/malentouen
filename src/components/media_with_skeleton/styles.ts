@@ -1,37 +1,24 @@
-import type {
-  CSSProperties,
-} from "react";
+import type { CSSProperties } from "react";
 
 import type {
   SxProps,
   Theme,
 } from "@mui/material";
 
-type MediaSize = number | string;
-
-const container = (
-  width: MediaSize,
-  height: MediaSize | undefined,
-  aspectRatio: CSSProperties["aspectRatio"],
-  borderRadius: MediaSize,
-): SxProps<Theme> => ({
+const root: SxProps<Theme> = {
   position: "relative",
-
-  width,
-  height,
-  aspectRatio,
 
   overflow: "hidden",
 
-  borderRadius,
-
   bgcolor: "background.paper",
-});
+};
 
 const loadingBox: SxProps<Theme> = {
   position: "absolute",
   inset: 0,
   zIndex: 2,
+
+  overflow: "hidden",
 };
 
 const skeleton: SxProps<Theme> = {
@@ -42,6 +29,7 @@ const skeleton: SxProps<Theme> = {
 const iconWrapper: SxProps<Theme> = {
   position: "absolute",
   inset: 0,
+  zIndex: 1,
 
   display: "flex",
   alignItems: "center",
@@ -58,7 +46,6 @@ const loadingIcon: SxProps<Theme> = {
 const media = (
   objectFit: CSSProperties["objectFit"],
   objectPosition: CSSProperties["objectPosition"],
-  borderRadius: MediaSize,
   isLoading: boolean,
   clickable: boolean,
 ): SxProps<Theme> => ({
@@ -70,9 +57,9 @@ const media = (
   objectFit,
   objectPosition,
 
-  borderRadius,
-
-  opacity: isLoading ? 0 : 1,
+  opacity: isLoading
+    ? 0
+    : 1,
 
   cursor: clickable
     ? "pointer"
@@ -82,7 +69,6 @@ const media = (
 });
 
 const errorBox = (
-  borderRadius: MediaSize,
   clickable: boolean,
 ): SxProps<Theme> => ({
   display: "flex",
@@ -95,17 +81,13 @@ const errorBox = (
 
   px: 3,
 
-  border: "1px solid",
-  borderColor: "divider",
-  borderRadius,
-
   bgcolor: "background.default",
-
-  textAlign: "center",
 
   cursor: clickable
     ? "pointer"
     : "default",
+
+  textAlign: "center",
 });
 
 const errorIcon: SxProps<Theme> = {
@@ -115,11 +97,12 @@ const errorIcon: SxProps<Theme> = {
 
 const errorContent: SxProps<Theme> = {
   mt: 1.5,
+
   color: "text.secondary",
 };
 
 export default {
-  container,
+  root,
   loadingBox,
   skeleton,
   iconWrapper,

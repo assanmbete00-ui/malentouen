@@ -1,6 +1,7 @@
 import type { ReactElement } from "react";
 import { Box, Typography } from "@mui/material";
 import Card from "@components/card";
+import MediaWithSkeleton from "@components/media_with_skeleton";
 import Section from "@components/section";
 import SectionTitle from "@components/section_title";
 
@@ -19,11 +20,7 @@ export default function HeritageLandmarks({
   }
 
   return (
-    <Section
-      id={id}
-      variant="paper"
-      containerSize="wide"
-    >
+    <Section id={id} variant="paper" containerSize="wide">
       <SectionTitle
         eyebrow={eyebrow}
         title={title}
@@ -33,14 +30,9 @@ export default function HeritageLandmarks({
 
       <Box sx={styles.grid}>
         {items.map((item) => (
-          <Card
-            key={item.id}
-            variant="default"
-            sx={styles.card}
-          >
+          <Card key={item.id} variant="default" sx={styles.card}>
             <Box sx={styles.imageWrapper}>
-              <Box
-                component="img"
+              <MediaWithSkeleton
                 src={item.image}
                 alt={item.imageAlt}
                 sx={styles.image}
@@ -48,18 +40,11 @@ export default function HeritageLandmarks({
             </Box>
 
             <Box sx={styles.content}>
-              <Typography
-                component="h3"
-                variant="h5"
-                sx={styles.title}
-              >
+              <Typography component="h3" variant="h5" sx={styles.title}>
                 {item.title}
               </Typography>
 
-              <Typography
-                variant="body2"
-                sx={styles.description}
-              >
+              <Typography variant="body2" sx={styles.description}>
                 {item.description}
               </Typography>
             </Box>

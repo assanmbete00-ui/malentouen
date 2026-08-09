@@ -1,5 +1,6 @@
 import { Box, Typography } from "@mui/material";
 
+import MediaWithSkeleton from "@components/media_with_skeleton";
 import TextLink from "@components/text_link";
 
 import styles from "./styles";
@@ -14,8 +15,7 @@ export default function CultureHighlight({
 }: CultureHighlightProps) {
   return (
     <Box sx={styles.container}>
-      <Box
-        component="img"
+      <MediaWithSkeleton
         src={image}
         alt={typeof title === "string" ? title : "Culture de Malentouen"}
         sx={styles.image}
@@ -28,9 +28,7 @@ export default function CultureHighlight({
           {title}
         </Typography>
 
-        <Typography sx={styles.description}>
-          {description}
-        </Typography>
+        <Typography sx={styles.description}>{description}</Typography>
 
         {showAction && action && (
           <Box sx={styles.actionWrapper}>
