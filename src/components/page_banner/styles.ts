@@ -1,5 +1,9 @@
 import { alpha } from "@mui/material/styles";
-import type { SxProps, Theme } from "@mui/material";
+
+import type {
+  SxProps,
+  Theme,
+} from "@mui/material";
 
 const root: SxProps<Theme> = {
   position: "relative",
@@ -19,17 +23,15 @@ const root: SxProps<Theme> = {
   bgcolor: "primary.dark",
 };
 
-const background = (position: string): SxProps<Theme> => ({
+const background = (
+  _position: string,
+): SxProps<Theme> => ({
   position: "absolute",
   inset: 0,
   zIndex: -3,
 
-  display: "block",
   width: "100%",
   height: "100%",
-
-  objectFit: "cover",
-  objectPosition: position,
 
   pointerEvents: "none",
   userSelect: "none",
@@ -43,9 +45,18 @@ const overlay: SxProps<Theme> = {
   background: (theme) =>
     `linear-gradient(
       90deg,
-      ${alpha(theme.palette.primary.dark, 0.96)} 0%,
-      ${alpha(theme.palette.primary.dark, 0.82)} 48%,
-      ${alpha(theme.palette.primary.dark, 0.5)} 100%
+      ${alpha(
+        theme.palette.primary.dark,
+        0.96,
+      )} 0%,
+      ${alpha(
+        theme.palette.primary.dark,
+        0.82,
+      )} 48%,
+      ${alpha(
+        theme.palette.primary.dark,
+        0.5,
+      )} 100%
     )`,
 };
 
@@ -57,8 +68,14 @@ const depthOverlay: SxProps<Theme> = {
   background: (theme) =>
     `linear-gradient(
       180deg,
-      ${alpha(theme.palette.primary.dark, 0.08)} 0%,
-      ${alpha(theme.palette.primary.dark, 0.58)} 100%
+      ${alpha(
+        theme.palette.primary.dark,
+        0.08,
+      )} 0%,
+      ${alpha(
+        theme.palette.primary.dark,
+        0.58,
+      )} 100%
     )`,
 };
 
@@ -90,7 +107,10 @@ const breadcrumb: SxProps<Theme> = {
 
   "& a": {
     color: (theme) =>
-      alpha(theme.palette.primary.contrastText, 0.76),
+      alpha(
+        theme.palette.primary.contrastText,
+        0.76,
+      ),
 
     "&:hover": {
       color: "secondary.main",
@@ -103,7 +123,10 @@ const breadcrumb: SxProps<Theme> = {
 
   "& > div:last-of-type span": {
     color: (theme) =>
-      alpha(theme.palette.primary.contrastText, 0.96),
+      alpha(
+        theme.palette.primary.contrastText,
+        0.96,
+      ),
   },
 };
 
@@ -149,7 +172,10 @@ const description: SxProps<Theme> = {
   },
 
   color: (theme) =>
-    alpha(theme.palette.primary.contrastText, 0.82),
+    alpha(
+      theme.palette.primary.contrastText,
+      0.82,
+    ),
 
   fontSize: {
     xs: 15,

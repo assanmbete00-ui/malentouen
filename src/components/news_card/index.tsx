@@ -2,6 +2,7 @@ import { Box, Typography } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 
 import Card from "@components/card";
+import MediaWithSkeleton from "@components/media_with_skeleton";
 
 import styles from "./styles";
 import type { NewsCardProps } from "./types";
@@ -18,8 +19,7 @@ export default function NewsCard({
   const content = (
     <Card variant={href ? "interactive" : "default"} sx={sx}>
       <Box sx={styles.imageWrapper}>
-        <Box
-          component="img"
+        <MediaWithSkeleton
           src={image}
           alt={typeof title === "string" ? title : "Actualité de Malentouen"}
           sx={styles.image}
@@ -41,9 +41,7 @@ export default function NewsCard({
           {title}
         </Typography>
 
-        <Typography sx={styles.description}>
-          {description}
-        </Typography>
+        <Typography sx={styles.description}>{description}</Typography>
       </Box>
     </Card>
   );

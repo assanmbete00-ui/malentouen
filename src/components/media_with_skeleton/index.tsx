@@ -27,10 +27,6 @@ export default function MediaWithSkeleton({
   alt,
   type = "image",
   poster,
-  width = "100%",
-  height,
-  aspectRatio = "16 / 9",
-  borderRadius = 4,
   objectFit = "cover",
   objectPosition = "center",
   controls = true,
@@ -66,39 +62,30 @@ export default function MediaWithSkeleton({
     onError?.();
   };
 
-  const containerStyles = styles.container(
-    width,
-    height,
-    aspectRatio,
-    borderRadius,
-  );
+  const rootSx = [
+    styles.root,
+    ...(Array.isArray(sx)
+      ? sx
+      : sx
+        ? [sx]
+        : []),
+  ];
 
-  const mediaStyles = styles.media(
+  const mediaSx = styles.media(
     objectFit,
     objectPosition,
-    borderRadius,
     isLoading,
     Boolean(onClick),
   );
 
   if (hasError) {
     return (
-      <Box
-        sx={[
-          containerStyles,
-          ...(Array.isArray(sx)
-            ? sx
-            : sx
-              ? [sx]
-              : []),
-        ]}
-      >
+      <Box sx={rootSx}>
         <Box
           role="img"
           aria-label={alt}
           onClick={onClick}
           sx={styles.errorBox(
-            borderRadius,
             Boolean(onClick),
           )}
         >
@@ -121,16 +108,7 @@ export default function MediaWithSkeleton({
   }
 
   return (
-    <Box
-      sx={[
-        containerStyles,
-        ...(Array.isArray(sx)
-          ? sx
-          : sx
-            ? [sx]
-            : []),
-      ]}
-    >
+    <Box sx={rootSx}>
       {isLoading && (
         <Box sx={styles.loadingBox}>
           <Skeleton
@@ -166,7 +144,7 @@ export default function MediaWithSkeleton({
           onLoadedData={handleLoad}
           onError={handleError}
           onClick={onClick}
-          sx={mediaStyles}
+          sx={mediaSx}
         />
       ) : (
         <Box
@@ -176,7 +154,7 @@ export default function MediaWithSkeleton({
           onLoad={handleLoad}
           onError={handleError}
           onClick={onClick}
-          sx={mediaStyles}
+          sx={mediaSx}
         />
       )}
     </Box>

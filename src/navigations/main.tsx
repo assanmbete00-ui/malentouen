@@ -44,7 +44,7 @@ const mainNavigation: RouteObject[] = [
   {
     path: "/cultures",
     element: (
-      <MainLayout bgColor="secondary" ContextProvider={MainPageContextProvider}>
+      <MainLayout bgColor="secondary" ContextProvider={MainPageContextProvider}disableContainer>
         <Cultures />
       </MainLayout>
     ),

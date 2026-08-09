@@ -2,6 +2,7 @@ import { Box, Typography } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 
 import Card from "@components/card";
+import MediaWithSkeleton from "@components/media_with_skeleton";
 
 import styles from "./styles";
 import type { ProjectsCardProps } from "./types";
@@ -16,14 +17,10 @@ export default function ProjectsCard({
   const content = (
     <Card
       variant={href ? "interactive" : "default"}
-      sx={[
-        styles.card,
-        ...(Array.isArray(sx) ? sx : sx ? [sx] : []),
-      ]}
+      sx={[styles.card, ...(Array.isArray(sx) ? sx : sx ? [sx] : [])]}
     >
       <Box sx={styles.media}>
-        <Box
-          component="img"
+        <MediaWithSkeleton
           src={image}
           alt={
             typeof title === "string"
@@ -39,9 +36,7 @@ export default function ProjectsCard({
           {title}
         </Typography>
 
-        <Typography sx={styles.description}>
-          {description}
-        </Typography>
+        <Typography sx={styles.description}>{description}</Typography>
       </Box>
     </Card>
   );

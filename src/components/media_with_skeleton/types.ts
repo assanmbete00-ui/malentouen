@@ -18,11 +18,6 @@ export type MediaWithSkeletonProps = {
   type?: MediaType;
   poster?: string;
 
-  width?: number | string;
-  height?: number | string;
-  aspectRatio?: CSSProperties["aspectRatio"];
-
-  borderRadius?: number | string;
   objectFit?: CSSProperties["objectFit"];
   objectPosition?: CSSProperties["objectPosition"];
 

@@ -3,6 +3,7 @@ import type { SxProps, Theme } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 
 import Card from "@components/card";
+import MediaWithSkeleton from "@components/media_with_skeleton";
 
 import styles from "./styles";
 import type { CultureCardProps } from "./types";
@@ -28,8 +29,7 @@ export default function CultureCard({
   const content = (
     <Card variant={href ? "interactive" : "default"} sx={contentSx}>
       <Box sx={styles.imageWrapper}>
-        <Box
-          component="img"
+        <MediaWithSkeleton
           src={image}
           alt={typeof title === "string" ? title : "Culture de Malentouen"}
           sx={styles.image}
