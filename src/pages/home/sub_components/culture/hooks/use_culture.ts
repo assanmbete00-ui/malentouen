@@ -27,6 +27,7 @@ export default function useCulture() {
   const items = CULTURE_ITEMS.map((item) => ({
     id: item.id,
     image: CULTURE_ASSETS.items[item.imageKey],
+    imageAlt: translate(item.imageAltKey),
     category: translate(item.categoryKey),
     title: translate(item.titleKey),
     description: translate(item.descriptionKey),

@@ -8,7 +8,6 @@
   "HOME_HERO_STAT_VILLAGES": "Villages",
   "HOME_HERO_STAT_EVENTS": "Événements culturels",
 
-
   "HOME_CHIEF_MESSAGE_EYEBROW": "Message officiel",
   "HOME_CHIEF_MESSAGE_TITLE": "Le Mot du Chef Traditionnel",
   "HOME_CHIEF_MESSAGE_QUOTE": "Préserver notre patrimoine, c'est préparer l'avenir de nos enfants.",
@@ -17,7 +16,6 @@
   "HOME_CHIEF_MESSAGE_SIGNATURE_NAME": "Chef Traditionnel de Malentouen",
   "HOME_CHIEF_MESSAGE_SIGNATURE_TITLE": "Sa Majesté Momafon Mohamed Madini",
   "HOME_CHIEF_MESSAGE_ACTION": "Découvrir la Chefferie",
-
 
   "HOME_HISTORY_EYEBROW": "Notre héritage",
   "HOME_HISTORY_TITLE": "Notre Histoire",
@@ -31,7 +29,6 @@
   "HOME_HISTORY_TIMELINE_TODAY_PERIOD": "Aujourd'hui",
   "HOME_HISTORY_TIMELINE_TODAY_TITLE": "Une institution tournée vers l'avenir",
 
-
   "HOME_CULTURE_EYEBROW": "Notre Culture",
   "HOME_CULTURE_TITLE": "Une culture vivante et transmise de génération en génération",
   "HOME_CULTURE_DESCRIPTION": "La Chefferie Traditionnelle de Malentouen préserve et valorise un patrimoine culturel riche, composé de traditions, de savoir-faire, de danses et de cérémonies qui continuent de rassembler les générations.",
@@ -41,13 +38,15 @@
   "HOME_CULTURE_TRADITIONS_CATEGORY": "Traditions",
   "HOME_CULTURE_TRADITIONS_TITLE": "Traditions et cérémonies",
   "HOME_CULTURE_TRADITIONS_DESCRIPTION": "Les rites, cérémonies et coutumes qui rythment la vie de la Chefferie.",
+  "HOME_CULTURE_TRADITIONS_IMAGE_ALT": "Cérémonie traditionnelle à Malentouen",
   "HOME_CULTURE_CRAFT_CATEGORY": "Artisanat",
   "HOME_CULTURE_CRAFT_TITLE": "Arts et artisanat",
   "HOME_CULTURE_CRAFT_DESCRIPTION": "Des savoir-faire transmis de génération en génération à travers les objets, sculptures et créations traditionnelles.",
+  "HOME_CULTURE_CRAFT_IMAGE_ALT": "Travail artisanal de la Chefferie",
   "HOME_CULTURE_DANCE_CATEGORY": "Danses",
   "HOME_CULTURE_DANCE_TITLE": "Danses et musiques",
   "HOME_CULTURE_DANCE_DESCRIPTION": "Des expressions artistiques qui racontent l'histoire, célèbrent les événements et renforcent les liens communautaires.",
-
+  "HOME_CULTURE_DANCE_IMAGE_ALT": "Spectacle de danse traditionnelle à Malentouen",
 
   "HOME_NEWS_EYEBROW": "Actualités",
   "HOME_NEWS_TITLE": "Les dernières actualités de la Chefferie",
@@ -70,7 +69,6 @@
   "HOME_NEWS_GOVERNANCE_TITLE": "Renforcement de la gouvernance traditionnelle",
   "HOME_NEWS_GOVERNANCE_DESCRIPTION": "Une concertation entre les autorités coutumières a permis de définir de nouvelles orientations pour préserver les valeurs et renforcer la cohésion sociale.",
 
-
   "HOME_EVENTS_EYEBROW": "Événements",
   "HOME_EVENTS_TITLE": "Participez à la vie de la Chefferie",
   "HOME_EVENTS_DESCRIPTION": "Découvrez les cérémonies, les rencontres officielles, les manifestations culturelles et les rendez-vous qui rythment la vie de la Chefferie Traditionnelle de Malentouen.",
@@ -91,7 +89,6 @@
   "HOME_EVENTS_CULTURE_LOCATION": "Esplanade de la Chefferie",
   "HOME_EVENTS_CULTURE_TIME": "08h30",
 
-
   "HOME_GALLERY_EYEBROW": "Galerie",
   "HOME_GALLERY_TITLE": "Découvrez Malentouen en images",
   "HOME_GALLERY_DESCRIPTION": "Explorez les moments forts, le patrimoine, les cérémonies, les paysages et les traditions qui font la richesse de la Chefferie Traditionnelle de Malentouen.",
@@ -103,7 +100,6 @@
   "HOME_GALLERY_TRADITION_TITLE": "Traditions Ancestrales",
   "HOME_GALLERY_LANDSCAPE_TITLE": "Paysages de Malentouen",
 
-
   "HOME_PROJECTS_EYEBROW": "Projets",
   "HOME_PROJECTS_TITLE": "Construire l'avenir de Malentouen",
   "HOME_PROJECTS_DESCRIPTION": "À travers des initiatives durables, la Chefferie œuvre pour le développement du territoire, la préservation du patrimoine et l'amélioration du bien-être de sa communauté.",
@@ -114,7 +110,6 @@
   "HOME_PROJECTS_HERITAGE_DESCRIPTION": "Préserver, valoriser et transmettre le patrimoine culturel et historique de la Chefferie.",
   "HOME_PROJECTS_DEVELOPMENT_TITLE": "Développement Local",
   "HOME_PROJECTS_DEVELOPMENT_DESCRIPTION": "Mettre en œuvre des initiatives favorisant le développement économique, social et environnemental.",
-
 
   "HOME_PARTNERS_EYEBROW": "Partenaires",
   "HOME_PARTNERS_TITLE": "Ils accompagnent notre mission",
@@ -129,7 +124,6 @@
   "HOME_PARTNERS_DEVELOPMENT_ACTORS_NAME": "Partenaire de Développement",
   "HOME_PARTNERS_DEVELOPMENT_ACTORS_TYPE": "Organisation de développement",
 
-
   "HOME_CONTACT_EYEBROW": "Contact",
   "HOME_CONTACT_TITLE": "Restons en contact",
   "HOME_CONTACT_DESCRIPTION": "La Chefferie Traditionnelle de Malentouen est à votre écoute. N'hésitez pas à nous contacter pour toute demande d'information, de collaboration ou de partenariat.",
@@ -142,14 +136,12 @@
   "HOME_CONTACT_EMAIL_VALUE": "contact@malentouen.org",
   "HOME_CONTACT_HOURS_LABEL": "Horaires",
   "HOME_CONTACT_HOURS_VALUE": "Lundi - Vendredi • 08h00 - 17h00",
-  
 
   "NAVIGATION_HOME": "Accueil",
   "NAVIGATION_ABOUT": "À propos",
   "ABOUT_BANNER_EYEBROW": "À propos de l’institution",
   "ABOUT_BANNER_TITLE": "La Chefferie Traditionnelle de Malentouen",
   "ABOUT_BANNER_DESCRIPTION": "Découvrez une institution enracinée dans l’histoire, gardienne des traditions et engagée au service de l’unité, du patrimoine et du développement de sa communauté.",
-
 
   "ABOUT_IDENTITY_EYEBROW": "Notre identité",
   "ABOUT_IDENTITY_TITLE": "Une institution traditionnelle au cœur de Malentouen",
@@ -161,7 +153,6 @@
   "ABOUT_IDENTITY_HIGHLIGHTS_TERRITORY_DESCRIPTION": "Une chefferie située dans l’arrondissement de Malentouen, département du Noun, région de l’Ouest Cameroun.",
   "ABOUT_IDENTITY_HIGHLIGHTS_HERITAGE_TITLE": "Héritage",
   "ABOUT_IDENTITY_HIGHLIGHTS_HERITAGE_DESCRIPTION": "Un patrimoine vivant transmis de génération en génération à travers les rites, les savoir-faire et les traditions.",
-
 
   "ABOUT_HISTORY_EYEBROW": "Notre héritage",
   "ABOUT_HISTORY_TITLE": "Une histoire qui traverse les générations",
@@ -180,7 +171,6 @@
   "ABOUT_HISTORY_TODAY_TITLE": "Une mémoire tournée vers l'avenir",
   "ABOUT_HISTORY_TODAY_DESCRIPTION": "Aujourd'hui, la Chefferie Traditionnelle de Malentouen poursuit son engagement en faveur de la préservation du patrimoine, du renforcement de la cohésion sociale et de la valorisation de la culture bamoun. Plus qu'un héritage du passé, elle demeure une institution dynamique qui prépare avec responsabilité les générations futures.",
 
-
   "ABOUT_MISSION_VISION_IMAGE_ALT": "Illustration institutionnelle de la mission et de la vision de la Chefferie Traditionnelle de Malentouen",
   "ABOUT_MISSION_VISION_EYEBROW": "Mission et vision",
   "ABOUT_MISSION_VISION_TITLE": "Une mission enracinée dans l’héritage, une vision tournée vers l’avenir",
@@ -191,7 +181,6 @@
   "ABOUT_VISION_TITLE": "Construire l’avenir sans renoncer à nos racines",
   "ABOUT_VISION_DESCRIPTION": "La Chefferie porte la vision d’une institution traditionnelle forte, moderne et ouverte, capable de conjuguer la richesse de son patrimoine avec les possibilités offertes par le monde contemporain. Elle aspire à devenir une référence dans la valorisation de la culture, la transmission de la mémoire collective et la promotion d’un développement durable, inclusif et respectueux de l’identité locale.",
   "ABOUT_VISION_DESCRIPTION_SECONDARY": "En rapprochant les générations, en encourageant l’éducation, l’engagement communautaire et une innovation compatible avec les valeurs ancestrales, la Chefferie souhaite transmettre un patrimoine vivant, accessible et porteur d’espérance. Elle entend ainsi préparer une communauté confiante dans son identité, capable de dialoguer avec le monde et de construire son avenir avec responsabilité.",
-
 
   "ABOUT_VALUES_EYEBROW": "Nos valeurs",
   "ABOUT_VALUES_TITLE": "Les principes qui guident chacune de nos actions",
@@ -205,7 +194,6 @@
   "ABOUT_VALUES_ITEMS_DEVELOPMENT_TITLE": "Développement",
   "ABOUT_VALUES_ITEMS_DEVELOPMENT_DESCRIPTION": "Le développement repose sur une ambition collective : améliorer durablement les conditions de vie, soutenir les initiatives locales et préparer un avenir respectueux de l’identité et du patrimoine de Malentouen.",
 
-
   "ABOUT_GOVERNANCE_EYEBROW": "Notre gouvernance",
   "ABOUT_GOVERNANCE_TITLE": "Une organisation au service de la communauté",
   "ABOUT_GOVERNANCE_DESCRIPTION": "La Chefferie Traditionnelle de Malentouen repose sur une organisation fondée sur les principes coutumiers, la concertation et le sens des responsabilités. Chaque organe joue un rôle complémentaire afin de garantir la préservation des traditions, la cohésion sociale et le développement harmonieux de la communauté.",
@@ -218,15 +206,13 @@
   "ABOUT_GOVERNANCE_ITEMS_ADMINISTRATION_TITLE": "L'Administration",
   "ABOUT_GOVERNANCE_ITEMS_ADMINISTRATION_DESCRIPTION": "L'administration assure la coordination des activités, le suivi des projets, la gestion des services et la mise en œuvre des initiatives destinées à accompagner le développement de la communauté.",
 
-
   "ABOUT_CHIEF_IMAGE_ALT": "Portrait officiel du Chef Traditionnel de Malentouen",
   "ABOUT_CHIEF_EYEBROW": "Autorité traditionnelle",
   "ABOUT_CHIEF_TITLE": "Une autorité au service de l’unité, de la tradition et de l’avenir",
   "ABOUT_CHIEF_DESCRIPTION": "À la tête de la Chefferie Traditionnelle de Malentouen, le Chef incarne la continuité de l’autorité coutumière, la mémoire de l’institution et la responsabilité morale envers l’ensemble de la communauté. Gardien des traditions et garant de l’unité, il veille à préserver les repères qui fondent l’identité collective tout en accompagnant les transformations de son époque.",
   "ABOUT_CHIEF_DESCRIPTION_SECONDARY": "Son action repose sur l’écoute, la concertation et le sens du devoir. À travers son rôle de médiation, d’orientation et de représentation, il œuvre au renforcement de la cohésion sociale, à la transmission des valeurs ancestrales et à la promotion d’un développement harmonieux, respectueux du patrimoine et ouvert sur l’avenir.",
   "ABOUT_CHIEF_SIGNATURE_NAME": "Sa Majesté Momafon Mohamed Madini",
-  "ABOUT_CHIEF_SIGNATURE_TITLE": "Chef Traditionnel de Malentouen", 
-
+  "ABOUT_CHIEF_SIGNATURE_TITLE": "Chef Traditionnel de Malentouen",
 
   "ABOUT_COMMITMENTS_EYEBROW": "Nos engagements",
   "ABOUT_COMMITMENTS_TITLE": "Des engagements au service des générations présentes et futures",
@@ -240,7 +226,6 @@
   "ABOUT_COMMITMENTS_ITEMS_COHESION_TITLE": "Renforcer la cohésion sociale",
   "ABOUT_COMMITMENTS_ITEMS_COHESION_DESCRIPTION": "Favoriser le dialogue, la solidarité, le respect mutuel et la participation de tous afin de préserver un climat durable de paix, d'unité et de fraternité au sein de la communauté.",
 
-
   "ABOUT_HERITAGE_LANDMARKS_EYEBROW": "Patrimoine et repères",
   "ABOUT_HERITAGE_LANDMARKS_TITLE": "Les symboles vivants de l’identité de Malentouen",
   "ABOUT_HERITAGE_LANDMARKS_DESCRIPTION": "Le patrimoine de Malentouen se révèle à travers ses lieux, ses traditions et son territoire. Ces repères racontent l’histoire de la Chefferie, expriment la mémoire collective et témoignent de la richesse culturelle transmise de génération en génération.",
@@ -253,7 +238,6 @@
   "ABOUT_HERITAGE_LANDMARKS_TERRITORY_IMAGE_ALT": "Paysage du territoire de Malentouen dans le département du Noun",
   "ABOUT_HERITAGE_LANDMARKS_TERRITORY_TITLE": "Un territoire d’histoire et d’avenir",
   "ABOUT_HERITAGE_LANDMARKS_TERRITORY_DESCRIPTION": "Situé dans l’arrondissement de Malentouen, au cœur du département du Noun, ce territoire constitue le cadre d’expression de la vie communautaire, de l’héritage ancestral et des ambitions de développement de la Chefferie.",
-
 
   "ABOUT_EXPLORE_PLATFORM_EYEBROW": "Explorer la plateforme",
   "ABOUT_EXPLORE_PLATFORM_TITLE": "Découvrez toutes les richesses de la Chefferie de Malentouen",
@@ -270,20 +254,17 @@
   "ABOUT_EXPLORE_PLATFORM_CONTACT_TITLE": "Contact",
   "ABOUT_EXPLORE_PLATFORM_CONTACT_DESCRIPTION": "Prenez contact avec la Chefferie Traditionnelle de Malentouen pour toute demande d'information, de partenariat ou d'accompagnement.",
 
-
   "CULTURES_BANNER_IMAGE_ALT": "Patrimoine culturel de la Chefferie Traditionnelle de Malentouen",
   "CULTURES_BANNER_EYEBROW": "Patrimoine culturel",
   "CULTURES_BANNER_TITLE": "Découvrez l'âme culturelle de la Chefferie Traditionnelle de Malentouen",
   "CULTURES_BANNER_DESCRIPTION": "Plongez au cœur d'un patrimoine vivant où traditions, rites, arts, savoir-faire et mémoire collective façonnent l'identité de la Chefferie Traditionnelle de Malentouen. Cette richesse culturelle, transmise de génération en génération, témoigne d'une histoire, d'une vision et d'un héritage qui continuent d'inspirer la communauté aujourd'hui.",
   "NAVIGATION_CULTURES": "Culture",
 
-
   "CULTURES_INTRODUCTION_IMAGE_ALT": "Patrimoine culturel du peuple Bamoun à Malentouen",
   "CULTURES_INTRODUCTION_EYEBROW": "Une identité vivante",
   "CULTURES_INTRODUCTION_TITLE": "Une culture qui raconte l'histoire d'un peuple",
   "CULTURES_INTRODUCTION_DESCRIPTION": "À Malentouen, la culture constitue bien plus qu'un héritage du passé : elle est l'expression vivante de l'identité du peuple Bamoun. Depuis des générations, elle façonne les modes de vie, guide les relations sociales, inspire les savoir-faire, accompagne les grandes cérémonies et perpétue les valeurs qui fondent la communauté. Chaque tradition, chaque geste, chaque symbole et chaque récit participe à la transmission d'une mémoire collective profondément enracinée dans l'histoire du Royaume Bamoun.",
   "CULTURES_INTRODUCTION_DESCRIPTION_SECONDARY": "La Chefferie Traditionnelle de Malentouen veille à préserver ce patrimoine exceptionnel tout en l'inscrivant dans une dynamique de transmission et de valorisation. Entre respect des coutumes ancestrales et ouverture sur le monde contemporain, elle œuvre pour que cette richesse culturelle demeure une source de fierté, d'unité et d'inspiration pour les générations présentes et futures.",
-
 
   "CULTURES_TRADITIONS_EYEBROW": "Traditions & rites",
   "CULTURES_TRADITIONS_TITLE": "Des traditions qui perpétuent l'identité du peuple Bamoun",
@@ -300,7 +281,6 @@
   "CULTURES_SYMBOLS_CATEGORY": "Patrimoine",
   "CULTURES_SYMBOLS_TITLE": "Les symboles et les emblèmes",
   "CULTURES_SYMBOLS_DESCRIPTION": "Les insignes, objets royaux, motifs décoratifs et symboles traditionnels incarnent l'histoire, l'autorité et les valeurs du peuple Bamoun. Ils constituent un patrimoine matériel et spirituel d'une grande richesse.",
-
 
   "CULTURES_EXPRESSIONS_EYEBROW": "Expressions culturelles",
   "CULTURES_EXPRESSIONS_TITLE": "Les expressions qui donnent vie à notre patrimoine",
@@ -322,7 +302,6 @@
   "CULTURES_EXPRESSIONS_LANGUAGE_TITLE": "La langue et le patrimoine oral",
   "CULTURES_EXPRESSIONS_LANGUAGE_DESCRIPTION": "La langue, les proverbes, les récits et la tradition orale constituent un patrimoine immatériel précieux. Ils permettent de transmettre les connaissances, les valeurs et la mémoire collective d'une génération à l'autre.",
 
-
   "CULTURES_CRAFTSMANSHIP_EYEBROW": "Savoir-faire & artisanat",
   "CULTURES_CRAFTSMANSHIP_TITLE": "Des savoir-faire façonnés par la mémoire et la transmission",
   "CULTURES_CRAFTSMANSHIP_DESCRIPTION": "À Malentouen, les savoir-faire artisanaux constituent une expression essentielle du patrimoine culturel. Ils traduisent une maîtrise patiemment transmise, une relation étroite avec les matières et les symboles, ainsi qu'un profond attachement à l'identité Bamoun. Chaque création porte la marque d'une histoire, d'un geste et d'une mémoire collective.",
@@ -343,7 +322,6 @@
   "CULTURES_CRAFTSMANSHIP_CRAFTS_TITLE": "L'artisanat comme mémoire vivante",
   "CULTURES_CRAFTSMANSHIP_CRAFTS_DESCRIPTION": "Au-delà de leur fonction, les objets artisanaux racontent une histoire. Ils transmettent des gestes, des techniques et des références culturelles qui permettent aux générations actuelles de rester liées à l'héritage de leurs prédécesseurs.",
 
-
   "CULTURES_INTANGIBLE_HERITAGE_EYEBROW": "Patrimoine immatériel",
   "CULTURES_INTANGIBLE_HERITAGE_TITLE": "La mémoire vivante d'une civilisation",
   "CULTURES_INTANGIBLE_HERITAGE_DESCRIPTION": "Le patrimoine culturel ne se limite pas aux objets ou aux monuments. Il vit également dans la langue, les récits, les savoirs, les coutumes et les valeurs qui façonnent l'identité collective. À Malentouen, ce patrimoine immatériel constitue un lien essentiel entre les générations et contribue à préserver l'âme de la communauté.",
@@ -361,6 +339,18 @@
   "CULTURES_GALLERY_EYEBROW": "Patrimoine en images",
   "CULTURES_GALLERY_TITLE": "Un regard sur la richesse culturelle de Malentouen",
   "CULTURES_GALLERY_DESCRIPTION": "Chaque image témoigne d'un patrimoine vivant, d'une tradition préservée et d'une identité transmise au fil des générations. Cette sélection offre un aperçu de la diversité culturelle qui fait la singularité de la Chefferie Traditionnelle de Malentouen.",
+  "CULTURES_GALLERY_IMAGE_01_ALT": "Scène culturelle traditionnelle de Malentouen",
+  "CULTURES_GALLERY_IMAGE_01_TITLE": "Mémoire et traditions de la communauté",
+  "CULTURES_GALLERY_IMAGE_02_ALT": "Expression artistique et culturelle du peuple Bamoun",
+  "CULTURES_GALLERY_IMAGE_02_TITLE": "Expressions d'un patrimoine vivant",
+  "CULTURES_GALLERY_IMAGE_03_ALT": "Tenues et parures traditionnelles liées au patrimoine Bamoun",
+  "CULTURES_GALLERY_IMAGE_03_TITLE": "Élégance et identité culturelle",
+  "CULTURES_GALLERY_IMAGE_04_ALT": "Savoir-faire artisanal issu de la culture Bamoun",
+  "CULTURES_GALLERY_IMAGE_04_TITLE": "Les gestes qui perpétuent le savoir-faire",
+  "CULTURES_GALLERY_IMAGE_05_ALT": "Cérémonie et rassemblement communautaire à Malentouen",
+  "CULTURES_GALLERY_IMAGE_05_TITLE": "La communauté réunie autour de ses traditions",
+  "CULTURES_GALLERY_IMAGE_06_ALT": "Patrimoine culturel transmis aux nouvelles générations à Malentouen",
+  "CULTURES_GALLERY_IMAGE_06_TITLE": "Un héritage tourné vers les générations futures",
 
 
   "CULTURES_TRANSMISSION_IMAGE_ALT": "Transmission du patrimoine culturel de Malentouen",
@@ -370,7 +360,7 @@
   "CULTURES_TRANSMISSION_DESCRIPTION_SECONDARY": "À travers ses actions de sauvegarde, de valorisation et de transmission, la Chefferie poursuit une mission essentielle : faire vivre un patrimoine qui demeure une source d'inspiration, de cohésion et de développement pour l'ensemble de la communauté.",
   "CULTURES_TRANSMISSION_ACTION": "Découvrir la Chefferie",
 
-
+  
   "CULTURES_EXPLORE_MORE_EYEBROW": "Poursuivre la découverte",
   "CULTURES_EXPLORE_MORE_TITLE": "La culture de Malentouen s'inscrit dans une histoire qui continue de s'écrire",
   "CULTURES_EXPLORE_MORE_DESCRIPTION": "Prolongez votre découverte de la Chefferie Traditionnelle de Malentouen à travers son histoire, ses événements, ses projets et son actualité. Chaque espace de la plateforme permet de mieux comprendre une institution vivante, profondément attachée à son héritage et engagée dans l'avenir de sa communauté.",
@@ -383,5 +373,4 @@
   "CULTURES_EXPLORE_MORE_PROJECTS_DESCRIPTION": "Explorez les initiatives portées pour préserver le patrimoine, accompagner le développement local et préparer l'avenir.",
   "CULTURES_EXPLORE_MORE_NEWS_TITLE": "Suivre notre actualité",
   "CULTURES_EXPLORE_MORE_NEWS_DESCRIPTION": "Restez informé des annonces, activités et informations qui témoignent de la vie quotidienne de la Chefferie."
-
-} 
+}
