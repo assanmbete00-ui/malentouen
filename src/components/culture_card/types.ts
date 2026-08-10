@@ -3,9 +3,11 @@ import type { SxProps, Theme } from "@mui/material";
 
 export type CultureCardProps = {
   image: string;
+  imageAlt: string;
   category: ReactNode;
   title: ReactNode;
   description: ReactNode;
   href?: string;
+
   sx?: SxProps<Theme>;
 };

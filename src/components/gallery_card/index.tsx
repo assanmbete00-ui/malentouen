@@ -9,6 +9,7 @@ import type { GalleryCardProps } from "./types";
 
 export default function GalleryCard({
   image,
+  imageAlt,
   title,
   href,
   sx,
@@ -21,11 +22,7 @@ export default function GalleryCard({
       <Box sx={styles.media}>
         <MediaWithSkeleton
           src={image}
-          alt={
-            typeof title === "string"
-              ? title
-              : "Galerie de la Chefferie de Malentouen"
-          }
+          alt={imageAlt}
           sx={styles.image}
         />
       </Box>

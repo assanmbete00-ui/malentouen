@@ -2,6 +2,7 @@ export const CULTURE_ITEMS = [
   {
     id: "traditions",
     imageKey: "traditions",
+    imageAltKey: "HOME_CULTURE_TRADITIONS_IMAGE_ALT",
     categoryKey: "HOME_CULTURE_TRADITIONS_CATEGORY",
     titleKey: "HOME_CULTURE_TRADITIONS_TITLE",
     descriptionKey: "HOME_CULTURE_TRADITIONS_DESCRIPTION",
@@ -10,6 +11,7 @@ export const CULTURE_ITEMS = [
   {
     id: "craft",
     imageKey: "craft",
+    imageAltKey: "HOME_CULTURE_CRAFT_IMAGE_ALT",
     categoryKey: "HOME_CULTURE_CRAFT_CATEGORY",
     titleKey: "HOME_CULTURE_CRAFT_TITLE",
     descriptionKey: "HOME_CULTURE_CRAFT_DESCRIPTION",
@@ -18,10 +20,10 @@ export const CULTURE_ITEMS = [
   {
     id: "dance",
     imageKey: "dance",
+    imageAltKey: "HOME_CULTURE_DANCE_IMAGE_ALT",
     categoryKey: "HOME_CULTURE_DANCE_CATEGORY",
     titleKey: "HOME_CULTURE_DANCE_TITLE",
     descriptionKey: "HOME_CULTURE_DANCE_DESCRIPTION",
     href: "/cultures",
   },
-  
 ] as const;

@@ -20,6 +20,7 @@ export type CultureAction = {
 export type CultureItem = {
   id: string;
   image: string;
+  imageAlt: string;
   category: ReactNode;
   title: ReactNode;
   description: ReactNode;

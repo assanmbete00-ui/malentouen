@@ -12,6 +12,7 @@ export default function CultureGrid({ items }: CultureGridProps) {
         <Box key={item.id} sx={styles.card}>
           <CultureCard
             image={item.image}
+            imageAlt={item.imageAlt}
             category={item.category}
             title={item.title}
             description={item.description}

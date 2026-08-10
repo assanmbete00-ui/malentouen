@@ -10,6 +10,7 @@ import type { CultureCardProps } from "./types";
 
 export default function CultureCard({
   image,
+  imageAlt,
   category,
   title,
   description,
@@ -31,7 +32,7 @@ export default function CultureCard({
       <Box sx={styles.imageWrapper}>
         <MediaWithSkeleton
           src={image}
-          alt={typeof title === "string" ? title : "Culture de Malentouen"}
+          alt={imageAlt}
           sx={styles.image}
         />
       </Box>
