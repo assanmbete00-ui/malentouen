@@ -14,6 +14,7 @@ export type NewsAction = {
 export type NewsItem = {
   id: string;
   image: string;
+  imageAlt: string;
   category: ReactNode;
   date: ReactNode;
   title: ReactNode;

@@ -6,6 +6,9 @@ import CulturalExpressions from "./sub_components/cultural_expressions";
 import Craftsmanship from "./sub_components/craftsmanship";
 import IntangibleHeritage from "./sub_components/intangible_heritage";
 import CulturalGallery from "./sub_components/cultural_gallery";
+import Transmission from "./sub_components/transmission";
+import ExploreMore from "./sub_components/explore_more";
+
 
 export default function Cultures() {
   const {
@@ -16,6 +19,8 @@ export default function Cultures() {
     craftsmanship,
     intangibleHeritage,
     gallery,
+    transmission,
+    exploreMore,
   } = useCultures();
 
   return (
@@ -27,6 +32,8 @@ export default function Cultures() {
       <Craftsmanship {...craftsmanship} />
       <IntangibleHeritage {...intangibleHeritage} />
       <CulturalGallery {...gallery} />
+      <Transmission {...transmission} />
+      <ExploreMore {...exploreMore} />
     </>
   );
 }

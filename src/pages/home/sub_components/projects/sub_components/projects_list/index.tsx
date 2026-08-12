@@ -1,5 +1,4 @@
 import { Box } from "@mui/material";
-
 import ProjectsCard from "@components/projects_card";
 
 import styles from "./styles";
@@ -18,6 +17,7 @@ export default function ProjectsList({
         <ProjectsCard
           key={item.id}
           image={item.image}
+          imageAlt={item.imageAlt}
           title={item.title}
           description={item.description}
           href={item.href}

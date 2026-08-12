@@ -3,6 +3,7 @@ import type { SxProps, Theme } from "@mui/material";
 
 export type NewsCardProps = {
   image: string;
+  imageAlt: string;
   category: ReactNode;
   date: ReactNode;
   title: ReactNode;

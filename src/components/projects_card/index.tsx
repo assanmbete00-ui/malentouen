@@ -9,6 +9,7 @@ import type { ProjectsCardProps } from "./types";
 
 export default function ProjectsCard({
   image,
+  imageAlt,
   title,
   description,
   href,
@@ -22,11 +23,7 @@ export default function ProjectsCard({
       <Box sx={styles.media}>
         <MediaWithSkeleton
           src={image}
-          alt={
-            typeof title === "string"
-              ? title
-              : "Projet de la Chefferie de Malentouen"
-          }
+          alt={imageAlt}
           sx={styles.image}
         />
       </Box>

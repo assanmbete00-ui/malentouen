@@ -1,4 +1,7 @@
-import type { SxProps, Theme } from "@mui/material";
+import type {
+  SxProps,
+  Theme,
+} from "@mui/material";
 
 const grid: SxProps<Theme> = {
   display: "grid",
@@ -6,11 +9,7 @@ const grid: SxProps<Theme> = {
   gridTemplateColumns: {
     xs: "1fr",
     sm: "repeat(2, minmax(0, 1fr))",
-    lg: "repeat(12, minmax(0, 1fr))",
-  },
-
-  gridAutoFlow: {
-    lg: "dense",
+    lg: "repeat(6, minmax(0, 1fr))",
   },
 
   gap: {
@@ -22,39 +21,27 @@ const grid: SxProps<Theme> = {
 const item: SxProps<Theme> = {
   minWidth: 0,
 
-  "&:nth-of-type(1)": {
-    gridColumn: {
-      lg: "span 6",
-    },
+  gridColumn: {
+    xs: "1 / -1",
+    sm: "auto",
   },
 
-  "&:nth-of-type(2)": {
+  "&:nth-of-type(1), &:nth-of-type(2)": {
     gridColumn: {
       lg: "span 3",
     },
   },
 
-  "&:nth-of-type(3)": {
+  "&:nth-of-type(3), &:nth-of-type(4), &:nth-of-type(5)": {
     gridColumn: {
-      lg: "span 3",
-    },
-  },
-
-  "&:nth-of-type(4)": {
-    gridColumn: {
-      lg: "span 4",
-    },
-  },
-
-  "&:nth-of-type(5)": {
-    gridColumn: {
-      lg: "span 5",
+      lg: "span 2",
     },
   },
 
   "&:nth-of-type(6)": {
     gridColumn: {
-      lg: "span 3",
+      sm: "1 / -1",
+      lg: "1 / -1",
     },
   },
 };
@@ -64,7 +51,7 @@ const card: SxProps<Theme> = {
 
   aspectRatio: {
     xs: "4 / 3",
-    sm: "4 / 5",
+    sm: "4 / 3",
   },
 
   "& .MuiCard-root": {

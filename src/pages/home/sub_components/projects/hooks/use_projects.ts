@@ -21,6 +21,7 @@ export default function useProjects() {
   const items = PROJECTS_ITEMS.map((item) => ({
     id: item.id,
     image: PROJECTS_ASSETS[item.imageKey],
+    imageAlt: translate(item.imageAltKey),
     title: translate(item.titleKey),
     description: translate(item.descriptionKey),
     href: item.href,

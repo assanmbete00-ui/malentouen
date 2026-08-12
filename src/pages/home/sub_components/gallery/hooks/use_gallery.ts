@@ -21,6 +21,7 @@ export default function useGallery() {
   const items = GALLERY_ITEMS.map((item) => ({
     id: item.id,
     image: GALLERY_ASSETS[item.imageKey],
+    imageAlt: translate(item.imageAltKey),
     title: translate(item.titleKey),
     href: GALLERY_CONFIG.actionPath,
   }));

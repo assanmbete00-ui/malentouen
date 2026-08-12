@@ -9,6 +9,7 @@ import type { NewsCardProps } from "./types";
 
 export default function NewsCard({
   image,
+  imageAlt,
   category,
   date,
   title,
@@ -21,7 +22,7 @@ export default function NewsCard({
       <Box sx={styles.imageWrapper}>
         <MediaWithSkeleton
           src={image}
-          alt={typeof title === "string" ? title : "Actualité de Malentouen"}
+          alt={imageAlt}
           sx={styles.image}
         />
       </Box>
