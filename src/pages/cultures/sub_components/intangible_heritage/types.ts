@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+
 export type IntangibleHeritageItem = {
   id: string;
   title: ReactNode;
@@ -10,7 +11,6 @@ export type IntangibleHeritageSectionProps = {
   eyebrow: ReactNode;
   title: ReactNode;
   description: ReactNode;
-  image?: string;
-  imageAlt?: string;
+  descriptionSecondary?: ReactNode;
   items: IntangibleHeritageItem[];
 };

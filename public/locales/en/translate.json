@@ -1,4 +1,8 @@
 {
+  "MEDIA_LIGHTBOX_CLOSE": "Close image",
+  "MEDIA_LIGHTBOX_PREVIOUS": "Previous image",
+  "MEDIA_LIGHTBOX_NEXT": "Next image",
+
   "HOME_HERO_BADGE": "Official Platform",
   "HOME_HERO_TITLE": "Traditional Chiefdom of Malentouen",
   "HOME_HERO_DESCRIPTION": "Discover a living heritage, centuries-old traditions, and a community looking toward the future.",

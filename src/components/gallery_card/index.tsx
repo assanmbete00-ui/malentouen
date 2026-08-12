@@ -11,19 +11,18 @@ export default function GalleryCard({
   imageAlt,
   title,
   href,
+  onPreview,
   sx,
 }: GalleryCardProps) {
+  const isInteractive = Boolean(href || onPreview);
+
   const content = (
     <Card
-      variant={href ? "interactive" : "default"}
+      variant={isInteractive ? "interactive" : "default"}
       sx={[styles.card, ...(Array.isArray(sx) ? sx : sx ? [sx] : [])]}
     >
       <Box sx={styles.media}>
-        <MediaWithSkeleton
-          src={image}
-          alt={imageAlt}
-          sx={styles.image}
-        />
+        <MediaWithSkeleton src={image} alt={imageAlt} sx={styles.image} />
       </Box>
 
       <Box sx={styles.overlay}>
@@ -31,12 +30,20 @@ export default function GalleryCard({
           {title}
         </Typography>
       </Box>
+
+      {onPreview && !href && (
+        <Box
+          component="button"
+          type="button"
+          aria-label={typeof title === "string" ? title : imageAlt}
+          onClick={onPreview}
+          sx={styles.previewButton}
+        />
+      )}
     </Card>
   );
 
-  if (!href) {
-    return content;
-  }
+  if (!href) return content;
 
   return (
     <Box component={RouterLink} to={href} sx={styles.link}>

@@ -86,8 +86,15 @@ export type CulturesPageData = {
     eyebrow: ReactNode;
     title: ReactNode;
     description: ReactNode;
-    items: GalleryItem[];
+
+  lightboxLabels: {
+    close: string;
+    previous: string;
+    next: string;
   };
+
+  items: GalleryItem[];
+};
 
   transmission: {
     id: string;
