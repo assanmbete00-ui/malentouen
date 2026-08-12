@@ -1,8 +1,8 @@
-// news/config/news_items.ts
 export const NEWS_ITEMS = [
   {
     id: "community",
     imageKey: "community",
+    imageAltKey: "HOME_NEWS_COMMUNITY_IMAGE_ALT",
     categoryKey: "HOME_NEWS_COMMUNITY_CATEGORY",
     dateKey: "HOME_NEWS_COMMUNITY_DATE",
     titleKey: "HOME_NEWS_COMMUNITY_TITLE",
@@ -12,6 +12,7 @@ export const NEWS_ITEMS = [
   {
     id: "culture",
     imageKey: "culture",
+    imageAltKey: "HOME_NEWS_CULTURE_IMAGE_ALT",
     categoryKey: "HOME_NEWS_CULTURE_CATEGORY",
     dateKey: "HOME_NEWS_CULTURE_DATE",
     titleKey: "HOME_NEWS_CULTURE_TITLE",
@@ -21,6 +22,7 @@ export const NEWS_ITEMS = [
   {
     id: "development",
     imageKey: "development",
+    imageAltKey: "HOME_NEWS_DEVELOPMENT_IMAGE_ALT",
     categoryKey: "HOME_NEWS_DEVELOPMENT_CATEGORY",
     dateKey: "HOME_NEWS_DEVELOPMENT_DATE",
     titleKey: "HOME_NEWS_DEVELOPMENT_TITLE",
@@ -28,12 +30,13 @@ export const NEWS_ITEMS = [
     href: "/news",
   },
   {
-  id: "governance",
-  imageKey: "governance",
-  categoryKey: "HOME_NEWS_GOVERNANCE_CATEGORY",
-  dateKey: "HOME_NEWS_GOVERNANCE_DATE",
-  titleKey: "HOME_NEWS_GOVERNANCE_TITLE",
-  descriptionKey: "HOME_NEWS_GOVERNANCE_DESCRIPTION",
-  href: "/news",
-},
+    id: "governance",
+    imageKey: "governance",
+    imageAltKey: "HOME_NEWS_GOVERNANCE_IMAGE_ALT",
+    categoryKey: "HOME_NEWS_GOVERNANCE_CATEGORY",
+    dateKey: "HOME_NEWS_GOVERNANCE_DATE",
+    titleKey: "HOME_NEWS_GOVERNANCE_TITLE",
+    descriptionKey: "HOME_NEWS_GOVERNANCE_DESCRIPTION",
+    href: "/news",
+  },
 ] as const;

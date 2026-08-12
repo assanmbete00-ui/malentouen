@@ -3,6 +3,7 @@ import type { SxProps, Theme } from "@mui/material";
 
 export type ProjectsCardProps = {
   image: string;
+  imageAlt: string;
   title: ReactNode;
   description: ReactNode;
   href?: string;

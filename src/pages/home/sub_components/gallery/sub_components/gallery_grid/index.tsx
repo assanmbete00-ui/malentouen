@@ -18,7 +18,7 @@ export default function GalleryGrid({
         <GalleryCard
           key={item.id}
           image={item.image}
-          imageAlt="string"
+          imageAlt={item.imageAlt}
           title={item.title}
           href={item.href}
         />

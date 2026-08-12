@@ -14,6 +14,7 @@ export type GalleryAction = {
 export type GalleryItem = {
   id: string;
   image: string;
+  imageAlt: string;
   title: ReactNode;
   href?: string;
 };

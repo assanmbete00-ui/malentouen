@@ -13,6 +13,7 @@ export default function NewsList({ items }: NewsListProps) {
         <NewsCard
           key={item.id}
           image={item.image}
+          imageAlt={item.imageAlt}
           category={item.category}
           date={item.date}
           title={item.title}

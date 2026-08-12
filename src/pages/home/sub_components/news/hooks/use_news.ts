@@ -21,6 +21,7 @@ export default function useNews() {
   const items = NEWS_ITEMS.map((item) => ({
     id: item.id,
     image: NEWS_ASSETS.items[item.imageKey],
+    imageAlt: translate(item.imageAltKey),
     category: translate(item.categoryKey),
     date: translate(item.dateKey),
     title: translate(item.titleKey),

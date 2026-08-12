@@ -1,6 +1,5 @@
 import { Box, Typography } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
-
 import Card from "@components/card";
 import MediaWithSkeleton from "@components/media_with_skeleton";
 

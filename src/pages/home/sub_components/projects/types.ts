@@ -9,6 +9,7 @@ export type ProjectsContent = {
 export type ProjectItem = {
   id: string;
   image: string;
+  imageAlt: string;
   title: ReactNode;
   description: ReactNode;
   href?: string;
