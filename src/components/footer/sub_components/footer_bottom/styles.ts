@@ -13,7 +13,7 @@ const container: SxProps<Theme> = {
 
 const copyright: SxProps<Theme> = {
   color: "primary.contrastText",
-  opacity: 0.85,
+  opacity: 0.9,
   fontSize: 13,
   textAlign: "center",
 };

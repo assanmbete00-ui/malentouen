@@ -19,7 +19,6 @@ export default function CultureCard({
 }: CultureCardProps) {
   const baseSx = {
     height: "100%",
-    borderRadius: "16px",
     overflow: "hidden",
   };
 

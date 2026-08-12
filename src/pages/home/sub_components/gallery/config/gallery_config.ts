@@ -2,5 +2,5 @@ export const GALLERY_CONFIG = {
   showItems: true,
   showAction: true,
 
-  actionPath: "/gallery",
+  actionPath: "/about",
 } as const;

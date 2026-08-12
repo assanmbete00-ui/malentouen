@@ -38,7 +38,7 @@ const iconWrapper: SxProps<Theme> = {
   width: 52,
   height: 52,
   mb: 3,
-  borderRadius: 3,
+  borderRadius: 1,
   bgcolor: "background.default",
   color: "secondary.main",
 };

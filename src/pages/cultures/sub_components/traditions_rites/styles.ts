@@ -24,7 +24,7 @@ const featured: SxProps<Theme> = {
   },
 
   overflow: "hidden",
-  borderRadius: 4,
+  borderRadius: 1.5,
 };
 
 const featuredMedia: SxProps<Theme> = {
@@ -82,7 +82,7 @@ const featuredDescription: SxProps<Theme> = {
   maxWidth: 680,
   mt: 2,
   color: "primary.contrastText",
-  opacity: 0.86,
+  opacity: 1,
 };
 
 const secondary: SxProps<Theme> = {

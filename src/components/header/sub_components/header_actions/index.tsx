@@ -14,7 +14,7 @@ export default function HeaderActions({
     <Box sx={styles.container}>
       <SearchTrigger compact={compact} />
 
-      <LanguageSelector compact={compact} />
+      <LanguageSelector />
 
       <AdminButton compact={compact} />
     </Box>

@@ -19,9 +19,9 @@ const image: SxProps<Theme> = {
     md: "16 / 8",
   },
 
+  borderRadius: 1.5,
   border: "1px solid",
   borderColor: "divider",
-  borderRadius: 4,
 };
 
 const introduction: SxProps<Theme> = {

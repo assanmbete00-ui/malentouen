@@ -30,9 +30,9 @@ export default function TopBar({ showSocials = false }: TopBarProps) {
         </Box>
 
         <Box sx={styles.right}>
-          <Typography sx={styles.language}>FR</Typography>
-          <Typography sx={{ opacity: 0.5 }}>|</Typography>
-          <Typography sx={styles.language}>EN</Typography>
+          <Typography aria-hidden="true" sx={styles.language}>FR</Typography>
+          <Typography aria-hidden="true" sx={{ opacity: 0.5 }}>|</Typography>
+          <Typography aria-hidden="true" sx={styles.language}>EN</Typography>
         </Box>
       </Box>
     </Box>

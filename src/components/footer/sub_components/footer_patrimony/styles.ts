@@ -6,7 +6,7 @@ const link: SxProps<Theme> = {
   width: "fit-content",
 
   color: "primary.contrastText",
-  opacity: 0.78,
+  opacity: 0.9,
 
   textDecoration: "none",
 

@@ -3,7 +3,7 @@ import type { SxProps, Theme } from "@mui/material";
 const container: SxProps<Theme> = {
   height: "100%",
   p: { xs: 2.5, md: 3 },
-  borderRadius: 2,
+  borderRadius: 1,
   bgcolor: "background.paper",
   border: "1px solid",
   borderColor: "divider",

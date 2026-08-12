@@ -4,7 +4,7 @@ const media: SxProps<Theme> = {
   width: "100%",
   overflow: "hidden",
 
-  borderRadius: 4,
+  borderRadius: 1.5,
   border: "1px solid",
   borderColor: "divider",
 

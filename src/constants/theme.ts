@@ -8,6 +8,7 @@ import {
   PRIMARY,
   PRIMARY_HOVER,
   SECONDARY,
+  SECONDARY_HOVER,
   SUCCESS,
   SURFACE,
   TEXT_DISABLED,
@@ -26,6 +27,7 @@ const theme = createTheme({
     },
     secondary: {
       main: SECONDARY,
+      dark: SECONDARY_HOVER,
       contrastText: WHITE,
     },
     background: {

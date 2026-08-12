@@ -90,7 +90,6 @@ const media: SxProps<Theme> = {
   height: "100%",
   maxWidth: 1440,
   maxHeight: "100%",
-  objectFit: "contain",
 };
 
 const navigationButton: SxProps<Theme> = {

@@ -1,3 +1,1 @@
-export type LanguageSelectorProps = {
-  compact?: boolean;
-};
+export type LanguageSelectorProps = Record<string, never>;

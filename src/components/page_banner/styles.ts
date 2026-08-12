@@ -109,7 +109,7 @@ const breadcrumb: SxProps<Theme> = {
     color: (theme) =>
       alpha(
         theme.palette.primary.contrastText,
-        0.76,
+        0.9,
       ),
 
     "&:hover": {

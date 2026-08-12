@@ -48,7 +48,7 @@ const subtitle = (variant: LogoVariant): SxProps<Theme> => ({
   fontSize: variant === "footer" ? 13 : 12,
   fontWeight: 500,
   color: variant === "footer" ? "primary.contrastText" : "text.secondary",
-  opacity: variant === "footer" ? 0.82 : 1,
+  opacity: variant === "footer" ? 0.9 : 1,
   display: variant === "compact" ? "none" : "block",
 });
 

@@ -6,7 +6,7 @@ const item: SxProps<Theme> = {
   gap: 1.8,
   width: "fit-content",
   color: "primary.contrastText",
-  opacity: 0.78,
+  opacity: 0.9,
   fontSize: 14,
   lineHeight: 1.7,
   textDecoration: "none",

@@ -64,7 +64,7 @@ const media: SxProps<Theme> = {
     lg: "5 / 6",
   },
 
-  borderRadius: 4,
+  borderRadius: 1.5,
   border: "1px solid",
   borderColor: "divider",
   bgcolor: "background.paper",

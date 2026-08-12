@@ -28,6 +28,12 @@ const item = (
       variant === "desktop" ? alpha(SECONDARY, 0.08) : alpha(SECONDARY, 0.12),
   },
 
+  "&:focus-visible": {
+    outline: "2px solid",
+    outlineColor: "secondary.main",
+    outlineOffset: 2,
+  },
+
   ...(active &&
     variant === "desktop" && {
       "&::after": {

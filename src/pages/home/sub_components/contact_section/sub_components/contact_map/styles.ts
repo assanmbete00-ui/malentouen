@@ -13,7 +13,7 @@ const container: SxProps<Theme> = {
 
   border: "1px solid",
   borderColor: "divider",
-  borderRadius: "18px",
+  borderRadius: 1,
 
   bgcolor: "background.paper",
 };

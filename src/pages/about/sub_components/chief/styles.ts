@@ -53,7 +53,7 @@ const signatureTitle: SxProps<Theme> = {
 
 const imageWrapper: SxProps<Theme> = {
   overflow: "hidden",
-  borderRadius: 4,
+  borderRadius: 1.5,
   border: "1px solid",
   borderColor: "divider",
   bgcolor: "background.paper",
