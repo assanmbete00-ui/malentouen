@@ -15,16 +15,26 @@ const title: SxProps<Theme> = {
 };
 
 const item = (active: boolean): SxProps<Theme> => ({
+  all: "unset",
   display: "flex",
   alignItems: "center",
+  width: "100%",
   py: 1,
   cursor: "pointer",
   color: active ? "secondary.main" : "text.secondary",
   fontWeight: active ? 700 : 500,
-  transition: "all .2s ease",
+  fontSize: "inherit",
+  transition: "color .2s ease",
 
   "&:hover": {
     color: "secondary.main",
+  },
+
+  "&:focus-visible": {
+    outline: "2px solid",
+    outlineColor: "secondary.main",
+    outlineOffset: 2,
+    borderRadius: "2px",
   },
 });
 

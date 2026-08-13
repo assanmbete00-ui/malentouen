@@ -53,7 +53,7 @@ const mainNavigation: RouteObject[] = [
   {
     path: "/news",
     element: (
-      <MainLayout bgColor="secondary" ContextProvider={MainPageContextProvider}>
+      <MainLayout bgColor="secondary" ContextProvider={MainPageContextProvider}disableContainer>
         <News />
       </MainLayout>
     ),

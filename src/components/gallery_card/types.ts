@@ -6,5 +6,6 @@ export type GalleryCardProps = {
   imageAlt: string;
   title: ReactNode;
   href?: string;
+  onPreview?: () => void;
   sx?: SxProps<Theme>;
 };

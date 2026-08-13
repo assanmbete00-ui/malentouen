@@ -17,7 +17,7 @@ const image: SxProps<Theme> = {
   objectFit: "cover",
   objectPosition: "center 55%",
 
-  borderRadius: "18px",
+  borderRadius: 1.5,
   display: "block",
 
   boxShadow: "0 14px 36px rgba(0, 0, 0, 0.08)",

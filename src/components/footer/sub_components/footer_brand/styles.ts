@@ -59,7 +59,7 @@ const slogan: SxProps<Theme> = {
 
 const description: SxProps<Theme> = {
   color: "primary.contrastText",
-  opacity: 0.76,
+  opacity: 0.9,
   fontSize: 14,
   lineHeight: 2,
   maxWidth: 380,

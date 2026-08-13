@@ -1,34 +1,42 @@
 import type { SxProps, Theme } from "@mui/material";
+import type { SectionSpacing, SectionVariant } from "./types";
 
-import type { SectionVariant } from "./types";
-
-const root = (variant: SectionVariant): SxProps<Theme> => ({
-  width: "100%",
-
-  py: {
-    xs: 7,
-    md: 9,
-    lg: 11,
+const spacings: Record<SectionSpacing, SxProps<Theme>> = {
+  compact: {
+    py: { xs: 5, md: 6, lg: 7 },
   },
+  default: {
+    py: { xs: 7, md: 8, lg: 9 },
+  },
+  spacious: {
+    py: { xs: 8, md: 10, lg: 11 },
+  },
+};
+
+const root = (
+  variant: SectionVariant,
+  spacing: SectionSpacing,
+): SxProps<Theme> => ({
+  width: "100%",
+  ...spacings[spacing],
 
   bgcolor:
     variant === "primary"
       ? "primary.main"
-      : variant === "paper"
-      ? "background.paper"
-      : "background.default",
+      : variant === "secondary"
+        ? "secondary.main"
+        : variant === "paper"
+          ? "background.paper"
+          : "background.default",
 
   color:
     variant === "primary"
       ? "primary.contrastText"
-      : "text.primary",
+      : variant === "secondary"
+        ? "secondary.contrastText"
+        : "text.primary",
 });
-
-const content: SxProps<Theme> = {
-  width: "100%",
-};
 
 export default {
   root,
-  content,
 };

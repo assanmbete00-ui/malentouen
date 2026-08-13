@@ -17,6 +17,12 @@ const button: SxProps<Theme> = {
     bgcolor: "action.hover",
     color: "secondary.main",
   },
+
+  "&:focus-visible": {
+    outline: "2px solid",
+    outlineColor: "secondary.main",
+    outlineOffset: 2,
+  },
 };
 
 export default {

@@ -39,7 +39,7 @@ const description: SxProps<Theme> = {
   mt: 2.5,
 
   color: "primary.contrastText",
-  opacity: 0.94,
+  opacity: 1,
 
   fontSize: {
     xs: 15,

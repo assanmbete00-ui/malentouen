@@ -21,19 +21,25 @@ export default function DrawerLanguage({
         Langue
       </Typography>
 
-      <Typography
-        sx={styles.item(currentLanguage === "fr")}
+      <Box
+        component="button"
+        type="button"
+        aria-pressed={currentLanguage === "fr"}
         onClick={() => onLanguageChange?.("fr")}
+        sx={styles.item(currentLanguage === "fr")}
       >
         Français
-      </Typography>
+      </Box>
 
-      <Typography
-        sx={styles.item(currentLanguage === "en")}
+      <Box
+        component="button"
+        type="button"
+        aria-pressed={currentLanguage === "en"}
         onClick={() => onLanguageChange?.("en")}
+        sx={styles.item(currentLanguage === "en")}
       >
         English
-      </Typography>
+      </Box>
     </Box>
   );
 }

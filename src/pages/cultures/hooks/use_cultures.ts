@@ -217,38 +217,26 @@ export default function useCultures(): CulturesPageData {
       ),
   };
 
-  const gallery:
-  CulturesPageData["gallery"] = {
-    id: CULTURES_GALLERY.id,
+  const gallery: CulturesPageData["gallery"] = {
+  id: CULTURES_GALLERY.id,
 
-    eyebrow: translate(
-      CULTURES_GALLERY.eyebrowKey,
-    ),
+  eyebrow: translate(CULTURES_GALLERY.eyebrowKey),
+  title: translate(CULTURES_GALLERY.titleKey),
+  description: translate(CULTURES_GALLERY.descriptionKey),
 
-    title: translate(
-      CULTURES_GALLERY.titleKey,
-    ),
+  lightboxLabels: {
+    close: translate(CULTURES_GALLERY.lightbox.closeLabelKey),
+    previous: translate(CULTURES_GALLERY.lightbox.previousLabelKey),
+    next: translate(CULTURES_GALLERY.lightbox.nextLabelKey),
+  },
 
-    description: translate(
-      CULTURES_GALLERY.descriptionKey,
-    ),
-
-    items: CULTURES_GALLERY.items.map(
-      (item) => ({
-        id: item.id,
-
-        image: item.image,
-
-        imageAlt: translate(
-          item.imageAltKey,
-        ),
-
-        title: translate(
-          item.titleKey,
-        ),
-      }),
-    ),
-  };
+  items: CULTURES_GALLERY.items.map((item) => ({
+    id: item.id,
+    image: item.image,
+    imageAlt: translate(item.imageAltKey),
+    title: translate(item.titleKey),
+  })),
+};
 
   const transmission:
   CulturesPageData["transmission"] = {

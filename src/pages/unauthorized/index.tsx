@@ -1,11 +1,6 @@
-import {
-  Stack,
-  Typography,
-} from "@mui/material";
-
+import { Stack, Typography } from "@mui/material";
 import Button from "@components/button";
 import Dialog from "@components/dialog";
-
 import useTranslate from "@hooks/use_translate";
 
 export default function UnauthorizedPage() {

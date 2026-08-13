@@ -33,8 +33,7 @@ const featuredMedia: SxProps<Theme> = {
     lg: "4 / 5",
   },
 
-  borderRadius: 4,
-
+  borderRadius: 1.5,
   border: "1px solid",
   borderColor: "divider",
 };
@@ -84,7 +83,7 @@ const secondaryMedia: SxProps<Theme> = {
   width: "100%",
   aspectRatio: "1 / 1",
 
-  borderRadius: 4,
+  borderRadius: 1,
 
   border: "1px solid",
   borderColor: "divider",
@@ -142,7 +141,7 @@ const closing: SxProps<Theme> = {
   border: "1px solid",
   borderColor: "divider",
 
-  borderRadius: 4,
+  borderRadius: 1,
 };
 
 const closingMedia: SxProps<Theme> = {
@@ -153,7 +152,7 @@ const closingMedia: SxProps<Theme> = {
     md: "16 / 10",
   },
 
-  borderRadius: 3,
+  borderRadius: 1,
 };
 
 const closingContent: SxProps<Theme> = {

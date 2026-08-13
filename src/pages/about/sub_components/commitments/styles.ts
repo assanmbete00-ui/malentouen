@@ -13,7 +13,7 @@ const wrapper: SxProps<Theme> = {
     lg: 9,
   },
 
-  borderRadius: 4,
+  borderRadius: 1,
 
   bgcolor: "primary.main",
 
@@ -65,7 +65,7 @@ const card: SxProps<Theme> = {
     md: 4,
   },
 
-  borderRadius: 3,
+  borderRadius: 1,
 
   bgcolor: "background.paper",
 };

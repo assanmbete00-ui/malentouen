@@ -18,13 +18,13 @@ const featured: SxProps<Theme> = {
   position: "relative",
 
   minHeight: {
-    xs: 480,
-    sm: 560,
+    xs: 420,
+    sm: 520,
     lg: 680,
   },
 
   overflow: "hidden",
-  borderRadius: 4,
+  borderRadius: 1.5,
 };
 
 const featuredMedia: SxProps<Theme> = {
@@ -82,7 +82,7 @@ const featuredDescription: SxProps<Theme> = {
   maxWidth: 680,
   mt: 2,
   color: "primary.contrastText",
-  opacity: 0.86,
+  opacity: 1,
 };
 
 const secondary: SxProps<Theme> = {

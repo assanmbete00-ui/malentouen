@@ -5,17 +5,22 @@ const link: SxProps<Theme> = {
   height: "100%",
   textDecoration: "none",
   color: "inherit",
-  transition: "transform .2s ease, box-shadow .2s ease",
-  "&:hover": {
-    transform: "translateY(-3px)",
-    boxShadow: "0 14px 28px rgba(0,0,0,0.08)",
+
+  "&:focus-visible": {
+    outline: "2px solid",
+    outlineColor: "secondary.main",
+    outlineOffset: 2,
+    borderRadius: 1,
   },
 };
 
 const imageWrapper: SxProps<Theme> = {
   position: "relative",
   width: "100%",
-  height: 240,
+  aspectRatio: {
+    xs: "4 / 3",
+    sm: "16 / 10",
+  },
   overflow: "hidden",
 };
 

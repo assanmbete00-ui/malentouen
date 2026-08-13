@@ -25,7 +25,7 @@ const image: SxProps<Theme> = {
   width: "100%",
   display: "block",
 
-  borderRadius: 4,
+  borderRadius: 1.5,
 
   objectFit: "cover",
 };

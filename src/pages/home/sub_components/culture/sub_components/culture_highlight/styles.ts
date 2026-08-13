@@ -11,7 +11,7 @@ const container: SxProps<Theme> = {
     md: 6,
   },
 
-  borderRadius: "18px",
+  borderRadius: 1.5,
   overflow: "hidden",
 
   height: {

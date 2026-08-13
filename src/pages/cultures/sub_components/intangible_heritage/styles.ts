@@ -1,119 +1,67 @@
 import type { SxProps, Theme } from "@mui/material";
 
-const content: SxProps<Theme> = {
-  display: "grid",
-
-  gridTemplateColumns: {
-    xs: "1fr",
-    lg: "0.9fr 1.1fr",
-  },
-
-  gap: {
-    xs: 5,
-    md: 7,
-    lg: 9,
-  },
-
-  alignItems: "start",
+const introduction: SxProps<Theme> = {
+  maxWidth: 920,
+  mb: { xs: 4, md: 6 },
 };
 
-const list: SxProps<Theme> = {
-  width: "100%",
+const descriptionSecondary: SxProps<Theme> = {
+  mt: 2,
+  color: "text.secondary",
+};
 
+const grid: SxProps<Theme> = {
+  display: "grid",
+  gridTemplateColumns: {
+    xs: "1fr",
+    md: "repeat(2, minmax(0, 1fr))",
+  },
+  columnGap: { md: 7, lg: 10 },
+  rowGap: 0,
   borderBottom: "1px solid",
   borderColor: "divider",
 };
 
 const item: SxProps<Theme> = {
   display: "grid",
-
   gridTemplateColumns: {
-    xs: "56px 1fr",
-    sm: "72px 1fr",
+    xs: "52px 1fr",
+    sm: "64px 1fr",
   },
-
-  gap: {
-    xs: 2,
-    sm: 3,
-  },
-
-  py: {
-    xs: 3,
-    md: 4,
-  },
-
+  gap: { xs: 2, sm: 3 },
+  py: { xs: 3.5, md: 4.5 },
   borderTop: "1px solid",
   borderColor: "divider",
 };
 
 const number: SxProps<Theme> = {
   color: "secondary.main",
-
-  fontSize: {
-    xs: 13,
-    md: 14,
-  },
-
+  fontSize: 13,
   fontWeight: 800,
   lineHeight: 1.5,
   letterSpacing: ".12em",
 };
 
-const itemContent: SxProps<Theme> = {
+const content: SxProps<Theme> = {
   minWidth: 0,
 };
 
-const itemTitle: SxProps<Theme> = {
+const title: SxProps<Theme> = {
   color: "text.primary",
 };
 
-const itemDescription: SxProps<Theme> = {
-  maxWidth: 620,
-
+const description: SxProps<Theme> = {
   mt: 1.5,
-
   color: "text.secondary",
 };
 
-const visual: SxProps<Theme> = {
-  position: {
-    lg: "sticky",
-  },
-
-  top: {
-    lg: 120,
-  },
-
-  width: "100%",
-};
-
-const media: SxProps<Theme> = {
-  width: "100%",
-
-  aspectRatio: {
-    xs: "4 / 3",
-    sm: "16 / 10",
-    lg: "4 / 5",
-  },
-
-  borderRadius: 4,
-
-  border: "1px solid",
-  borderColor: "divider",
-
-  bgcolor: "background.paper",
-};
-
 export default {
-  content,
-
-  list,
+  introduction,
+  descriptionSecondary,
+  grid,
   item,
   number,
-  itemContent,
-  itemTitle,
-  itemDescription,
-
-  visual,
-  media,
+  content,
+  title,
+  description,
 };

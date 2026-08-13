@@ -26,6 +26,12 @@ const button: SxProps<Theme> = {
     borderColor: "secondary.main",
     transform: "translateY(-3px) scale(1.05)",
   },
+
+  "&:focus-visible": {
+    outline: "2px solid",
+    outlineColor: "secondary.main",
+    outlineOffset: 2,
+  },
 };
 
 export default {

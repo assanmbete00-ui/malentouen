@@ -9,6 +9,7 @@ export default function Section({
   children,
   id,
   variant = "default",
+  spacing = "default",
   containerSize = "default",
   sx,
   contentSx,
@@ -18,14 +19,11 @@ export default function Section({
       component="section"
       id={id}
       sx={[
-        styles.root(variant),
+        styles.root(variant, spacing),
         ...(Array.isArray(sx) ? sx : sx ? [sx] : []),
       ]}
     >
-      <Container
-        size={containerSize}
-        sx={contentSx}
-      >
+      <Container size={containerSize} sx={contentSx}>
         {children}
       </Container>
     </Box>

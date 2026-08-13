@@ -10,7 +10,6 @@ const link: SxProps<Theme> = {
 const card: SxProps<Theme> = {
   position: "relative",
   minHeight: 0,
-
   aspectRatio: {
     xs: "4 / 3",
     sm: "3 / 4",
@@ -40,14 +39,9 @@ const overlay: SxProps<Theme> = {
   position: "absolute",
   inset: 0,
   zIndex: 1,
-
   display: "flex",
   alignItems: "flex-end",
-
-  p: {
-    xs: 2.5,
-    md: 3,
-  },
+  p: { xs: 2.5, md: 3 },
 
   background: (theme) =>
     `linear-gradient(
@@ -60,16 +54,28 @@ const overlay: SxProps<Theme> = {
 const title: SxProps<Theme> = {
   maxWidth: "90%",
   color: "primary.contrastText",
-
-  fontSize: {
-    xs: 17,
-    md: 18,
-  },
-
+  fontSize: { xs: 17, md: 18 },
   fontWeight: 800,
   lineHeight: 1.35,
-
   textShadow: "0 2px 12px rgba(0, 0, 0, 0.28)",
+};
+
+const previewButton: SxProps<Theme> = {
+  position: "absolute",
+  inset: 0,
+  zIndex: 2,
+  width: "100%",
+  height: "100%",
+  p: 0,
+  border: 0,
+  bgcolor: "transparent",
+  cursor: "pointer",
+
+  "&:focus-visible": {
+    outline: "2px solid",
+    outlineColor: "secondary.main",
+    outlineOffset: -4,
+  },
 };
 
 export default {
@@ -79,4 +85,5 @@ export default {
   image,
   overlay,
   title,
+  previewButton,
 };

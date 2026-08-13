@@ -26,6 +26,13 @@ const link: SxProps<Theme> = {
   "&:hover": {
     color: "primary.main",
   },
+
+  "&:focus-visible": {
+    outline: "2px solid",
+    outlineColor: "secondary.main",
+    outlineOffset: 2,
+    borderRadius: "2px",
+  },
 };
 
 const linkText: SxProps<Theme> = {
