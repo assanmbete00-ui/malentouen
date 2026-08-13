@@ -28,11 +28,21 @@ const item: SxProps<Theme> = {
 
 const card: SxProps<Theme> = {
   height: "100%",
-  aspectRatio: { xs: "4 / 3", sm: "4 / 3" },
+  aspectRatio: "4 / 3",
+};
+
+const cardPanoramic: SxProps<Theme> = {
+  height: "100%",
+  aspectRatio: {
+    xs: "4 / 3",
+    sm: "16 / 9",
+    lg: "21 / 8",
+  },
 };
 
 export default {
   grid,
   item,
   card,
+  cardPanoramic,
 };

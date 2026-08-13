@@ -61,7 +61,7 @@ const media: SxProps<Theme> = {
   aspectRatio: {
     xs: "4 / 3",
     sm: "16 / 11",
-    lg: "5 / 6",
+    lg: "4 / 5",
   },
 
   borderRadius: 1.5,

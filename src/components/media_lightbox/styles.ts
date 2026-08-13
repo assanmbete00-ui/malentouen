@@ -82,7 +82,7 @@ const mediaWrapper: SxProps<Theme> = {
   height: "100%",
   minWidth: 0,
   minHeight: 0,
-  px: { xs: 0, sm: 6, md: 8 },
+  px: { xs: 5.5, sm: 6, md: 8 },
 };
 
 const media: SxProps<Theme> = {

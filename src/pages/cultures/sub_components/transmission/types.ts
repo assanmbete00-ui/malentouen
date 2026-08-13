@@ -7,4 +7,8 @@ export type TransmissionSectionProps = {
   title: ReactNode;
   description: ReactNode;
   descriptionSecondary?: ReactNode;
+  action?: {
+    label: ReactNode;
+    href: string;
+  };
 };

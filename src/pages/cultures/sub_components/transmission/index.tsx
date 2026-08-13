@@ -4,6 +4,7 @@ import { Box, Typography } from "@mui/material";
 import MediaWithSkeleton from "@components/media_with_skeleton";
 import Section from "@components/section";
 import SectionTitle from "@components/section_title";
+import TextLink from "@components/text_link";
 
 import styles from "./styles";
 import type { TransmissionSectionProps } from "./types";
@@ -16,6 +17,7 @@ export default function Transmission({
   title,
   description,
   descriptionSecondary,
+  action,
 }: TransmissionSectionProps): ReactElement {
   return (
     <Section
@@ -63,6 +65,12 @@ export default function Transmission({
             aria-hidden="true"
             sx={styles.accent}
           />
+
+          {action && (
+            <TextLink to={action.href} sx={styles.action}>
+              {action.label}
+            </TextLink>
+          )}
         </Box>
       </Box>
     </Section>

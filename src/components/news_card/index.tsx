@@ -23,6 +23,8 @@ export default function NewsCard({
         <MediaWithSkeleton
           src={image}
           alt={imageAlt}
+          objectFit="cover"
+          objectPosition="center"
           sx={styles.image}
         />
       </Box>
@@ -42,7 +44,9 @@ export default function NewsCard({
           {title}
         </Typography>
 
-        <Typography sx={styles.description}>{description}</Typography>
+        <Typography sx={styles.description}>
+          {description}
+        </Typography>
       </Box>
     </Card>
   );

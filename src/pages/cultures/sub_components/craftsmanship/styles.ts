@@ -34,7 +34,6 @@ const featuredMedia: SxProps<Theme> = {
   },
 
   borderRadius: 1.5,
-
   border: "1px solid",
   borderColor: "divider",
 };

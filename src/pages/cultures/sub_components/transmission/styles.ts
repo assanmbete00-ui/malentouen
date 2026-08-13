@@ -30,7 +30,7 @@ const media: SxProps<Theme> = {
   aspectRatio: {
     xs: "4 / 3",
     sm: "16 / 11",
-    lg: "5 / 6",
+    lg: "4 / 5",
   },
 
   borderRadius: 1.5,
@@ -82,6 +82,13 @@ const accent: SxProps<Theme> = {
   bgcolor: "secondary.main",
 };
 
+const action: SxProps<Theme> = {
+  mt: {
+    xs: 3,
+    md: 4,
+  },
+};
+
 export default {
   content,
   visual,
@@ -90,4 +97,5 @@ export default {
   descriptions,
   description,
   accent,
+  action,
 };

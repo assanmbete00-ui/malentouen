@@ -3,8 +3,15 @@ import type { SxProps, Theme } from "@mui/material";
 const link: SxProps<Theme> = {
   display: "block",
   height: "100%",
-  textDecoration: "none",
   color: "inherit",
+  textDecoration: "none",
+
+  "&:focus-visible": {
+    outline: "2px solid",
+    outlineColor: "secondary.main",
+    outlineOffset: 3,
+    borderRadius: 1,
+  },
 };
 
 const imageWrapper: SxProps<Theme> = {
@@ -16,7 +23,6 @@ const imageWrapper: SxProps<Theme> = {
 const image: SxProps<Theme> = {
   width: "100%",
   height: "100%",
-  objectFit: "cover",
   display: "block",
   transition: "transform .45s ease",
 
@@ -37,10 +43,10 @@ const meta: SxProps<Theme> = {
 };
 
 const category: SxProps<Theme> = {
-  color: "secondary.main",
+  color: "secondary.dark",
   fontSize: 12,
   fontWeight: 900,
-  letterSpacing: "0.12em",
+  letterSpacing: ".12em",
   textTransform: "uppercase",
 };
 
@@ -56,6 +62,11 @@ const title: SxProps<Theme> = {
   fontSize: 20,
   fontWeight: 900,
   lineHeight: 1.35,
+
+  display: "-webkit-box",
+  WebkitBoxOrient: "vertical",
+  WebkitLineClamp: 2,
+  overflow: "hidden",
 };
 
 const description: SxProps<Theme> = {
@@ -63,6 +74,11 @@ const description: SxProps<Theme> = {
   color: "text.secondary",
   fontSize: 15,
   lineHeight: 1.8,
+
+  display: "-webkit-box",
+  WebkitBoxOrient: "vertical",
+  WebkitLineClamp: 3,
+  overflow: "hidden",
 };
 
 export default {

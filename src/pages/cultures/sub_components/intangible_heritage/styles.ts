@@ -6,6 +6,7 @@ const introduction: SxProps<Theme> = {
 };
 
 const descriptionSecondary: SxProps<Theme> = {
+  mt: 2,
   color: "text.secondary",
 };
 

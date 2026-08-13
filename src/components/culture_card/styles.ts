@@ -17,7 +17,10 @@ const link: SxProps<Theme> = {
 const imageWrapper: SxProps<Theme> = {
   position: "relative",
   width: "100%",
-  height: 240,
+  aspectRatio: {
+    xs: "4 / 3",
+    sm: "16 / 10",
+  },
   overflow: "hidden",
 };
 

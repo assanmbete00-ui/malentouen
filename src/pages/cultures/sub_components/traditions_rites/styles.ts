@@ -18,8 +18,8 @@ const featured: SxProps<Theme> = {
   position: "relative",
 
   minHeight: {
-    xs: 480,
-    sm: 560,
+    xs: 420,
+    sm: 520,
     lg: 680,
   },
 

@@ -49,7 +49,7 @@ export default function CulturalGallery({
               imageAlt={item.imageAlt}
               title={item.title}
               onPreview={() => setActiveIndex(index)}
-              sx={styles.card}
+              sx={index === items.length - 1 ? styles.cardPanoramic : styles.card}
             />
           </Box>
         ))}
