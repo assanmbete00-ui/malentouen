@@ -6,8 +6,13 @@ export type NewsArchiveSectionProps = {
   eyebrow: ReactNode;
   title: ReactNode;
   description: ReactNode;
+
+  categoriesLabel: ReactNode;
+  yearsLabel: ReactNode;
+
   actionLabel: ReactNode;
   actionHref: string;
+
   categories: NewsArchiveCategory[];
   years: NewsArchiveYear[];
 };

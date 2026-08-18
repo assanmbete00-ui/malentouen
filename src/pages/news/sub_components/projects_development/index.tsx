@@ -11,7 +11,7 @@ import type { ProjectsDevelopmentSectionProps } from "./types";
 
 export default function ProjectsDevelopment({
   id,
-  eyebrow,
+  eyebrow, 
   title,
   description,
   actionLabel,
@@ -34,39 +34,49 @@ export default function ProjectsDevelopment({
       />
 
       <Box sx={styles.grid}>
-        {items.map((item) => (
-          <Box key={item.id} component="article" sx={styles.article}>
-            <MediaWithSkeleton
-              src={item.image}
-              alt={item.imageAlt}
-              objectFit="cover"
-              objectPosition="center"
-              sx={styles.media}
-            />
+        {items.map((item, index) => {
+          const isLastOddItem = items.length % 2 !== 0 && index === items.length - 1;
 
-            <Box sx={styles.meta}>
-              <Typography component="span" sx={styles.category}>
-                {item.category.label}
-              </Typography>
+          return (
+            <Box
+              key={item.id}
+              component="article"
+              sx={isLastOddItem ? styles.featuredArticle : styles.article}
+            >
+              <MediaWithSkeleton
+                src={item.image}
+                alt={item.imageAlt}
+                objectFit="cover"
+                objectPosition="center"
+                sx={isLastOddItem ? styles.featuredMedia : styles.media}
+              />
 
-              <Typography component="time" dateTime={item.publishedAt} sx={styles.date}>
-                {item.formattedDate}
-              </Typography>
+              <Box sx={styles.body}>
+                <Box sx={isLastOddItem ? styles.featuredMeta : styles.meta}>
+                  <Typography component="span" sx={styles.category}>
+                    {item.category.label}
+                  </Typography>
+
+                  <Typography component="time" dateTime={item.publishedAt} sx={styles.date}>
+                    {item.formattedDate}
+                  </Typography>
+                </Box>
+
+                <Typography component="h3" sx={isLastOddItem ? styles.featuredTitle : styles.title}>
+                  {item.title}
+                </Typography>
+
+                <Typography sx={styles.excerpt}>
+                  {item.excerpt}
+                </Typography>
+
+                <TextLink to={item.href} sx={styles.link}>
+                  {actionLabel}
+                </TextLink>
+              </Box>
             </Box>
-
-            <Typography component="h3" sx={styles.title}>
-              {item.title}
-            </Typography>
-
-            <Typography sx={styles.excerpt}>
-              {item.excerpt}
-            </Typography>
-
-            <TextLink to={item.href} sx={styles.link}>
-              {actionLabel}
-            </TextLink>
-          </Box>
-        ))}
+          );
+        })}
       </Box>
     </Section>
   );

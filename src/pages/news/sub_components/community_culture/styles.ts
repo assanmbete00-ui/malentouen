@@ -7,7 +7,7 @@ const headerAction: SxProps<Theme> = {
 const layout: SxProps<Theme> = {
   display: "grid",
   gridTemplateColumns: { xs: "1fr", lg: "1.15fr 0.85fr" },
-  gap: { xs: 4, md: 5, lg: 6 },
+  gap: { xs: 3.5, md: 4.5, lg: 5 },
   alignItems: "start",
 };
 
@@ -49,7 +49,7 @@ const meta: SxProps<Theme> = {
 
 const category: SxProps<Theme> = {
   color: "secondary.dark",
-  fontSize: 11,
+  fontSize: 12,
   fontWeight: 900,
   letterSpacing: ".1em",
   textTransform: "uppercase",

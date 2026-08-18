@@ -4,11 +4,13 @@ const content: SxProps<Theme> = {
   display: "grid",
   gridTemplateColumns: { xs: "1fr", lg: "1.1fr 0.9fr" },
   alignItems: "center",
-  gap: { xs: 4, md: 6, lg: 8 },
+  gap: { xs: 4, md: 5, lg: 6 },
 };
 
 const media: SxProps<Theme> = {
   width: "100%",
+  maxWidth: { md: 920, lg: "none" },
+  mx: { md: "auto", lg: 0 },
   aspectRatio: { xs: "4 / 3", sm: "16 / 10" },
   borderRadius: 1.5,
   overflow: "hidden",

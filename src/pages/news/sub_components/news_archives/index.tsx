@@ -13,6 +13,8 @@ export default function NewsArchive({
   eyebrow,
   title,
   description,
+  categoriesLabel,
+  yearsLabel,
   actionLabel,
   actionHref,
   categories,
@@ -23,29 +25,37 @@ export default function NewsArchive({
       <SectionTitle eyebrow={eyebrow} title={title} subtitle={description} />
 
       <Box sx={styles.content}>
-        <Box sx={styles.group}>
-          <Typography sx={styles.label}>Catégories</Typography>
+        {categories.length > 0 && (
+          <Box sx={styles.group}>
+            <Typography component="h3" sx={styles.label}>
+              {categoriesLabel}
+            </Typography>
 
-          <Box sx={styles.options}>
-            {categories.map((item) => (
-              <Box key={item.id} component="span" sx={styles.option}>
-                {item.label}
-              </Box>
-            ))}
+            <Box component="ul" sx={styles.options}>
+              {categories.map((item) => (
+                <Box key={item.id} component="li" sx={styles.option}>
+                  {item.label}
+                </Box>
+              ))}
+            </Box>
           </Box>
-        </Box>
+        )}
 
-        <Box sx={styles.group}>
-          <Typography sx={styles.label}>Années</Typography>
+        {years.length > 0 && (
+          <Box sx={styles.group}>
+            <Typography component="h3" sx={styles.label}>
+              {yearsLabel}
+            </Typography>
 
-          <Box sx={styles.options}>
-            {years.map((item) => (
-              <Box key={item.id} component="span" sx={styles.option}>
-                {item.label}
-              </Box>
-            ))}
+            <Box component="ul" sx={styles.options}>
+              {years.map((item) => (
+                <Box key={item.id} component="li" sx={styles.option}>
+                  {item.label}
+                </Box>
+              ))}
+            </Box>
           </Box>
-        </Box>
+        )}
       </Box>
 
       <TextLink to={actionHref} sx={styles.action}>

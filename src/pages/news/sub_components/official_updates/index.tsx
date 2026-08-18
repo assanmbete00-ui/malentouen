@@ -52,7 +52,7 @@ export default function OfficialUpdates({
             </Box>
 
             <Box component={RouterLink} to={item.href} sx={styles.link}>
-              {actionLabel}
+              {item.actionLabel}
               <ArrowForwardRoundedIcon fontSize="small" />
             </Box>
           </Box>
