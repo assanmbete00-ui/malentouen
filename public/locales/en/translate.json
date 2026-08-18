@@ -451,6 +451,8 @@
   "NEWS_ARCHIVE_EYEBROW": "Archives",
   "NEWS_ARCHIVE_TITLE": "Explore the Chiefdom’s Previous Publications",
   "NEWS_ARCHIVE_DESCRIPTION": "Browse previous news, official announcements and publications from the Traditional Chiefdom of Malentouen by topic or year of publication.",
+  "NEWS_ARCHIVE_CATEGORIES_LABEL": "Catégories",
+  "NEWS_ARCHIVE_YEARS_LABEL": "Years", 
   "NEWS_ARCHIVE_ACTION": "Explore All Archives",
   "NEWS_ARCHIVE_CATEGORY_ALL": "All News",
   "NEWS_ARCHIVE_YEAR_2026": "2026",

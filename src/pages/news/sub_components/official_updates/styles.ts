@@ -17,8 +17,8 @@ const item: SxProps<Theme> = {
     md: "160px minmax(0, 1fr) auto",
   },
   alignItems: "center",
-  gap: { xs: 2, md: 4 },
-  py: { xs: 3, md: 4 },
+  gap: { xs: 1.5, md: 3 },
+  py: { xs: 2.5, md: 3.5 },
   borderTop: "1px solid",
   borderColor: "divider",
 };
@@ -56,7 +56,7 @@ const link: SxProps<Theme> = {
   fontSize: 14,
   fontWeight: 800,
   textDecoration: "none",
-  whiteSpace: "nowrap",
+  whiteSpace: { xs: "normal", lg: "nowrap",},
 
   "&:hover": {
     color: "secondary.dark",

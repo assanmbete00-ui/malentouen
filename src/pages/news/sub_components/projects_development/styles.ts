@@ -10,13 +10,23 @@ const grid: SxProps<Theme> = {
     xs: "1fr",
     md: "repeat(2, minmax(0, 1fr))",
   },
-  gap: { xs: 4, md: 5 },
+  gap: { xs: 3.5, md: 4.5 },
 };
 
 const article: SxProps<Theme> = {
   display: "flex",
   flexDirection: "column",
   minWidth: 0,
+};
+
+const featuredArticle: SxProps<Theme> = {
+  ...article,
+  gridColumn: { md: "1 / -1" },
+  display: { md: "grid" },
+  gridTemplateColumns: { md: "1fr 1fr" },
+  alignItems: "center",
+  gap: { md: 4.5, lg: 5.5 },
+  mt: { md: 0.5 },
 };
 
 const media: SxProps<Theme> = {
@@ -26,12 +36,26 @@ const media: SxProps<Theme> = {
   overflow: "hidden",
 };
 
+const featuredMedia: SxProps<Theme> = {
+  ...media,
+  aspectRatio: { xs: "16 / 10", md: "16 / 9" },
+};
+
+const body: SxProps<Theme> = {
+  minWidth: 0,
+};
+
 const meta: SxProps<Theme> = {
   display: "flex",
   alignItems: "center",
   flexWrap: "wrap",
   gap: 1,
   mt: 2.5,
+};
+
+const featuredMeta: SxProps<Theme> = {
+  ...meta,
+  mt: { xs: 2.5, md: 0 },
 };
 
 const category: SxProps<Theme> = {
@@ -51,9 +75,14 @@ const date: SxProps<Theme> = {
 const title: SxProps<Theme> = {
   mt: 1.5,
   color: "text.primary",
-  fontSize: { xs: 20, md: 22 },
+  fontSize: { xs: 20, md: 23, lg: 25 },
   fontWeight: 900,
   lineHeight: 1.35,
+};
+
+const featuredTitle: SxProps<Theme> = {
+  ...title,
+  fontSize: { xs: 20, md: 24, lg: 26 },
 };
 
 const excerpt: SxProps<Theme> = {
@@ -72,11 +101,16 @@ export default {
   headerAction,
   grid,
   article,
+  featuredArticle,
   media,
+  featuredMedia,
+  body,
   meta,
+  featuredMeta,
   category,
   date,
   title,
+  featuredTitle,
   excerpt,
   link,
 };

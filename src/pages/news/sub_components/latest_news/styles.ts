@@ -11,7 +11,7 @@ const grid: SxProps<Theme> = {
     sm: "repeat(2, minmax(0, 1fr))",
     lg: "repeat(3, minmax(0, 1fr))",
   },
-  gap: { xs: 3, md: 3.5 },
+  gap: { xs: 2.5, md: 3 },
 };
 
 const card: SxProps<Theme> = {

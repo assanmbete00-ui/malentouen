@@ -1,9 +1,14 @@
+import { Category } from "@mui/icons-material";
+
 export const NEWS_ARCHIVE = {
   id: "news-archive",
 
   eyebrowKey: "NEWS_ARCHIVE_EYEBROW",
   titleKey: "NEWS_ARCHIVE_TITLE",
   descriptionKey: "NEWS_ARCHIVE_DESCRIPTION",
+
+  CategoriesLabelKey: "NEWS_ARCHIVE_CATEGORIES_LABEL",
+  yearsLabelKey: "NEWS_ARCHIVE_YEARS_LABEL",
 
   actionLabelKey: "NEWS_ARCHIVE_ACTION",
   actionHref: "/news/archive",

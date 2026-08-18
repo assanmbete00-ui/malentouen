@@ -34,6 +34,7 @@ export type OfficialUpdateItem = {
   formattedDate: string;
   title: ReactNode;
   excerpt: ReactNode;
+  actionLabel: ReactNode;
   href: string;
 };
 
@@ -106,6 +107,8 @@ export type NewsPageData = {
     eyebrow: ReactNode;
     title: ReactNode;
     description: ReactNode;
+    categoriesLabel: ReactNode;
+    yearsLabel: ReactNode;
     actionLabel: ReactNode;
     actionHref: string;
     categories: NewsArchiveCategory[];

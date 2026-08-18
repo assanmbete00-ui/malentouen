@@ -94,8 +94,8 @@ export default function useNews(): NewsPageData {
     eyebrow: translate(NEWS_OFFICIAL_UPDATES.eyebrowKey),
     title: translate(NEWS_OFFICIAL_UPDATES.titleKey),
     description: translate(NEWS_OFFICIAL_UPDATES.descriptionKey),
-    actionLabel: translate(NEWS_OFFICIAL_UPDATES.actionLabelKey),
-    actionHref: NEWS_OFFICIAL_UPDATES.actionHref,
+    actionLabel: translate(NEWS_OFFICIAL_UPDATES.action.LabelKey),
+    actionHref: NEWS_OFFICIAL_UPDATES.action.Href,
 
     items: NEWS_OFFICIAL_UPDATES.items.map((item) => ({
       id: item.id,
@@ -105,6 +105,7 @@ export default function useNews(): NewsPageData {
       formattedDate: formatDate(item.publishedAt),
       title: translate(item.titleKey),
       excerpt: translate(item.excerptKey),
+      actionLabel: translate(item.actionLabelKey),
       href: item.href,
     })),
   };
@@ -166,6 +167,8 @@ export default function useNews(): NewsPageData {
     eyebrow: translate(NEWS_ARCHIVE.eyebrowKey),
     title: translate(NEWS_ARCHIVE.titleKey),
     description: translate(NEWS_ARCHIVE.descriptionKey),
+    categoriesLabel: translate(NEWS_ARCHIVE.CategoriesLabelKey),
+    yearsLabel: translate(NEWS_ARCHIVE.yearsLabelKey),
     actionLabel: translate(NEWS_ARCHIVE.actionLabelKey),
     actionHref: NEWS_ARCHIVE.actionHref,
 
