@@ -10,6 +10,7 @@ import About from "@pages/about";
 import Events from "@pages/events";
 import Cultures from "@pages/cultures";
 import News from "@pages/news";
+import NewsArticle from "@pages/news/article";
 import Projects from "@pages/projects";
 import Contact from "@pages/contact";
 
@@ -17,7 +18,11 @@ const mainNavigation: RouteObject[] = [
   {
     path: "/",
     element: (
-      <MainLayout bgColor="secondary" ContextProvider={MainPageContextProvider}disableContainer> 
+      <MainLayout
+        bgColor="secondary"
+        ContextProvider={MainPageContextProvider}
+        disableContainer
+      >
         <Home />
       </MainLayout>
     ),
@@ -26,7 +31,11 @@ const mainNavigation: RouteObject[] = [
   {
     path: "/about",
     element: (
-      <MainLayout bgColor="secondary" ContextProvider={MainPageContextProvider}disableContainer>
+      <MainLayout
+        bgColor="secondary"
+        ContextProvider={MainPageContextProvider}
+        disableContainer
+      >
         <About />
       </MainLayout>
     ),
@@ -44,7 +53,11 @@ const mainNavigation: RouteObject[] = [
   {
     path: "/cultures",
     element: (
-      <MainLayout bgColor="secondary" ContextProvider={MainPageContextProvider}disableContainer>
+      <MainLayout
+        bgColor="secondary"
+        ContextProvider={MainPageContextProvider}
+        disableContainer
+      >
         <Cultures />
       </MainLayout>
     ),
@@ -53,8 +66,25 @@ const mainNavigation: RouteObject[] = [
   {
     path: "/news",
     element: (
-      <MainLayout bgColor="secondary" ContextProvider={MainPageContextProvider}disableContainer>
+      <MainLayout
+        bgColor="secondary"
+        ContextProvider={MainPageContextProvider}
+        disableContainer
+      >
         <News />
+      </MainLayout>
+    ),
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/news/:slug",
+    element: (
+      <MainLayout
+        bgColor="secondary"
+        ContextProvider={MainPageContextProvider}
+        disableContainer
+      >
+        <NewsArticle />
       </MainLayout>
     ),
     errorElement: <ErrorPage />,

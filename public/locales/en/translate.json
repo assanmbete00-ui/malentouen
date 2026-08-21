@@ -282,7 +282,6 @@
   "CULTURES_EXPRESSIONS_LANGUAGE_TITLE": "Language and Oral Heritage",
   "CULTURES_EXPRESSIONS_LANGUAGE_DESCRIPTION": "Language, proverbs, oral traditions and storytelling represent a valuable intangible heritage. They ensure that knowledge, values and collective memory are passed from one generation to the next.",
 
-
   "CULTURES_CRAFTSMANSHIP_EYEBROW": "Craftsmanship & Heritage",
   "CULTURES_CRAFTSMANSHIP_TITLE": "Skills Shaped by Memory and Transmission",
   "CULTURES_CRAFTSMANSHIP_DESCRIPTION": "In Malentouen, traditional craftsmanship is an essential expression of cultural heritage. It reflects skills patiently passed down through generations, a close relationship with materials and symbols, and a deep attachment to Bamoun identity. Every creation carries the trace of a story, a gesture and a shared memory.",
@@ -303,7 +302,6 @@
   "CULTURES_CRAFTSMANSHIP_CRAFTS_TITLE": "Craftsmanship as Living Memory",
   "CULTURES_CRAFTSMANSHIP_CRAFTS_DESCRIPTION": "Beyond their practical function, handcrafted objects tell a story. They preserve gestures, techniques and cultural references that allow present generations to remain connected to the heritage of those who came before them.",
 
-
   "CULTURES_INTANGIBLE_HERITAGE_EYEBROW": "Intangible Heritage",
   "CULTURES_INTANGIBLE_HERITAGE_TITLE": "The Living Memory of a Civilization",
   "CULTURES_INTANGIBLE_HERITAGE_DESCRIPTION": "Cultural heritage extends far beyond objects and monuments. It also lives through language, oral traditions, knowledge, customs and values that shape collective identity. In Malentouen, this intangible heritage forms a vital bridge between generations and preserves the very soul of the community.",
@@ -316,7 +314,6 @@
   "CULTURES_INTANGIBLE_HERITAGE_VALUES_DESCRIPTION": "Respect, solidarity, dignity, responsibility and attachment to tradition remain the guiding principles of community life and continue to inspire future generations.",
   "CULTURES_INTANGIBLE_HERITAGE_TRANSMISSION_TITLE": "Transmission",
   "CULTURES_INTANGIBLE_HERITAGE_TRANSMISSION_DESCRIPTION": "Safeguarding intangible heritage means passing on far more than knowledge; it means transmitting identity, memory and a shared vision for the future.",
-
 
   "CULTURES_GALLERY_EYEBROW": "Heritage in Pictures",
   "CULTURES_GALLERY_TITLE": "A Glimpse into the Cultural Wealth of Malentouen",
@@ -334,14 +331,12 @@
   "CULTURES_GALLERY_IMAGE_06_ALT": "Cultural heritage passed on to future generations in Malentouen",
   "CULTURES_GALLERY_IMAGE_06_TITLE": "A Heritage for Future Generations",
 
-
   "CULTURES_TRANSMISSION_IMAGE_ALT": "Transmission of the cultural heritage of Malentouen",
   "CULTURES_TRANSMISSION_EYEBROW": "Preserving to Pass On",
   "CULTURES_TRANSMISSION_TITLE": "A Heritage That Belongs to Future Generations",
   "CULTURES_TRANSMISSION_DESCRIPTION": "Preserving cultural heritage is a shared responsibility. Every tradition, every story, every skill and every value passed down helps keep the identity of the Traditional Chiefdom of Malentouen alive. By safeguarding this legacy today, we enable future generations to better understand their history, their roots and their sense of belonging to a community enriched by its past.",
   "CULTURES_TRANSMISSION_DESCRIPTION_SECONDARY": "Through its efforts to safeguard, promote and transmit this heritage, the Chiefdom fulfills an essential mission: ensuring that this cultural legacy continues to inspire unity, identity and sustainable development for generations to come.",
   "CULTURES_TRANSMISSION_ACTION": "Discover the Chiefdom",
-
 
   "CULTURES_EXPLORE_MORE_EYEBROW": "Continue Exploring",
   "CULTURES_EXPLORE_MORE_TITLE": "The Culture of Malentouen Is Part of a Story That Continues to Be Written",
@@ -356,13 +351,14 @@
   "CULTURES_EXPLORE_MORE_NEWS_TITLE": "Follow Our News",
   "CULTURES_EXPLORE_MORE_NEWS_DESCRIPTION": "Stay informed about announcements, activities and developments that reflect the everyday life of the Chiefdom.",
 
-
   "NEWS_BANNER_IMAGE_ALT": "News and institutional information from the Traditional Chiefdom of Malentouen",
   "NEWS_BANNER_EYEBROW": "News",
   "NEWS_BANNER_TITLE": "Follow the Life and Initiatives of the Chiefdom",
   "NEWS_BANNER_DESCRIPTION": "Discover the latest news, official announcements, initiatives, events and information reflecting the institutional, cultural and community life of the Traditional Chiefdom of Malentouen.",
   "NAVIGATION_NEWS": "News",
-
+  "NEWS_ARTICLE_NOT_FOUND_TITLE": "Article not found",
+  "NEWS_ARTICLE_NOT_FOUND_DESCRIPTION": "This article does not exist or is no longer available.",
+  "NEWS_ARTICLE_NOT_FOUND_BACK": "Back to news",
 
   "NEWS_FEATURED_EYEBROW": "Featured",
   "NEWS_FEATURED_TITLE": "The Chiefdom’s Key Story",
@@ -372,7 +368,6 @@
   "NEWS_FEATURED_ARTICLE_IMAGE_ALT": "Institutional news from the Traditional Chiefdom of Malentouen",
   "NEWS_FEATURED_ARTICLE_TITLE": "Preserving Our Heritage While Building the Community’s Future",
   "NEWS_FEATURED_ARTICLE_EXCERPT": "The Traditional Chiefdom of Malentouen continues its efforts to preserve heritage, strengthen community cohesion and support development, with particular attention to passing this legacy on to future generations.",
-
 
   "NEWS_LATEST_EYEBROW": "Latest News",
   "NEWS_LATEST_TITLE": "Follow the Key Moments of Malentouen",
@@ -401,7 +396,6 @@
   "NEWS_LATEST_ITEM_06_TITLE": "The Chiefdom Continues Its Institutional Meetings",
   "NEWS_LATEST_ITEM_06_EXCERPT": "Institutional exchanges contribute to coordinating actions, maintaining dialogue with local stakeholders and monitoring community priorities.",
 
-
   "NEWS_OFFICIAL_UPDATES_EYEBROW": "Official Information",
   "NEWS_OFFICIAL_UPDATES_TITLE": "Chiefdom Announcements and Notices",
   "NEWS_OFFICIAL_UPDATES_DESCRIPTION": "Access official announcements, notices and information published by the Traditional Chiefdom of Malentouen for the community and its partners.",
@@ -413,7 +407,6 @@
   "NEWS_OFFICIAL_UPDATE_02_EXCERPT": "An institutional meeting is announced to strengthen coordination, dialogue and the monitoring of actions carried out within the community.",
   "NEWS_OFFICIAL_UPDATE_03_TITLE": "Information Notice for the Residents of Malentouen",
   "NEWS_OFFICIAL_UPDATE_03_EXCERPT": "The Chiefdom brings to the attention of the community several practical updates concerning local life and upcoming activities.",
-
 
   "NEWS_COMMUNITY_CULTURE_EYEBROW": "Community & Culture",
   "NEWS_COMMUNITY_CULTURE_TITLE": "The Community at the Heart of the News",
@@ -432,7 +425,6 @@
   "NEWS_COMMUNITY_CULTURE_ITEM_04_TITLE": "Preserving Memory and Traditional Knowledge",
   "NEWS_COMMUNITY_CULTURE_ITEM_04_EXCERPT": "Collective memory and knowledge passed between generations remain essential pillars of Malentouen’s cultural heritage.",
 
-
   "NEWS_PROJECTS_DEVELOPMENT_EYEBROW": "Projects & Development",
   "NEWS_PROJECTS_DEVELOPMENT_TITLE": "Initiatives Supporting Malentouen’s Future",
   "NEWS_PROJECTS_DEVELOPMENT_DESCRIPTION": "Follow the projects, actions and initiatives contributing to improved living conditions, stronger local capacities and the sustainable development of the community.",
@@ -447,12 +439,11 @@
   "NEWS_PROJECTS_DEVELOPMENT_ITEM_03_TITLE": "Supporting Local Economic Initiatives and Skills",
   "NEWS_PROJECTS_DEVELOPMENT_ITEM_03_EXCERPT": "Developing local activities contributes to creating opportunities, promoting traditional and practical skills, and strengthening the community’s economic autonomy.",
 
-
   "NEWS_ARCHIVE_EYEBROW": "Archives",
   "NEWS_ARCHIVE_TITLE": "Explore the Chiefdom’s Previous Publications",
   "NEWS_ARCHIVE_DESCRIPTION": "Browse previous news, official announcements and publications from the Traditional Chiefdom of Malentouen by topic or year of publication.",
   "NEWS_ARCHIVE_CATEGORIES_LABEL": "Catégories",
-  "NEWS_ARCHIVE_YEARS_LABEL": "Years", 
+  "NEWS_ARCHIVE_YEARS_LABEL": "Years",
   "NEWS_ARCHIVE_ACTION": "Explore All Archives",
   "NEWS_ARCHIVE_CATEGORY_ALL": "All News",
   "NEWS_ARCHIVE_YEAR_2026": "2026",

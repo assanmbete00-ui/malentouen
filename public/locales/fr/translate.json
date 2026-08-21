@@ -339,7 +339,6 @@
   "CULTURES_INTANGIBLE_HERITAGE_TRANSMISSION_TITLE": "La transmission",
   "CULTURES_INTANGIBLE_HERITAGE_TRANSMISSION_DESCRIPTION": "Préserver le patrimoine immatériel, c'est transmettre bien plus que des connaissances : c'est transmettre une identité, une mémoire et une vision commune de l'avenir.",
 
-
   "CULTURES_GALLERY_EYEBROW": "Patrimoine en images",
   "CULTURES_GALLERY_TITLE": "Un regard sur la richesse culturelle de Malentouen",
   "CULTURES_GALLERY_DESCRIPTION": "Chaque image témoigne d'un patrimoine vivant, d'une tradition préservée et d'une identité transmise au fil des générations. Cette sélection offre un aperçu de la diversité culturelle qui fait la singularité de la Chefferie Traditionnelle de Malentouen.",
@@ -356,7 +355,6 @@
   "CULTURES_GALLERY_IMAGE_06_ALT": "Patrimoine culturel transmis aux nouvelles générations à Malentouen",
   "CULTURES_GALLERY_IMAGE_06_TITLE": "Un héritage tourné vers les générations futures",
 
-
   "CULTURES_TRANSMISSION_IMAGE_ALT": "Transmission du patrimoine culturel de Malentouen",
   "CULTURES_TRANSMISSION_EYEBROW": "Préserver pour transmettre",
   "CULTURES_TRANSMISSION_TITLE": "Un héritage qui appartient aux générations futures",
@@ -364,7 +362,6 @@
   "CULTURES_TRANSMISSION_DESCRIPTION_SECONDARY": "À travers ses actions de sauvegarde, de valorisation et de transmission, la Chefferie poursuit une mission essentielle : faire vivre un patrimoine qui demeure une source d'inspiration, de cohésion et de développement pour l'ensemble de la communauté.",
   "CULTURES_TRANSMISSION_ACTION": "Découvrir la Chefferie",
 
-  
   "CULTURES_EXPLORE_MORE_EYEBROW": "Poursuivre la découverte",
   "CULTURES_EXPLORE_MORE_TITLE": "La culture de Malentouen s'inscrit dans une histoire qui continue de s'écrire",
   "CULTURES_EXPLORE_MORE_DESCRIPTION": "Prolongez votre découverte de la Chefferie Traditionnelle de Malentouen à travers son histoire, ses événements, ses projets et son actualité. Chaque espace de la plateforme permet de mieux comprendre une institution vivante, profondément attachée à son héritage et engagée dans l'avenir de sa communauté.",
@@ -378,13 +375,14 @@
   "CULTURES_EXPLORE_MORE_NEWS_TITLE": "Suivre notre actualité",
   "CULTURES_EXPLORE_MORE_NEWS_DESCRIPTION": "Restez informé des annonces, activités et informations qui témoignent de la vie quotidienne de la Chefferie.",
 
-  
   "NEWS_BANNER_IMAGE_ALT": "Actualités et informations institutionnelles de la Chefferie Traditionnelle de Malentouen",
   "NEWS_BANNER_EYEBROW": "Actualités",
   "NEWS_BANNER_TITLE": "Suivre la vie et les actions de la Chefferie",
   "NEWS_BANNER_DESCRIPTION": "Retrouvez les actualités, communiqués, initiatives, événements et informations qui témoignent de la vie institutionnelle, culturelle et communautaire de la Chefferie Traditionnelle de Malentouen.",
   "NAVIGATION_NEWS": "Actualités",
-
+  "NEWS_ARTICLE_NOT_FOUND_TITLE": "Article introuvable",
+  "NEWS_ARTICLE_NOT_FOUND_DESCRIPTION": "Cet article n'existe pas ou n'est plus disponible.",
+  "NEWS_ARTICLE_NOT_FOUND_BACK": "Retour aux actualités",
 
   "NEWS_FEATURED_EYEBROW": "À la une",
   "NEWS_FEATURED_TITLE": "L’information essentielle de la Chefferie",
@@ -394,7 +392,6 @@
   "NEWS_FEATURED_ARTICLE_IMAGE_ALT": "Actualité institutionnelle de la Chefferie Traditionnelle de Malentouen",
   "NEWS_FEATURED_ARTICLE_TITLE": "Préserver notre héritage tout en construisant l’avenir de la communauté",
   "NEWS_FEATURED_ARTICLE_EXCERPT": "La Chefferie Traditionnelle de Malentouen poursuit ses actions en faveur de la préservation du patrimoine, de la cohésion communautaire et du développement, avec une attention particulière portée à la transmission aux nouvelles générations.",
-
 
   "NEWS_LATEST_EYEBROW": "Dernières actualités",
   "NEWS_LATEST_TITLE": "Suivre les temps forts de Malentouen",
@@ -423,14 +420,13 @@
   "NEWS_LATEST_ITEM_06_TITLE": "La Chefferie poursuit ses rencontres institutionnelles",
   "NEWS_LATEST_ITEM_06_EXCERPT": "Les échanges institutionnels contribuent à la coordination des actions, au dialogue avec les acteurs locaux et au suivi des priorités de la communauté.",
 
-
   "NEWS_OFFICIAL_UPDATES_EYEBROW": "Informations officielles",
   "NEWS_OFFICIAL_UPDATES_TITLE": "Communiqués et annonces de la Chefferie",
   "NEWS_OFFICIAL_UPDATES_DESCRIPTION": "Consultez les communiqués, avis et informations officielles publiés par la Chefferie Traditionnelle de Malentouen à l’attention de la communauté et de ses partenaires.",
   "NEWS_OFFICIAL_UPDATES_VIEW_ALL": "Voir toutes les informations officielles",
   "NEWS_OFFICIAL_UPDATE_READ_COMMUNIQUE": "Lire le communiqué",
   "NEWS_OFFICIAL_UPDATE_READ_ANNOUNCEMENT": "Lire l’annonce",
-  "NEWS_OFFICIAL_UPDATE_READ_NOTICE": "Consulter l’avis", 
+  "NEWS_OFFICIAL_UPDATE_READ_NOTICE": "Consulter l’avis",
   "NEWS_OFFICIAL_UPDATES_ITEM_ACTION": "Consulter",
   "NEWS_OFFICIAL_UPDATE_01_TITLE": "Annonce relative à une prochaine concertation communautaire",
   "NEWS_OFFICIAL_UPDATE_01_EXCERPT": "La Chefferie informe la communauté de la tenue prochaine d’une rencontre de concertation consacrée aux préoccupations locales et aux actions prioritaires.",
@@ -438,7 +434,6 @@
   "NEWS_OFFICIAL_UPDATE_02_EXCERPT": "Une rencontre institutionnelle est annoncée afin de renforcer la coordination, le dialogue et le suivi des actions menées au sein de la communauté.",
   "NEWS_OFFICIAL_UPDATE_03_TITLE": "Avis d’information à l’attention des habitants de Malentouen",
   "NEWS_OFFICIAL_UPDATE_03_EXCERPT": "La Chefferie porte à la connaissance de la communauté plusieurs informations pratiques relatives à la vie locale et aux prochaines activités.",
-
 
   "NEWS_COMMUNITY_CULTURE_EYEBROW": "Vie communautaire & culturellle",
   "NEWS_COMMUNITY_CULTURE_TITLE": "La communauté au cœur de l’actualité",
@@ -457,7 +452,6 @@
   "NEWS_COMMUNITY_CULTURE_ITEM_04_TITLE": "Préserver la mémoire et les savoirs traditionnels",
   "NEWS_COMMUNITY_CULTURE_ITEM_04_EXCERPT": "La mémoire collective et les connaissances transmises entre générations demeurent des piliers essentiels du patrimoine culturel de Malentouen.",
 
-
   "NEWS_PROJECTS_DEVELOPMENT_EYEBROW": "Projets & développement",
   "NEWS_PROJECTS_DEVELOPMENT_TITLE": "Des initiatives qui accompagnent l’avenir de Malentouen",
   "NEWS_PROJECTS_DEVELOPMENT_DESCRIPTION": "Suivez les projets, actions et initiatives qui contribuent à l’amélioration du cadre de vie, au renforcement des capacités locales et au développement durable de la communauté.",
@@ -472,16 +466,14 @@
   "NEWS_PROJECTS_DEVELOPMENT_ITEM_03_TITLE": "Soutenir les initiatives économiques et les savoir-faire locaux",
   "NEWS_PROJECTS_DEVELOPMENT_ITEM_03_EXCERPT": "Le développement des activités locales participe à la création d’opportunités, à la valorisation des savoir-faire et au renforcement de l’autonomie économique de la communauté.",
 
-
   "NEWS_ARCHIVE_EYEBROW": "Archives",
   "NEWS_ARCHIVE_TITLE": "Retrouver les publications de la Chefferie",
   "NEWS_ARCHIVE_DESCRIPTION": "Explorez les actualités, communiqués et publications antérieures de la Chefferie Traditionnelle de Malentouen selon leur thématique ou leur année de publication.",
   "NEWS_ARCHIVE_CATEGORIES_LABEL": "Catégories",
-  "NEWS_ARCHIVE_YEARS_LABEL": "Années", 
+  "NEWS_ARCHIVE_YEARS_LABEL": "Années",
   "NEWS_ARCHIVE_ACTION": "Explorer toutes les archives",
   "NEWS_ARCHIVE_CATEGORY_ALL": "Toutes les actualités",
   "NEWS_ARCHIVE_YEAR_2026": "2026",
   "NEWS_ARCHIVE_YEAR_2025": "2025",
   "NEWS_ARCHIVE_YEAR_2024": "2024"
 }
-
