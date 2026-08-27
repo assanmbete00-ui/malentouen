@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/malentouen/static/js/main.30bbf80d.js",
+    "main.js": "/malentouen/static/js/main.a2d2428f.js",
     "static/js/38.12141f9c.chunk.js": "/malentouen/static/js/38.12141f9c.chunk.js",
     "static/media/news1.jpg": "/malentouen/static/media/news1.199fe1b56ad066cd564d.jpg",
     "static/media/project2.jpg": "/malentouen/static/media/project2.55049f54e631383ff125.jpg",
@@ -42,6 +42,7 @@
     "static/media/introduction.png": "/malentouen/static/media/introduction.010af3379157e7d00493.png",
     "static/media/news3.png": "/malentouen/static/media/news3.ccfd2cfacb94889a3eff.png",
     "static/media/chief.webp": "/malentouen/static/media/chief.1257cec26f84db1375b5.webp",
+    "static/media/banner.png": "/malentouen/static/media/banner.8d150838b107bf738417.png",
     "static/media/ceremony.png": "/malentouen/static/media/ceremony.8d150838b107bf738417.png",
     "static/media/chief_portrait.png": "/malentouen/static/media/chief_portrait.fcc1ddfeda2c809b4d3a.png",
     "static/media/community.png": "/malentouen/static/media/community.9c1f5a41cd080919572a.png",
@@ -64,10 +65,10 @@
     "static/media/news2.jpg": "/malentouen/static/media/news2.f34402c7c6d4937ab5d1.jpg",
     "static/media/clv.png": "/malentouen/static/media/clv.63b36f739e2ab6c13614.png",
     "index.html": "/malentouen/index.html",
-    "main.30bbf80d.js.map": "/malentouen/static/js/main.30bbf80d.js.map",
+    "main.a2d2428f.js.map": "/malentouen/static/js/main.a2d2428f.js.map",
     "38.12141f9c.chunk.js.map": "/malentouen/static/js/38.12141f9c.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.30bbf80d.js"
+    "static/js/main.a2d2428f.js"
   ]
 }
