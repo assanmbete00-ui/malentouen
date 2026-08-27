@@ -32,7 +32,9 @@ export default function CultureHighlight({
 
         {showAction && action && (
           <Box sx={styles.actionWrapper}>
-            <TextLink to={action.href}>{action.label}</TextLink>
+            <TextLink to={action.href} variant="inverse">
+              {action.label}
+            </TextLink>
           </Box>
         )}
       </Box>

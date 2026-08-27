@@ -14,7 +14,7 @@ export default function ChiefMessage() {
 
   return (
     <Section
-      variant="paper"
+      variant="default"
       id="chief-message"
       contentSx={{ py: 0, display: "flex", alignItems: "center" }}
     >

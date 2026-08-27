@@ -23,7 +23,7 @@ export type NewsArticleSource = {
   href: string;
 };
 
-const NEWS_ARTICLES: NewsArticleSource[] = [
+export const NEWS_ARTICLES: NewsArticleSource[] = [
   NEWS_FEATURED.article,
   ...NEWS_LATEST.items,
   ...NEWS_COMMUNITY_CULTURE.items,

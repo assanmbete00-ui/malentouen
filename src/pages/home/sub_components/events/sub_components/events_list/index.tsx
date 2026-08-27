@@ -14,6 +14,7 @@ export default function EventsList({ items }: EventsListProps) {
         <EventCard
           key={item.id}
           date={item.date}
+          dateTime={item.dateTime}
           category={item.category}
           title={item.title}
           location={item.location}

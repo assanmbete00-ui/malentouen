@@ -18,6 +18,11 @@ export type NewsArticleItem = {
   title: ReactNode;
   excerpt: ReactNode;
   href: string;
+  breadcrumb?: Array<{ label: ReactNode; href?: string }>;
+  action?: {
+    label: ReactNode;
+    href: string;
+  };
 };
 
 export type FeaturedNewsArticle = NewsArticleItem & {

@@ -1,10 +1,20 @@
 import useTranslate from "@hooks/use_translate";
+import { EVENTS } from "@data/events";
 
 import { EVENTS_CONFIG } from "../config/events_config";
-import { EVENTS_ITEMS } from "../config/events_items";
 
 export default function useEvents() {
-  const { translate } = useTranslate();
+  const { translate, currentLanguage } = useTranslate();
+
+  const formatDate = (date: string) =>
+    new Intl.DateTimeFormat(currentLanguage, {
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+    }).format(new Date(`${date}T00:00:00`));
+
+  const formatTime = (startTime: string, endTime?: string) =>
+    endTime ? `${startTime} – ${endTime}` : startTime;
 
   const content = {
     eyebrow: translate("HOME_EVENTS_EYEBROW"),
@@ -17,14 +27,15 @@ export default function useEvents() {
     href: EVENTS_CONFIG.actionPath,
   };
 
-  const items = EVENTS_ITEMS.map((item) => ({
+  const items = EVENTS.map((item) => ({
     id: item.id,
     category: translate(item.categoryKey),
-    date: translate(item.dateKey),
+    date: formatDate(item.date),
+    dateTime: item.date,
     title: translate(item.titleKey),
     location: translate(item.locationKey),
-    time: translate(item.timeKey),
-    href: item.href,
+    time: formatTime(item.startTime, item.endTime),
+    href: EVENTS_CONFIG.actionPath,
   }));
 
   const options = {

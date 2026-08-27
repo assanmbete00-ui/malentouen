@@ -13,17 +13,12 @@ export default function HeroActions({
 }: HeroActionsProps) {
   return (
     <Box sx={styles.container}>
-      <RouterLink
-        to={primaryAction.href}
-        style={{ textDecoration: "none" }}
-      >
-        <Button>
-          {primaryAction.label}
-        </Button>
+      <RouterLink to={primaryAction.href} style={{ textDecoration: "none" }}>
+        <Button>{primaryAction.label}</Button>
       </RouterLink>
 
       {secondaryAction && (
-        <TextLink to={secondaryAction.href}>
+        <TextLink to={secondaryAction.href} variant="inverse">
           {secondaryAction.label}
         </TextLink>
       )}

@@ -5,6 +5,12 @@ const link: SxProps<Theme> = {
   height: "100%",
   textDecoration: "none",
   color: "inherit",
+  "&:focus-visible": {
+    outline: "2px solid",
+    outlineColor: "secondary.main",
+    outlineOffset: 3,
+    borderRadius: 1,
+  },
 };
 
 const content: SxProps<Theme> = {

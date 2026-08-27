@@ -3,6 +3,7 @@ import type { SxProps, Theme } from "@mui/material";
 
 export type EventCardProps = {
   date: ReactNode;
+  dateTime?: string;
   category?: ReactNode;
   title: ReactNode;
   location: ReactNode;

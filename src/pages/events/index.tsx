@@ -1,10 +1,17 @@
-import { Box, Typography } from "@mui/material";
+import PageBanner from "@components/page_banner";
 
-export default function EventsPage() {
+import useEvents from "./hooks/use_events";
+import UpcomingEvents from "./sub_components/upcoming_events";
+import EventsAgenda from "./sub_components/events_agenda";
+
+export default function Events() {
+  const { banner, upcoming, agenda } = useEvents();
+
   return (
-    <Box sx={{ p: 3 }}>
-      <Typography variant="h1">Events Page</Typography>
-      {/* Add your events page content here */}
-    </Box>
+    <>
+      <PageBanner {...banner} />
+      <UpcomingEvents {...upcoming} />
+      <EventsAgenda {...agenda} />
+    </>
   );
 }

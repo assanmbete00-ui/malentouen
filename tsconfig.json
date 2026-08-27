@@ -27,7 +27,8 @@
       "@navigations/*": ["navigations/*"],
       "@contexts/*": ["contexts/*"],
       "@pages/*": ["pages/*"],
-      "@constants/*": ["constants/*"]
+      "@constants/*": ["constants/*"],
+      "@data/*": ["data/*"]
     }
   },
   "include": ["src"]

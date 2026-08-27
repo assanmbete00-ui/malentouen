@@ -8,6 +8,7 @@ import type { EventCardProps } from "./types";
 
 export default function EventCard({
   date,
+  dateTime,
   category,
   title,
   location,
@@ -26,7 +27,7 @@ export default function EventCard({
           </Typography>
         </Box>
 
-        <Typography sx={styles.date}>
+        <Typography component="time" dateTime={dateTime} sx={styles.date}>
           {date}
         </Typography>
 

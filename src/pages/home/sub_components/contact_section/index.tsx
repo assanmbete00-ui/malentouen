@@ -15,7 +15,7 @@ export default function Contact() {
   return (
     <Section
       id="contact"
-      variant="paper"
+      variant="default"
       containerSize="wide"
     >
       <Box sx={styles.container}>
