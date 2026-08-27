@@ -1,4 +1,4 @@
-import EVENTS_BANNER_IMAGE from "@assets/images/history/history.png";
+import EVENTS_BANNER_IMAGE from "@assets/images/events/banner/banner.png";
 
 export const EVENTS_BANNER = {
   image: EVENTS_BANNER_IMAGE,

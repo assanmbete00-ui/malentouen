@@ -92,6 +92,9 @@
   "EVENTS_UPCOMING_EYEBROW": "Upcoming",
   "EVENTS_UPCOMING_TITLE": "Upcoming events",
   "EVENTS_UPCOMING_DESCRIPTION": "Discover the upcoming ceremonies, gatherings and activities taking place within the community.",
+  "EVENTS_PAST_EYEBROW": "Archives",
+  "EVENTS_PAST_TITLE": "Past events",
+  "EVENTS_PAST_DESCRIPTION": "Discover the events and gatherings that have marked the life of the Malentouen traditional chiefdom.",
 
   "HOME_GALLERY_EYEBROW": "Gallery",
   "HOME_GALLERY_TITLE": "Discover Malentouen Through Images",
@@ -127,6 +130,8 @@
   "HOME_PARTNERS_COMMUNITY_LEADERS_TYPE": "Traditional Institution",
   "HOME_PARTNERS_DEVELOPMENT_ACTORS_NAME": "Development Partner",
   "HOME_PARTNERS_DEVELOPMENT_ACTORS_TYPE": "Development Organization",
+  "HOME_PARTNERS_CLV_FRANCE_NAME": "Partnership between France and Malentouen",
+  "HOME_PARTNERS_CLV_FRANCE_TYPE": "CLV France-Cameroun",
 
   "HOME_CONTACT_EYEBROW": "Contact",
   "HOME_CONTACT_TITLE": "Let's Stay Connected",
