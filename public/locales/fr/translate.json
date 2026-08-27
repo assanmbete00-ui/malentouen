@@ -101,6 +101,9 @@
   "EVENTS_UPCOMING_EYEBROW": "À venir",
   "EVENTS_UPCOMING_TITLE": "Prochains rendez-vous",
   "EVENTS_UPCOMING_DESCRIPTION": "Découvrez les prochaines cérémonies, rencontres et activités organisées au sein de la communauté.",
+  "EVENTS_PAST_EYEBROW": "Archives",
+  "EVENTS_PAST_TITLE": "Événements passés",
+  "EVENTS_PAST_DESCRIPTION": "Retrouvez les événements et rencontres qui ont marqué la vie de la chefferie traditionnelle de Malentouen.",
 
   "HOME_GALLERY_EYEBROW": "Galerie",
   "HOME_GALLERY_TITLE": "Découvrez Malentouen en images",
@@ -136,6 +139,8 @@
   "HOME_PARTNERS_COMMUNITY_LEADERS_TYPE": "Institution traditionnelle",
   "HOME_PARTNERS_DEVELOPMENT_ACTORS_NAME": "Partenaire de Développement",
   "HOME_PARTNERS_DEVELOPMENT_ACTORS_TYPE": "Organisation de développement",
+  "HOME_PARTNERS_CLV_FRANCE_NAME": "Partenariat entre la France et Malentouen",
+  "HOME_PARTNERS_CLV_FRANCE_TYPE": "CLV France-Cameroun",
 
   "HOME_CONTACT_EYEBROW": "Contact",
   "HOME_CONTACT_TITLE": "Restons en contact",
@@ -485,7 +490,6 @@
   "NEWS_ARCHIVE_YEAR_2026": "2026",
   "NEWS_ARCHIVE_YEAR_2025": "2025",
   "NEWS_ARCHIVE_YEAR_2024": "2024",
-
 
   "EVENTS_AGENDA_EYEBROW": "Agenda",
   "EVENTS_AGENDA_TITLE": "Agenda de la Chefferie",

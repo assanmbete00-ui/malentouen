@@ -27,4 +27,11 @@ export const PARTNERS_ITEMS = [
     typeKey: "HOME_PARTNERS_DEVELOPMENT_ACTORS_TYPE",
     href: "/partners",
   },
+  {
+    id: "clvPartner",
+    imageKey: "clvPartner",
+    nameKey: "HOME_PARTNERS_CLV_FRANCE_NAME",
+    typeKey: "HOME_PARTNERS_CLV_FRANCE_TYPE",
+    href: "/partners"
+  }
 ] as const;
