@@ -1,12 +1,13 @@
 import type { SxProps, Theme } from "@mui/material";
+import type { TextLinkVariant } from "./types";
 
-const root: SxProps<Theme> = {
+const root = (variant: TextLinkVariant): SxProps<Theme> => ({
   display: "inline-flex",
   alignItems: "center",
   width: "fit-content",
   gap: 0.8,
 
-  color: "primary.contrastText",
+  color: variant === "inverse" ? "primary.contrastText" : "primary.main",
   fontSize: 15,
   fontWeight: 800,
   textDecoration: "none",
@@ -17,7 +18,7 @@ const root: SxProps<Theme> = {
     color: "secondary.main",
     transform: "translateX(4px)",
   },
-};
+});
 
 const arrow: SxProps<Theme> = {
   fontSize: 20,

@@ -44,7 +44,11 @@ const mainNavigation: RouteObject[] = [
   {
     path: "/events",
     element: (
-      <MainLayout bgColor="secondary" ContextProvider={MainPageContextProvider}>
+      <MainLayout 
+      bgColor="secondary" 
+      ContextProvider={MainPageContextProvider}
+      disableContainer
+      >
         <Events />
       </MainLayout>
     ),
@@ -92,7 +96,11 @@ const mainNavigation: RouteObject[] = [
   {
     path: "/projects",
     element: (
-      <MainLayout bgColor="secondary" ContextProvider={MainPageContextProvider}>
+      <MainLayout 
+      bgColor="secondary" 
+      ContextProvider={MainPageContextProvider}
+      disableContainer
+      >
         <Projects />
       </MainLayout>
     ),
@@ -101,7 +109,11 @@ const mainNavigation: RouteObject[] = [
   {
     path: "/contact",
     element: (
-      <MainLayout bgColor="secondary" ContextProvider={MainPageContextProvider}>
+      <MainLayout 
+      bgColor="secondary" 
+      ContextProvider={MainPageContextProvider}
+      disableContainer
+      >
         <Contact />
       </MainLayout>
     ),

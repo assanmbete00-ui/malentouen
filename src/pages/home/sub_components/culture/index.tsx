@@ -14,7 +14,7 @@ export default function Culture() {
   const culture = useCulture();
 
   return (
-    <Section id="culture" variant="paper" containerSize="wide">
+    <Section id="culture" variant="default" containerSize="wide">
       <Box sx={styles.container}>
         <CultureContent {...culture.content} />
 

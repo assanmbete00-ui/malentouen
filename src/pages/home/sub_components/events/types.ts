@@ -4,6 +4,7 @@ export type EventItem = {
   id: string;
   category: ReactNode;
   date: ReactNode;
+  dateTime: string;
   title: ReactNode;
   location: ReactNode;
   time: ReactNode;

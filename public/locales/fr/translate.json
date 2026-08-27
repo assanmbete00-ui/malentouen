@@ -93,6 +93,15 @@
   "HOME_EVENTS_CULTURE_LOCATION": "Esplanade de la Chefferie",
   "HOME_EVENTS_CULTURE_TIME": "08h30",
 
+  "EVENTS_BANNER_IMAGE_ALT": "Cérémonie traditionnelle de la Chefferie de Malentouen",
+  "EVENTS_BANNER_EYEBROW": "Vie de la Chefferie",
+  "EVENTS_BANNER_TITLE": "Événements & Agenda",
+  "EVENTS_BANNER_DESCRIPTION": "Retrouvez les cérémonies, rencontres communautaires et rendez-vous institutionnels de la Chefferie Traditionnelle de Malentouen.",
+  "EVENTS_BREADCRUMB": "Événements",
+  "EVENTS_UPCOMING_EYEBROW": "À venir",
+  "EVENTS_UPCOMING_TITLE": "Prochains rendez-vous",
+  "EVENTS_UPCOMING_DESCRIPTION": "Découvrez les prochaines cérémonies, rencontres et activités organisées au sein de la communauté.",
+
   "HOME_GALLERY_EYEBROW": "Galerie",
   "HOME_GALLERY_TITLE": "Découvrez Malentouen en images",
   "HOME_GALLERY_DESCRIPTION": "Explorez les moments forts, le patrimoine, les cérémonies, les paysages et les traditions qui font la richesse de la Chefferie Traditionnelle de Malentouen.",
@@ -381,7 +390,7 @@
   "NEWS_BANNER_DESCRIPTION": "Retrouvez les actualités, communiqués, initiatives, événements et informations qui témoignent de la vie institutionnelle, culturelle et communautaire de la Chefferie Traditionnelle de Malentouen.",
   "NAVIGATION_NEWS": "Actualités",
   "NEWS_ARTICLE_NOT_FOUND_TITLE": "Article introuvable",
-  "NEWS_ARTICLE_NOT_FOUND_DESCRIPTION": "Cet article n'existe pas ou n'est plus disponible.",
+  "NEWS_ARTICLE_NOT_FOUND_DESCRIPTION": "L’article que vous recherchez n’existe pas ou n’est plus disponible.",
   "NEWS_ARTICLE_NOT_FOUND_BACK": "Retour aux actualités",
 
   "NEWS_FEATURED_EYEBROW": "À la une",
@@ -475,5 +484,10 @@
   "NEWS_ARCHIVE_CATEGORY_ALL": "Toutes les actualités",
   "NEWS_ARCHIVE_YEAR_2026": "2026",
   "NEWS_ARCHIVE_YEAR_2025": "2025",
-  "NEWS_ARCHIVE_YEAR_2024": "2024"
+  "NEWS_ARCHIVE_YEAR_2024": "2024",
+
+
+  "EVENTS_AGENDA_EYEBROW": "Agenda",
+  "EVENTS_AGENDA_TITLE": "Agenda de la Chefferie",
+  "EVENTS_AGENDA_DESCRIPTION": "Consultez les prochaines dates qui rythment la vie institutionnelle, culturelle et communautaire de Malentouen."
 }

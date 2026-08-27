@@ -1,95 +1,42 @@
-import { Box, Typography } from "@mui/material";
-
-import PageBanner from "@components/page_banner";
-import MediaWithSkeleton from "@components/media_with_skeleton";
-import Section from "@components/section";
-import TextLink from "@components/text_link";
-
-import useTranslate from "@hooks/use_translate";
 import useNewsArticle from "../hooks/use_news_article";
-import styles from "./styles";
-import type { NewsArticlePageProps } from "./types";
 
-function NewsArticleNotFound() {
-  const { translate } = useTranslate();
+import ArticleContent from "./sub_components/article_content";
+import ArticleHeader from "./sub_components/article_header";
+import ArticleNotFound from "./sub_components/article_not_found";
 
-  return (
-    <Section id="news-article-not-found" variant="default">
-      <Box sx={styles.content}>
-        <Typography component="h1" variant="h2">
-          {translate("NEWS_ARTICLE_NOT_FOUND_TITLE")}
-        </Typography>
-        <Typography variant="body1">
-          {translate("NEWS_ARTICLE_NOT_FOUND_DESCRIPTION")}
-        </Typography>
-        <Box sx={styles.footer}>
-          <TextLink to="/news">
-            {translate("NEWS_ARTICLE_NOT_FOUND_BACK")}
-          </TextLink>
-        </Box>
-      </Box>
-    </Section>
-  );
-}
+export default function NewsArticle() {
+  const { article, isNotFound, notFound } = useNewsArticle();
 
-function NewsArticleDetail({ article }: NewsArticlePageProps) {
-  const { translate } = useTranslate();
+  if (isNotFound || !article) {
+    return (
+      <ArticleNotFound
+        title={notFound.title}
+        description={notFound.description}
+        actionLabel={notFound.actionLabel}
+        actionHref={notFound.actionHref}
+      />
+    );
+  }
 
   return (
     <>
-      <PageBanner
+      <ArticleHeader
         background={{ image: article.image, alt: article.imageAlt }}
-        breadcrumb={[
-          { label: translate("NAVIGATION_HOME"), href: "/" },
-          { label: translate("NAVIGATION_NEWS"), href: "/news" },
-          { label: article.title },
-        ]}
+        breadcrumb={article.breadcrumb ?? []}
         eyebrow={article.category.label}
         title={article.title}
         description={article.excerpt}
       />
-
-      <Section id="news-article" variant="default" containerSize="wide">
-        <Box sx={styles.content}>
-          <MediaWithSkeleton
-            src={article.image}
-            alt={article.imageAlt}
-            objectFit="cover"
-            objectPosition="center"
-            sx={styles.media}
-          />
-
-          <Box sx={styles.meta}>
-            <Typography component="span" sx={styles.category}>
-              {article.category.label}
-            </Typography>
-            <Box aria-hidden="true" sx={styles.separator} />
-            <Typography component="time" dateTime={article.publishedAt}>
-              {article.formattedDate}
-            </Typography>
-          </Box>
-
-          <Typography component="div" sx={styles.excerpt}>
-            {article.excerpt}
-          </Typography>
-
-          <Box sx={styles.footer}>
-            <TextLink to="/news">
-              {translate("NEWS_ARTICLE_NOT_FOUND_BACK")}
-            </TextLink>
-          </Box>
-        </Box>
-      </Section>
+      <ArticleContent
+        image={article.image}
+        imageAlt={article.imageAlt}
+        categoryLabel={article.category.label}
+        publishedAt={article.publishedAt}
+        formattedDate={article.formattedDate}
+        excerpt={article.excerpt}
+        actionLabel={article.action?.label ?? ""}
+        actionHref={article.action?.href ?? "/news"}
+      />
     </>
   );
-}
-
-export default function NewsArticle() {
-  const { article, isNotFound } = useNewsArticle();
-
-  if (isNotFound || !article) {
-    return <NewsArticleNotFound />;
-  }
-
-  return <NewsArticleDetail article={article} />;
 }

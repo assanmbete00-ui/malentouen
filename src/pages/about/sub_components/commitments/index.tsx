@@ -23,7 +23,7 @@ export default function Commitments({
   return (
     <Section
       id={id}
-      variant="paper"
+      variant="default"
       containerSize="wide"
     >
       <Box sx={styles.wrapper}>

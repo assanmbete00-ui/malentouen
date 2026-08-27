@@ -17,7 +17,7 @@ export default function Projects() {
   return (
     <Section
       id="projects"
-      variant="paper"
+      variant="default"
       containerSize="wide"
     >
       <Box sx={styles.container}>

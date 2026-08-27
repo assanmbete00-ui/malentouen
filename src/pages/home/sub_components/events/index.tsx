@@ -13,7 +13,7 @@ export default function Events() {
   const events = useEvents();
 
   return (
-    <Section id="events" variant="paper" containerSize="wide">
+    <Section id="events" variant="default" containerSize="wide">
       <Box sx={styles.container}>
         <EventsContent
           {...events.content}

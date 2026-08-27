@@ -84,6 +84,15 @@
   "HOME_EVENTS_CULTURE_LOCATION": "Chiefdom Esplanade",
   "HOME_EVENTS_CULTURE_TIME": "08:30 AM",
 
+  "EVENTS_BANNER_IMAGE_ALT": "Traditional ceremony of the Malentouen Chiefdom",
+  "EVENTS_BANNER_EYEBROW": "Life of the Chiefdom",
+  "EVENTS_BANNER_TITLE": "Events & Agenda",
+  "EVENTS_BANNER_DESCRIPTION": "Discover the ceremonies, community gatherings and institutional events of the Traditional Chiefdom of Malentouen.",
+  "EVENTS_BREADCRUMB": "Events",
+  "EVENTS_UPCOMING_EYEBROW": "Upcoming",
+  "EVENTS_UPCOMING_TITLE": "Upcoming events",
+  "EVENTS_UPCOMING_DESCRIPTION": "Discover the upcoming ceremonies, gatherings and activities taking place within the community.",
+
   "HOME_GALLERY_EYEBROW": "Gallery",
   "HOME_GALLERY_TITLE": "Discover Malentouen Through Images",
   "HOME_GALLERY_DESCRIPTION": "Explore memorable moments, cultural heritage, ceremonies, landscapes and traditions that showcase the richness of the Traditional Chiefdom of Malentouen.",
@@ -357,7 +366,7 @@
   "NEWS_BANNER_DESCRIPTION": "Discover the latest news, official announcements, initiatives, events and information reflecting the institutional, cultural and community life of the Traditional Chiefdom of Malentouen.",
   "NAVIGATION_NEWS": "News",
   "NEWS_ARTICLE_NOT_FOUND_TITLE": "Article not found",
-  "NEWS_ARTICLE_NOT_FOUND_DESCRIPTION": "This article does not exist or is no longer available.",
+  "NEWS_ARTICLE_NOT_FOUND_DESCRIPTION": "The article you are looking for does not exist or is no longer available.",
   "NEWS_ARTICLE_NOT_FOUND_BACK": "Back to news",
 
   "NEWS_FEATURED_EYEBROW": "Featured",
@@ -448,5 +457,9 @@
   "NEWS_ARCHIVE_CATEGORY_ALL": "All News",
   "NEWS_ARCHIVE_YEAR_2026": "2026",
   "NEWS_ARCHIVE_YEAR_2025": "2025",
-  "NEWS_ARCHIVE_YEAR_2024": "2024"
+  "NEWS_ARCHIVE_YEAR_2024": "2024",
+
+  "EVENTS_AGENDA_EYEBROW": "Agenda",
+  "EVENTS_AGENDA_TITLE": "Chiefdom Agenda",
+  "EVENTS_AGENDA_DESCRIPTION": "View the upcoming dates shaping the institutional, cultural and community life of Malentouen."
 }

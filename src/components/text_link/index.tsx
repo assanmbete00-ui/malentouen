@@ -5,16 +5,18 @@ import Link from "@mui/material/Link";
 import styles from "./styles";
 import type { TextLinkProps } from "./types";
 
-export default function TextLink({ children, to, sx }: TextLinkProps) {
+export default function TextLink({
+  children,
+  to,
+  variant = "default",
+  sx,
+}: TextLinkProps) {
   return (
     <Link
       component={RouterLink}
       to={to}
       underline="none"
-      sx={[
-        styles.root,
-        ...(Array.isArray(sx) ? sx : sx ? [sx] : []),
-      ]}
+      sx={[styles.root(variant), ...(Array.isArray(sx) ? sx : sx ? [sx] : [])]}
     >
       {children}
       <ArrowForwardRoundedIcon sx={styles.arrow} />
