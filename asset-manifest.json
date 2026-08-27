@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/malentouen/static/js/main.262f6fcc.js",
+    "main.js": "/malentouen/static/js/main.30bbf80d.js",
     "static/js/38.12141f9c.chunk.js": "/malentouen/static/js/38.12141f9c.chunk.js",
     "static/media/news1.jpg": "/malentouen/static/media/news1.199fe1b56ad066cd564d.jpg",
     "static/media/project2.jpg": "/malentouen/static/media/project2.55049f54e631383ff125.jpg",
@@ -62,11 +62,12 @@
     "static/media/education.jpg": "/malentouen/static/media/education.624aa7ad02e29726388d.jpg",
     "static/media/governance.jpg": "/malentouen/static/media/governance.624aa7ad02e29726388d.jpg",
     "static/media/news2.jpg": "/malentouen/static/media/news2.f34402c7c6d4937ab5d1.jpg",
+    "static/media/clv.png": "/malentouen/static/media/clv.63b36f739e2ab6c13614.png",
     "index.html": "/malentouen/index.html",
-    "main.262f6fcc.js.map": "/malentouen/static/js/main.262f6fcc.js.map",
+    "main.30bbf80d.js.map": "/malentouen/static/js/main.30bbf80d.js.map",
     "38.12141f9c.chunk.js.map": "/malentouen/static/js/38.12141f9c.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.262f6fcc.js"
+    "static/js/main.30bbf80d.js"
   ]
 }
