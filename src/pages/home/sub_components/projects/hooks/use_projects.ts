@@ -1,8 +1,8 @@
 import useTranslate from "@hooks/use_translate";
 
-import { PROJECTS_ASSETS } from "../config/projects_assets";
+import { PROJECTS } from "@data/projects";
+
 import { PROJECTS_CONFIG } from "../config/projects_config";
-import { PROJECTS_ITEMS } from "../config/projects_items";
 
 export default function useProjects() {
   const { translate } = useTranslate();
@@ -18,13 +18,13 @@ export default function useProjects() {
     href: PROJECTS_CONFIG.actionPath,
   };
 
-  const items = PROJECTS_ITEMS.map((item) => ({
+  const items = PROJECTS.map((item) => ({
     id: item.id,
-    image: PROJECTS_ASSETS[item.imageKey],
+    image: item.image,
     imageAlt: translate(item.imageAltKey),
     title: translate(item.titleKey),
     description: translate(item.descriptionKey),
-    href: item.href,
+    href: PROJECTS_CONFIG.actionPath,
   }));
 
   return {

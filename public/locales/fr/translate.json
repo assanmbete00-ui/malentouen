@@ -126,6 +126,22 @@
   "HOME_PROJECTS_HERITAGE_DESCRIPTION": "Préserver, valoriser et transmettre le patrimoine culturel et historique de la Chefferie.",
   "HOME_PROJECTS_DEVELOPMENT_TITLE": "Développement Local",
   "HOME_PROJECTS_DEVELOPMENT_DESCRIPTION": "Mettre en œuvre des initiatives favorisant le développement économique, social et environnemental.",
+  "HOME_PROJECTS_EDUCATION_IMAGE_ALT": "Éducation et jeunesse à Malentouen",
+  "HOME_PROJECTS_HERITAGE_IMAGE_ALT": "Patrimoine et culture de Malentouen",
+  "HOME_PROJECTS_DEVELOPMENT_IMAGE_ALT": "Développement local à Malentouen",
+  "PROJECTS_OVERVIEW_EYEBROW": "Notre vision",
+  "PROJECTS_OVERVIEW_TITLE": "Développer le territoire tout en préservant l'héritage de Malentouen",
+  "PROJECTS_OVERVIEW_DESCRIPTION": "Les initiatives de la Chefferie s'inscrivent dans une vision durable : accompagner les générations, renforcer la communauté et faire évoluer le territoire dans le respect de son identité et de son patrimoine.",
+  "PROJECTS_OVERVIEW_IMAGE_ALT": "Autorités traditionnelles réunies lors d'une cérémonie à Malentouen",
+  "PROJECTS_PORTFOLIO_EYEBROW": "Nos initiatives",
+  "PROJECTS_PORTFOLIO_TITLE": "Des projets au service de Malentouen",
+  "PROJECTS_PORTFOLIO_DESCRIPTION": "Découvrez les initiatives consacrées à l’éducation, à la préservation du patrimoine et au développement local de la communauté.",
+  "PROJECTS_COMMITMENT_PRESERVE_TITLE": "Préserver",
+  "PROJECTS_COMMITMENT_PRESERVE_DESCRIPTION": "Le patrimoine et l’identité de Malentouen",
+  "PROJECTS_COMMITMENT_TRANSMIT_TITLE": "Transmettre",
+  "PROJECTS_COMMITMENT_TRANSMIT_DESCRIPTION": "Les savoirs et l’héritage aux générations futures",
+  "PROJECTS_COMMITMENT_DEVELOP_TITLE": "Développer",
+  "PROJECTS_COMMITMENT_DEVELOP_DESCRIPTION": "Le territoire de manière durable et responsable",
 
   "HOME_PARTNERS_EYEBROW": "Partenaires",
   "HOME_PARTNERS_TITLE": "Ils accompagnent notre mission",
@@ -157,6 +173,7 @@
 
   "NAVIGATION_HOME": "Accueil",
   "NAVIGATION_ABOUT": "À propos",
+  "NAVIGATION_PROJECTS": "Projets",
   "ABOUT_BANNER_EYEBROW": "À propos de l’institution",
   "ABOUT_BANNER_TITLE": "La Chefferie Traditionnelle de Malentouen",
   "ABOUT_BANNER_DESCRIPTION": "Découvrez une institution enracinée dans l’histoire, gardienne des traditions et engagée au service de l’unité, du patrimoine et du développement de sa communauté.",
@@ -493,5 +510,45 @@
 
   "EVENTS_AGENDA_EYEBROW": "Agenda",
   "EVENTS_AGENDA_TITLE": "Agenda de la Chefferie",
-  "EVENTS_AGENDA_DESCRIPTION": "Consultez les prochaines dates qui rythment la vie institutionnelle, culturelle et communautaire de Malentouen."
+  "EVENTS_AGENDA_DESCRIPTION": "Consultez les prochaines dates qui rythment la vie institutionnelle, culturelle et communautaire de Malentouen.",
+
+  
+  "CONTACT_BANNER_IMAGE_ALT": "Chefferie traditionnelle de Malentouen",
+  "CONTACT_BANNER_EYEBROW": "Contact",
+  "CONTACT_BANNER_TITLE": "Entrons en contact",
+  "CONTACT_BANNER_DESCRIPTION": "Retrouvez les coordonnées officielles de la Chefferie traditionnelle de Malentouen et adressez-nous directement votre demande.",
+
+  "CONTACT_OVERVIEW_EYEBROW": "À votre écoute",
+  "CONTACT_OVERVIEW_TITLE": "La Chefferie de Malentouen reste proche de sa communauté",
+  "CONTACT_OVERVIEW_DESCRIPTION": "Cette page vous permet d’entrer en relation avec la Chefferie traditionnelle de Malentouen pour toute demande d’information, démarche institutionnelle ou prise de contact.",
+  "CONTACT_OVERVIEW_NOTE": "Habitants, membres de la diaspora, institutions, partenaires et visiteurs peuvent utiliser les canaux officiels présentés ci-dessous pour s’adresser à la Chefferie.",
+
+  "CONTACT_CHANNELS_EYEBROW": "Contacts officiels",
+  "CONTACT_CHANNELS_TITLE": "Comment joindre la Chefferie",
+  "CONTACT_CHANNELS_DESCRIPTION": "Retrouvez les coordonnées officielles pour contacter la Chefferie traditionnelle de Malentouen.",
+  "CONTACT_CHANNEL_LOCATION_LABEL": "Adresse",
+  "CONTACT_CHANNEL_PHONE_LABEL": "Téléphone",
+  "CONTACT_CHANNEL_EMAIL_LABEL": "E-mail",
+
+  "CONTACT_FORM_EYEBROW": "Écrivez-nous",
+  "CONTACT_FORM_TITLE": "Adressez votre demande à la Chefferie",
+  "CONTACT_FORM_DESCRIPTION": "Utilisez ce formulaire pour nous transmettre votre message. Les informations fournies permettront à la Chefferie de mieux comprendre votre demande.",
+  "CONTACT_FORM_NAME_LABEL": "Nom complet",
+  "CONTACT_FORM_NAME_PLACEHOLDER": "Votre nom complet",
+  "CONTACT_FORM_EMAIL_LABEL": "Adresse e-mail",
+  "CONTACT_FORM_EMAIL_PLACEHOLDER": "Votre adresse e-mail",
+  "CONTACT_FORM_PHONE_LABEL": "Téléphone",
+  "CONTACT_FORM_PHONE_PLACEHOLDER": "Votre numéro de téléphone",
+  "CONTACT_FORM_SUBJECT_LABEL": "Objet",
+  "CONTACT_FORM_SUBJECT_PLACEHOLDER": "Objet de votre demande",
+  "CONTACT_FORM_MESSAGE_LABEL": "Message",
+  "CONTACT_FORM_MESSAGE_PLACEHOLDER": "Décrivez votre demande...",
+  "CONTACT_FORM_SUBMIT": "Envoyer le message",
+  "CONTACT_FORM_REQUIRED": "Ce champ est obligatoire.",
+  "CONTACT_FORM_INVALID_EMAIL": "Veuillez saisir une adresse e-mail valide.",
+
+  "CONTACT_LOCATION_EYEBROW": "Nous trouver",
+  "CONTACT_LOCATION_TITLE": "La Chefferie au cœur de Malentouen",
+  "CONTACT_LOCATION_DESCRIPTION": "Retrouvez l’adresse officielle de la Chefferie traditionnelle de Malentouen pour vos visites et démarches.",
+  "CONTACT_LOCATION_ADDRESS_LABEL": "Adresse de la Chefferie"
 }
