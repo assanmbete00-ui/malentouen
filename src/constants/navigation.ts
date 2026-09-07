@@ -1,52 +1,68 @@
 export type NavigationItemModel = {
   id: string;
-  label: string;
+  labelKey: string;
   path: string;
-  visible: boolean;
+  visible?: boolean;
   external?: boolean;
   badge?: string;
 };
 
+export type PreparedNavigationItem = Omit<NavigationItemModel, "labelKey"> & {
+  label: string;
+  active?: boolean;
+};
+
+export function isNavigationItemActive(pathname: string, path: string) {
+  if (path === "/") return pathname === "/";
+  return pathname === path || pathname.startsWith(`${path}/`);
+}
+
 export const NAVIGATION_ITEMS: NavigationItemModel[] = [
   {
     id: "home",
-    label: "Accueil",
+    labelKey: "NAVIGATION_HOME",
     path: "/",
     visible: true,
   },
   {
     id: "about",
-    label: "À propos",
+    labelKey: "NAVIGATION_ABOUT",
     path: "/about",
     visible: true,
   },
   {
     id: "cultures",
-    label: "Culture",
+    labelKey: "NAVIGATION_CULTURES",
     path: "/cultures",
     visible: true,
   },
   {
     id: "news",
-    label: "Actualités",
+    labelKey: "NAVIGATION_NEWS",
     path: "/news",
     visible: true,
   },
   {
     id: "events",
-    label: "Événements",
+    labelKey: "NAVIGATION_EVENTS",
     path: "/events",
     visible: true,
   },
   {
     id: "projects",
-    label: "Projets",
+    labelKey: "NAVIGATION_PROJECTS",
     path: "/projects",
     visible: true,
   },
   {
+    id: "partners",
+    labelKey: "NAVIGATION_PARTNERS",
+    path: "/partners",
+    visible: true,
+  },
+  {
     id: "contact",
-    label: "Contact",
+    labelKey: "NAVIGATION_CONTACT",
     path: "/contact",
     visible: true,
   },

@@ -20,6 +20,7 @@ export default function ContactOverview({
           <SectionTitle
             eyebrow={eyebrow}
             title={title}
+            sx={styles.title}
           />
 
           <Typography sx={styles.description}>

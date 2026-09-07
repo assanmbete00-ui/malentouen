@@ -99,7 +99,9 @@ export default function ContactForm({
           />
 
           <Box sx={styles.actions}>
-            <Button type="submit">
+            <Button type="submit"
+              sx={styles.submitButton}
+              >
               {submitLabel}
             </Button>
           </Box>

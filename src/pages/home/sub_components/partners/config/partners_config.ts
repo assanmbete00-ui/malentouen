@@ -2,5 +2,5 @@ export const PARTNERS_CONFIG = {
   showItems: true,
   showAction: true,
 
-  actionPath: "/contact",
+  actionPath: "/partners",
 } as const;

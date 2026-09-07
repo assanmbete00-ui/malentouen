@@ -5,10 +5,15 @@ import IconButton from "@mui/material/IconButton";
 import styles from "./styles";
 import type { MobileButtonProps } from "./types";
 
-export default function MobileButton({ open = false, onClick }: MobileButtonProps) {
+export default function MobileButton({
+  open = false,
+  onClick,
+  openLabel,
+  closeLabel,
+}: MobileButtonProps) {
   return (
     <IconButton
-      aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
+      aria-label={open ? closeLabel : openLabel}
       onClick={onClick}
       sx={styles.button}
     >

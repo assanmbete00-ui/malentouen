@@ -5,34 +5,15 @@ import ChevronRightRoundedIcon from "@mui/icons-material/ChevronRightRounded";
 import FooterSection from "../footer_section";
 
 import styles from "./styles";
+import type { FooterPatrimonyProps } from "./types";
 
-const PATRIMONY_LINKS = [
-  {
-    id: "history",
-    label: "Histoire",
-    path: "/about",
-  },
-  {
-    id: "culture",
-    label: "Culture",
-    path: "/cultures",
-  },
-  {
-    id: "traditions",
-    label: "Traditions",
-    path: "/cultures",
-  },
-  {
-    id: "gallery",
-    label: "Galerie",
-    path: "/gallery",
-  },
-];
-
-export default function FooterPatrimony() {
+export default function FooterPatrimony({
+  title,
+  items,
+}: FooterPatrimonyProps) {
   return (
-    <FooterSection title="Notre patrimoine">
-      {PATRIMONY_LINKS.map((item) => (
+    <FooterSection title={title}>
+      {items.map((item) => (
         <Link
           key={item.id}
           component={RouterLink}

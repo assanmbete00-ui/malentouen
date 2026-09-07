@@ -28,7 +28,10 @@
       "@contexts/*": ["contexts/*"],
       "@pages/*": ["pages/*"],
       "@constants/*": ["constants/*"],
-      "@data/*": ["data/*"]
+      "@data/*": ["data/*"],
+      "@app-types/*": ["types/*"],
+      "@theme/*": ["theme/*"],
+      "@design/*": ["design/*"]
     }
   },
   "include": ["src"]

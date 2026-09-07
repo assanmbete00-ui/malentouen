@@ -7,10 +7,11 @@ import type { SearchTriggerProps } from "./types";
 export default function SearchTrigger({
   compact = false,
   onClick,
+  ariaLabel,
 }: SearchTriggerProps) {
   return (
     <IconButton
-      aria-label="Ouvrir la recherche"
+      aria-label={ariaLabel}
       onClick={onClick}
       sx={styles.button(compact)}
     >

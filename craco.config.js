@@ -10,9 +10,13 @@ module.exports = {
       "@navigations": path.resolve(__dirname, "src/navigations"),
       "@pages": path.resolve(__dirname, "src/pages"),
       "@utils": path.resolve(__dirname, "src/utils"),
+      "@utils/localization": path.resolve(__dirname, "src/utils/localization"),
       "@hooks": path.resolve(__dirname, "src/hooks"),
       "@contexts": path.resolve(__dirname, "src/contexts"),
       "@data": path.resolve(__dirname, "src/data"),
+      "@app-types": path.resolve(__dirname, "src/types"),
+      "@theme": path.resolve(__dirname, "src/theme"),
+      "@design": path.resolve(__dirname, "src/design"),
     },
     configure: (webpackConfig) => {
       const oneOfRule = webpackConfig.module.rules.find((rule) =>

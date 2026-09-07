@@ -1,4 +1,5 @@
 import Link from "@mui/material/Link";
+import Typography from "@mui/material/Typography";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import PhoneOutlinedIcon from "@mui/icons-material/PhoneOutlined";
 import MailOutlineOutlinedIcon from "@mui/icons-material/MailOutlineOutlined";
@@ -8,42 +9,42 @@ import FooterSection from "../footer_section";
 import { ORGANIZATION } from "@constants/organization";
 
 import styles from "./styles";
+import type { FooterContactProps } from "./types";
 
-export default function FooterContact() {
+export default function FooterContact({
+  title,
+  address,
+  phone,
+  email,
+  website,
+  websiteLabel,
+}: FooterContactProps) {
   return (
-    <FooterSection title="Contact">
-      <Link href="#" underline="none" sx={styles.item}>
+    <FooterSection title={title}>
+      <Typography sx={styles.item}>
         <LocationOnOutlinedIcon sx={styles.icon} />
-        {ORGANIZATION.address}
-      </Link>
+        {address}
+      </Typography>
 
-      <Link
-        href={`tel:${ORGANIZATION.phone}`}
-        underline="none"
-        sx={styles.item}
-      >
+      <Link href={`tel:${phone}`} underline="none" sx={styles.item}>
         <PhoneOutlinedIcon sx={styles.icon} />
-        {ORGANIZATION.phone}
+        {phone}
       </Link>
 
-      <Link
-        href={`mailto:${ORGANIZATION.email}`}
-        underline="none"
-        sx={styles.item}
-      >
+      <Link href={`mailto:${email}`} underline="none" sx={styles.item}>
         <MailOutlineOutlinedIcon sx={styles.icon} />
-        {ORGANIZATION.email}
+        {email}
       </Link>
 
       <Link
-        href={ORGANIZATION.website}
+        href={website}
         target="_blank"
         rel="noopener noreferrer"
         underline="none"
         sx={styles.item}
       >
         <LanguageOutlinedIcon sx={styles.icon} />
-        Site officiel
+        {websiteLabel}
       </Link>
     </FooterSection>
   );

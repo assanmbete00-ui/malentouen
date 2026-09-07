@@ -1,1 +1,4 @@
-export type FooterBottomProps = {};
+export type FooterBottomProps = {
+  copyright: string;
+  motto: string;
+};

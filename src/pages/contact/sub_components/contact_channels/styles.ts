@@ -7,13 +7,13 @@ const grid: SxProps<Theme> = {
     sm: "repeat(2, 1fr)",
     md: "repeat(3, 1fr)",
   },
-  gap: 3,
-  mt: { xs: 4, md: 5 },
+  gap: {sx:2, md:4},
+  mt: { xs: 3.5, md: 5 },
 };
 
 const card: SxProps<Theme> = {
   height: "100%",
-  p: { xs: 3, md: 4 },
+  p: { xs: 2.5, md: 4 },
 };
 
 const iconBox: SxProps<Theme> = {

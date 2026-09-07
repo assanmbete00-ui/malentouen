@@ -1,37 +1,34 @@
-export const PARTNERS_ITEMS = [
+import type { PartnerSource } from "./types";
+
+export const PARTNERS = [
   {
     id: "localInstitution",
-    imageKey: "localInstitution",
     nameKey: "HOME_PARTNERS_LOCAL_INSTITUTIONS_NAME",
     typeKey: "HOME_PARTNERS_LOCAL_INSTITUTIONS_TYPE",
-    href: "/partners",
+    imageKey: "localInstitution",
   },
   {
     id: "culturalAssociation",
-    imageKey: "culturalAssociation",
     nameKey: "HOME_PARTNERS_CULTURAL_ASSOCIATIONS_NAME",
     typeKey: "HOME_PARTNERS_CULTURAL_ASSOCIATIONS_TYPE",
-    href: "/partners",
+    imageKey: "culturalAssociation",
   },
   {
     id: "communityLeader",
-    imageKey: "communityLeader",
     nameKey: "HOME_PARTNERS_COMMUNITY_LEADERS_NAME",
     typeKey: "HOME_PARTNERS_COMMUNITY_LEADERS_TYPE",
-    href: "/partners",
+    imageKey: "communityLeader",
   },
   {
     id: "developmentActor",
-    imageKey: "developmentActor",
     nameKey: "HOME_PARTNERS_DEVELOPMENT_ACTORS_NAME",
     typeKey: "HOME_PARTNERS_DEVELOPMENT_ACTORS_TYPE",
-    href: "/partners",
+    imageKey: "developmentActor",
   },
   {
     id: "clvPartner",
-    imageKey: "clvPartner",
     nameKey: "HOME_PARTNERS_CLV_FRANCE_NAME",
     typeKey: "HOME_PARTNERS_CLV_FRANCE_TYPE",
-    href: "/partners"
-  }
-] as const;
+    imageKey: "clvPartner",
+  },
+] satisfies PartnerSource[];

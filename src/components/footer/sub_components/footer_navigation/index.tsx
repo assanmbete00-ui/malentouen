@@ -1,26 +1,15 @@
-import { Link as RouterLink } from "react-router-dom";
-import Link from "@mui/material/Link";
-import ChevronRightRoundedIcon from "@mui/icons-material/ChevronRightRounded";
-
 import FooterSection from "../footer_section";
-import { NAVIGATION_ITEMS } from "@constants/navigation";
+import NavigationItem from "@components/header/sub_components/navigation_item";
+import type { FooterNavigationProps } from "./types";
 
-import styles from "./styles";
-
-export default function FooterNavigation() {
+export default function FooterNavigation({
+  items,
+  title,
+}: FooterNavigationProps) {
   return (
-    <FooterSection title="Découvrir">
-      {NAVIGATION_ITEMS.filter((item) => item.visible).map((item) => (
-        <Link
-          key={item.id}
-          component={RouterLink}
-          to={item.path}
-          underline="none"
-          sx={styles.link}
-        >
-          <ChevronRightRoundedIcon sx={styles.icon} />
-          {item.label}
-        </Link>
+    <FooterSection title={title}>
+      {items.map((item) => (
+        <NavigationItem key={item.id} item={item} variant="footer" />
       ))}
     </FooterSection>
   );

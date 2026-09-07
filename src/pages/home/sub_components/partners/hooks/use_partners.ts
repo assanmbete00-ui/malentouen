@@ -1,8 +1,8 @@
 import useTranslate from "@hooks/use_translate";
 
+import { PARTNERS } from "@data/partners";
 import { PARTNERS_ASSETS } from "../config/partners_assets";
 import { PARTNERS_CONFIG } from "../config/partners_config";
-import { PARTNERS_ITEMS } from "../config/partners_items";
 
 export default function usePartners() {
   const { translate } = useTranslate();
@@ -18,12 +18,11 @@ export default function usePartners() {
     href: PARTNERS_CONFIG.actionPath,
   };
 
-  const items = PARTNERS_ITEMS.map((item) => ({
+  const items = PARTNERS.map((item) => ({
     id: item.id,
     image: PARTNERS_ASSETS[item.imageKey],
     name: translate(item.nameKey),
     type: translate(item.typeKey),
-    href: item.href,
   }));
   const options = {
     showItems: PARTNERS_CONFIG.showItems,
