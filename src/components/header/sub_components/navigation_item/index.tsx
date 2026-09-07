@@ -1,4 +1,4 @@
-import { Link as RouterLink, useLocation } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
 import { Box } from "@mui/material";
 
 import styles from "./styles";
@@ -9,10 +9,7 @@ export default function NavigationItem({
   variant = "desktop",
   onClick,
 }: NavigationItemProps) {
-  const { pathname } = useLocation();
-
-  const isActive =
-    item.path === "/" ? pathname === "/" : pathname.startsWith(item.path);
+  const isActive = Boolean(item.active);
 
   if (item.external) {
     return (
@@ -22,6 +19,7 @@ export default function NavigationItem({
         target="_blank"
         rel="noopener noreferrer"
         onClick={onClick}
+        aria-current={isActive ? "page" : undefined}
         sx={styles.item(isActive, variant)}
       >
         {item.label}
@@ -34,6 +32,7 @@ export default function NavigationItem({
       component={RouterLink}
       to={item.path}
       onClick={onClick}
+      aria-current={isActive ? "page" : undefined}
       sx={styles.item(isActive, variant)}
     >
       {item.label}

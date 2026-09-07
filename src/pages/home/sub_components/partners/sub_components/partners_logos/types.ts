@@ -1,5 +1,5 @@
 import type { PartnerItem } from "../../types";
 
-export type PartnersListProps = {
+export type PartnersLogosProps = {
   items: PartnerItem[];
 };

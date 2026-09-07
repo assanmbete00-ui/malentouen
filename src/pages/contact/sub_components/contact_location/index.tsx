@@ -1,3 +1,4 @@
+
 import { Box, Typography } from "@mui/material";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 
@@ -22,11 +23,13 @@ export default function ContactLocation({
       spacing="spacious"
     >
       <Box sx={styles.layout}>
-        <SectionTitle
-          eyebrow={eyebrow}
-          title={title}
-          subtitle={description}
-        />
+        <Box sx={styles.content}>
+          <SectionTitle
+            eyebrow={eyebrow}
+            title={title}
+            subtitle={description}
+          />
+        </Box>
 
         <Box sx={styles.addressBox}>
           <Box sx={styles.iconBox}>

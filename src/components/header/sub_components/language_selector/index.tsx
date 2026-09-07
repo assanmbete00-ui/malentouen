@@ -1,22 +1,24 @@
 import { Box } from "@mui/material";
 
-import useTranslate from "@hooks/use_translate";
-
 import styles from "./styles";
+import type { LanguageSelectorProps } from "./types";
 
-export default function LanguageSelector() {
-  const { currentLanguage, changeLanguage } = useTranslate();
-
-  const isFr = currentLanguage.startsWith("fr");
+export default function LanguageSelector({
+  currentLanguage,
+  onLanguageChange,
+  frenchLabel,
+  englishLabel,
+}: LanguageSelectorProps) {
+  const isFr = currentLanguage === "fr";
 
   return (
     <Box sx={styles.container}>
       <Box
         component="button"
         type="button"
-        aria-label="Passer en français"
+        aria-label={frenchLabel}
         aria-pressed={isFr}
-        onClick={() => changeLanguage("fr")}
+        onClick={() => onLanguageChange("fr")}
         sx={styles.button(isFr)}
       >
         FR
@@ -29,9 +31,9 @@ export default function LanguageSelector() {
       <Box
         component="button"
         type="button"
-        aria-label="Switch to English"
+        aria-label={englishLabel}
         aria-pressed={!isFr}
-        onClick={() => changeLanguage("en")}
+        onClick={() => onLanguageChange("en")}
         sx={styles.button(!isFr)}
       >
         EN

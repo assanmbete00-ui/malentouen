@@ -8,7 +8,7 @@ import { HEADER_CONFIG } from "../../../../config/header_config";
 import styles from "./styles";
 import type { DrawerAdminProps } from "./types";
 
-export default function DrawerAdmin({ onClick }: DrawerAdminProps) {
+export default function DrawerAdmin({ onClick, label }: DrawerAdminProps) {
   const navigate = useNavigate();
 
   const handleClick = () => {
@@ -18,8 +18,12 @@ export default function DrawerAdmin({ onClick }: DrawerAdminProps) {
 
   return (
     <Box sx={styles.container}>
-      <Button startIcon={<LoginRoundedIcon />} sx={styles.button} onClick={handleClick}>
-        Administration
+      <Button
+        startIcon={<LoginRoundedIcon />}
+        sx={styles.button}
+        onClick={handleClick}
+      >
+        {label}
       </Button>
     </Box>
   );

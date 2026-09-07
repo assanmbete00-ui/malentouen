@@ -13,6 +13,12 @@ import type { MobileDrawerProps } from "./types";
 export default function MobileDrawer({
   open,
   onClose,
+  navigation,
+  currentLanguage,
+  onLanguageChange,
+  showLanguageSelector,
+  showAdminButton,
+  labels,
 }: MobileDrawerProps) {
   return (
     <Drawer
@@ -26,15 +32,21 @@ export default function MobileDrawer({
       <Box sx={styles.container}>
         <DrawerHeader />
 
-        <DrawerNavigation
-          onItemClick={onClose}
-        />
+        <DrawerNavigation items={navigation} onItemClick={onClose} />
 
-        <DrawerLanguage />
+        {showLanguageSelector && (
+          <DrawerLanguage
+            currentLanguage={currentLanguage}
+            onLanguageChange={onLanguageChange}
+            title={labels.language}
+            frenchLabel={labels.french}
+            englishLabel={labels.english}
+          />
+        )}
 
-        <DrawerAdmin
-          onClick={onClose}
-        />
+        {showAdminButton && (
+          <DrawerAdmin onClick={onClose} label={labels.admin} />
+        )}
 
         <DrawerFooter />
       </Box>

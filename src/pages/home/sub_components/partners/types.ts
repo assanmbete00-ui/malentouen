@@ -11,7 +11,6 @@ export type PartnerItem = {
   image: string;
   type: ReactNode;
   name: ReactNode;
-  href?: string;
 };
 
 export type PartnersAction = {
@@ -23,5 +22,3 @@ export type PartnersOptions = {
   showItems: boolean;
   showAction: boolean;
 };
-
-export type PartnersProps = {};

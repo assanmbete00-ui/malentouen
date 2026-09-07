@@ -7,6 +7,9 @@ import type { DrawerLanguageProps } from "./types";
 export default function DrawerLanguage({
   currentLanguage = "fr",
   onLanguageChange,
+  title,
+  frenchLabel,
+  englishLabel,
 }: DrawerLanguageProps) {
   return (
     <Box sx={styles.container}>
@@ -18,7 +21,7 @@ export default function DrawerLanguage({
             verticalAlign: "middle",
           }}
         />
-        Langue
+        {title}
       </Typography>
 
       <Box
@@ -28,7 +31,7 @@ export default function DrawerLanguage({
         onClick={() => onLanguageChange?.("fr")}
         sx={styles.item(currentLanguage === "fr")}
       >
-        Français
+        {frenchLabel}
       </Box>
 
       <Box
@@ -38,7 +41,7 @@ export default function DrawerLanguage({
         onClick={() => onLanguageChange?.("en")}
         sx={styles.item(currentLanguage === "en")}
       >
-        English
+        {englishLabel}
       </Box>
     </Box>
   );

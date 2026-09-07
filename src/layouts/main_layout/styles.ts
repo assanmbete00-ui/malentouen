@@ -1,5 +1,7 @@
 import type { SxProps, Theme } from "@mui/material";
 
+import { HEADER_CONFIG } from "@components/header/config/header_config";
+
 const root: SxProps<Theme> = {
   display: "flex",
   flexDirection: "column",
@@ -21,8 +23,8 @@ const main: SxProps<Theme> = {
   overflowY: "visible",
 
   pt: {
-    xs: "112px",
-    md: "124px",
+    xs: `${HEADER_CONFIG.HEADER_HEIGHT}px`,
+    md: `${HEADER_CONFIG.TOP_BAR_HEIGHT + HEADER_CONFIG.HEADER_HEIGHT}px`,
   },
 };
 

@@ -12,6 +12,7 @@ import Cultures from "@pages/cultures";
 import News from "@pages/news";
 import NewsArticle from "@pages/news/article";
 import Projects from "@pages/projects";
+import Partners from "@pages/partners";
 import Contact from "@pages/contact";
 
 const mainNavigation: RouteObject[] = [
@@ -44,10 +45,10 @@ const mainNavigation: RouteObject[] = [
   {
     path: "/events",
     element: (
-      <MainLayout 
-      bgColor="secondary" 
-      ContextProvider={MainPageContextProvider}
-      disableContainer
+      <MainLayout
+        bgColor="secondary"
+        ContextProvider={MainPageContextProvider}
+        disableContainer
       >
         <Events />
       </MainLayout>
@@ -96,10 +97,10 @@ const mainNavigation: RouteObject[] = [
   {
     path: "/projects",
     element: (
-      <MainLayout 
-      bgColor="secondary" 
-      ContextProvider={MainPageContextProvider}
-      disableContainer
+      <MainLayout
+        bgColor="secondary"
+        ContextProvider={MainPageContextProvider}
+        disableContainer
       >
         <Projects />
       </MainLayout>
@@ -107,12 +108,25 @@ const mainNavigation: RouteObject[] = [
     errorElement: <ErrorPage />,
   },
   {
+    path: "/partners",
+    element: (
+      <MainLayout
+        bgColor="secondary"
+        ContextProvider={MainPageContextProvider}
+        disableContainer
+      >
+        <Partners />
+      </MainLayout>
+    ),
+    errorElement: <ErrorPage />,
+  },
+  {
     path: "/contact",
     element: (
-      <MainLayout 
-      bgColor="secondary" 
-      ContextProvider={MainPageContextProvider}
-      disableContainer
+      <MainLayout
+        bgColor="secondary"
+        ContextProvider={MainPageContextProvider}
+        disableContainer
       >
         <Contact />
       </MainLayout>

@@ -14,7 +14,7 @@ export default function ProjectsCommitment({
   principles,
 }: ProjectsCommitmentProps) {
   return (
-    <Section id={id} variant="secondary" containerSize="wide">
+    <Section id={id} variant="default" containerSize="wide">
       <Box sx={styles.layout}>
         <SectionTitle
           eyebrow={eyebrow}

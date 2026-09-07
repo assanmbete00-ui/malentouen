@@ -3,10 +3,16 @@ import { Box, Typography } from "@mui/material";
 
 import styles from "./styles";
 import type { LogoProps } from "./types";
+import { ORGANIZATION } from "@constants/organization";
 
 export default function Logo({ variant = "default" }: LogoProps) {
   return (
-    <Box component={RouterLink} to="/" sx={styles.container(variant)}>
+    <Box
+      component={RouterLink}
+      to="/"
+      aria-label={ORGANIZATION.logoAlt}
+      sx={styles.container(variant)}
+    >
       <Box sx={styles.emblem(variant)}>M</Box>
 
       <Box sx={styles.textWrapper}>

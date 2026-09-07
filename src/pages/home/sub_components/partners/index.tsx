@@ -1,11 +1,12 @@
 import { Box } from "@mui/material";
 
 import Section from "@components/section";
+import TextLink from "@components/text_link";
 
 import usePartners from "./hooks/use_partners";
 
 import PartnersContent from "./sub_components/partners_content";
-import PartnersList from "./sub_components/partners_list";
+import PartnersLogos from "./sub_components/partners_logos";
 
 import styles from "./styles";
 
@@ -19,17 +20,21 @@ export default function Partners() {
       containerSize="wide"
     >
       <Box sx={styles.container}>
-        <PartnersContent
-          {...partners.content}
-          action={
-            partners.options.showAction
-              ? partners.action
-              : undefined
-          }
-        />
+        <PartnersContent {...partners.content} />
 
         {partners.options.showItems && (
-          <PartnersList items={partners.items} />
+          <PartnersLogos items={partners.items} />
+        )}
+
+        {partners.options.showAction && (
+          <Box sx={styles.action}>
+            <TextLink
+              to={partners.action.href}
+              sx={styles.actionLink}
+            >
+              {partners.action.label}
+            </TextLink>
+          </Box>
         )}
       </Box>
     </Section>

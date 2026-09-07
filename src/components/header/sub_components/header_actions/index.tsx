@@ -9,14 +9,31 @@ import type { HeaderActionsProps } from "./types";
 
 export default function HeaderActions({
   compact = false,
+  showLanguageSelector,
+  showSearchButton,
+  showAdminButton,
+  currentLanguage,
+  onLanguageChange,
+  labels,
 }: HeaderActionsProps) {
   return (
     <Box sx={styles.container}>
-      <SearchTrigger compact={compact} />
+      {showSearchButton && (
+        <SearchTrigger compact={compact} ariaLabel={labels.search} />
+      )}
 
-      <LanguageSelector />
+      {showLanguageSelector && (
+        <LanguageSelector
+          currentLanguage={currentLanguage}
+          onLanguageChange={onLanguageChange}
+          frenchLabel={labels.french}
+          englishLabel={labels.english}
+        />
+      )}
 
-      <AdminButton compact={compact} />
+      {showAdminButton && (
+        <AdminButton compact={compact} label={labels.admin} />
+      )}
     </Box>
   );
 }
