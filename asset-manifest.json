@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/malentouen/static/js/main.c6148ed2.js",
+    "main.js": "/malentouen/static/js/main.fc70f2ef.js",
     "static/js/38.12141f9c.chunk.js": "/malentouen/static/js/38.12141f9c.chunk.js",
     "static/media/news1.jpg": "/malentouen/static/media/news1.199fe1b56ad066cd564d.jpg",
     "static/media/project2.jpg": "/malentouen/static/media/project2.55049f54e631383ff125.jpg",
@@ -65,10 +65,10 @@
     "static/media/news2.jpg": "/malentouen/static/media/news2.f34402c7c6d4937ab5d1.jpg",
     "static/media/clv.png": "/malentouen/static/media/clv.63b36f739e2ab6c13614.png",
     "index.html": "/malentouen/index.html",
-    "main.c6148ed2.js.map": "/malentouen/static/js/main.c6148ed2.js.map",
+    "main.fc70f2ef.js.map": "/malentouen/static/js/main.fc70f2ef.js.map",
     "38.12141f9c.chunk.js.map": "/malentouen/static/js/38.12141f9c.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.c6148ed2.js"
+    "static/js/main.fc70f2ef.js"
   ]
 }
