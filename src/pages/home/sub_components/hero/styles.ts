@@ -1,15 +1,20 @@
 import type { SxProps, Theme } from "@mui/material";
 
+import { HEADER_CONFIG } from "@components/header/config/header_config";
+
 const root: SxProps<Theme> = {
   position: "relative",
   width: "100%",
+
   minHeight: {
-    xs: "60vh",
-    md: "66vh",
-    lg: "68vh",
+    xs: "72vh",
+    md: "76vh",
+    lg: "78vh",
   },
+
   overflow: "hidden",
   isolation: "isolate",
+
   display: "flex",
   alignItems: "center",
 };
@@ -17,19 +22,24 @@ const root: SxProps<Theme> = {
 const contentWrapper: SxProps<Theme> = {
   position: "relative",
   zIndex: 2,
+
   width: "100%",
+
   minHeight: {
-    xs: "60vh",
-    md: "66vh",
-    lg: "68vh",
+    xs: "72vh",
+    md: "76vh",
+    lg: "78vh",
   },
+
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
+
   pt: {
-    xs: 6,
-    md: 8,
+    xs: `calc(${HEADER_CONFIG.HEADER_HEIGHT}px + 32px)`,
+    md: `calc(${HEADER_CONFIG.TOP_BAR_HEIGHT + HEADER_CONFIG.HEADER_HEIGHT}px + 36px)`,
   },
+
   pb: {
     xs: 6,
     md: 8,
@@ -40,6 +50,7 @@ const contentInner: SxProps<Theme> = {
   width: "100%",
   maxWidth: "1320px",
   mx: "auto",
+
   px: {
     xs: 2,
     sm: 3,

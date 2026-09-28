@@ -2,6 +2,7 @@ export const FOOTER_CONFIG = {
   SHOW_SOCIALS: true,
   SHOW_CONTACT: true,
   SHOW_PATRIMONY: true,
+
   PATRIMONY_LINKS: [
     {
       id: "about",
@@ -9,7 +10,7 @@ export const FOOTER_CONFIG = {
       path: "/about",
     },
     {
-      id: "culture",
+      id: "cultures",
       labelKey: "NAVIGATION_CULTURES",
       path: "/cultures",
     },

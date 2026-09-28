@@ -1,10 +1,13 @@
 import { type ReactNode, type ComponentType } from "react";
 import { Box } from "@mui/material";
+import { useLocation } from "react-router-dom";
 
 import Container from "@components/container";
 import Header from "@components/header";
 import Footer from "@components/footer";
 import ScrollToTop from "@components/scroll_to_top";
+
+import { supportsTransparentHeader } from "@constants/navigation";
 
 import BaseLayout from "@layouts/base_layout";
 
@@ -25,13 +28,17 @@ export default function MainLayout({
   bgColor = "secondary",
   disableContainer = false,
 }: MainLayoutProps) {
+  const { pathname } = useLocation();
+
+  const overlayHeader = supportsTransparentHeader(pathname);
+
   const pageContent = disableContainer ? children : <Container>{children}</Container>;
 
   const content = (
     <Box sx={styles.root}>
       <Header />
 
-      <Box component="main" sx={styles.main}>
+      <Box component="main" sx={styles.main(overlayHeader)}>
         {pageContent}
       </Box>
 
@@ -42,7 +49,12 @@ export default function MainLayout({
   return (
     <BaseLayout bgColor={bgColor}>
       <ScrollToTop />
-      {ContextProvider ? <ContextProvider>{content}</ContextProvider> : content}
+
+      {ContextProvider ? (
+        <ContextProvider>{content}</ContextProvider>
+      ) : (
+        content
+      )}
     </BaseLayout>
   );
 }

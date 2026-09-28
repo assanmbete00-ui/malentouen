@@ -1,62 +1,55 @@
+import malentouenLogo from "@assets/logo/malentouen-logo.svg";
 export const ORGANIZATION = {
   // ==========================================================
   // Identité
   // ==========================================================
   shortName: "Chefferie de Malentouen",
-
   fullName: "Chefferie Traditionnelle de Malentouen",
-
   brandInitial: "M",
 
-  slogan: "Patrimoine • Tradition • Développement",
+  brand: {
+    logo: malentouenLogo,
+  },
+
+  slogan: "Patrimoine • Culture • Unité • Développement",
 
   description:
     "Plateforme officielle de la Chefferie Traditionnelle de Malentouen dédiée à la valorisation du patrimoine culturel, à la préservation des traditions et au développement de la communauté.",
 
   logoAlt: "Logo officiel de la Chefferie Traditionnelle de Malentouen",
-
   favicon: "/favicon.ico",
-
-  establishedYear: 2026,
+  platformLaunchYear: 2026,
 
   // ==========================================================
   // Localisation
   // ==========================================================
-
   country: "Cameroun",
-
   region: "Ouest",
-
   division: "Noun",
-
   arrondissement: "Malentouen",
-
   address: "Malentouen, Cameroun",
 
   latitude: 0,
-
   longitude: 0,
 
   // ==========================================================
   // Contact
   // ==========================================================
-
   phone: "+237 657 53 43 92",
-
   email: "contact@chefferiemalentouen.cm",
-
   website: "https://assanmbete00-ui.github.io/malentouen/",
 
   // ==========================================================
   // SEO
   // ==========================================================
-
   keywords: [
     "Chefferie",
     "Malentouen",
     "Culture",
     "Patrimoine",
     "Tradition",
+    "Unité",
+    "Développement",
     "Cameroun",
     "Noun",
   ],
@@ -64,6 +57,5 @@ export const ORGANIZATION = {
   // ==========================================================
   // Copyright
   // ==========================================================
-
   copyright: `© ${new Date().getFullYear()} Chefferie Traditionnelle de Malentouen. Tous droits réservés.`,
 } as const;

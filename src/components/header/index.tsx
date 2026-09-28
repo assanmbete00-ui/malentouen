@@ -15,35 +15,52 @@ import styles from "./styles";
 export default function Header() {
   const {
     isSticky,
+    isTransparent,
     drawerOpen,
     toggleDrawer,
     closeDrawer,
+    handleMouseEnter,
+    handleMouseLeave,
     navigation,
     currentLanguage,
     changeLanguage,
     labels,
   } = useHeader();
+
   const isCompact = isSticky && HEADER_CONFIG.ENABLE_COMPACT_ON_SCROLL;
+  const showShadow = isSticky && HEADER_CONFIG.ENABLE_SCROLL_SHADOW;
 
   return (
     <Box
       component="header"
-      sx={styles.root(isSticky && HEADER_CONFIG.ENABLE_SCROLL_SHADOW)}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      sx={styles.root(isTransparent, showShadow)}
     >
-      {HEADER_CONFIG.SHOW_TOP_BAR && <TopBar />}
+      {HEADER_CONFIG.SHOW_TOP_BAR && (
+        <TopBar transparent={isTransparent} />
+      )}
 
-      <Box sx={styles.main(isCompact)}>
+      <Box sx={styles.main(isCompact, isTransparent)}>
         <Box sx={styles.left}>
-          <Logo variant={isCompact ? "compact" : "default"} />
+          <Logo
+            variant={isCompact ? "compact" : "default"}
+            transparent={isTransparent}
+          />
         </Box>
 
         <Box sx={styles.center}>
-          <DesktopNavigation compact={isCompact} items={navigation} />
+          <DesktopNavigation
+            compact={isCompact}
+            transparent={isTransparent}
+            items={navigation}
+          />
         </Box>
 
         <Box sx={styles.right}>
           <HeaderActions
             compact={isCompact}
+            transparent={isTransparent}
             showLanguageSelector={HEADER_CONFIG.SHOW_LANGUAGE_SELECTOR}
             showSearchButton={HEADER_CONFIG.SHOW_SEARCH_BUTTON}
             showAdminButton={HEADER_CONFIG.SHOW_ADMIN_BUTTON}
@@ -54,6 +71,7 @@ export default function Header() {
 
           <MobileButton
             open={drawerOpen}
+            transparent={isTransparent}
             onClick={toggleDrawer}
             openLabel={labels.openMenu}
             closeLabel={labels.closeMenu}

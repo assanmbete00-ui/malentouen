@@ -616,7 +616,7 @@
   "CONTACT_LOCATION_ADDRESS_LABEL": "Adresse de la Chefferie",
 
   "ADMIN_NAV_GROUP_OVERVIEW": "Vue d'ensemble",
-  "ADMIN_NAV_DASHBOARD": "Dashboard",
+  "ADMIN_NAV_DASHBOARD": "Tableau de bord",
   "ADMIN_NAV_GROUP_CONTENT": "Contenus",
   "ADMIN_NAV_NEWS": "Actualités",
   "ADMIN_NAV_EVENTS": "Événements",
@@ -628,7 +628,7 @@
   "ADMIN_NAV_GROUP_ACCOUNT": "Compte",
   "ADMIN_NAV_PROFILE": "Profil",
   "ADMIN_NAV_SETTINGS": "Paramètres",
-  "ADMIN_DASHBOARD_TITLE": "Dashboard",
+  "ADMIN_DASHBOARD_TITLE": "Tableau de bord",
   "ADMIN_DASHBOARD_DESCRIPTION": "Vue d'ensemble de l'administration de Malentouen",
   "ADMIN_DASHBOARD_STATS_NEWS": "Actualités",
   "ADMIN_DASHBOARD_STATS_NEWS_DESCRIPTION": "Publications",

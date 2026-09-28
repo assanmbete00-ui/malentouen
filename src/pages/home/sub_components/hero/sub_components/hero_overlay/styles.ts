@@ -1,3 +1,4 @@
+import { alpha } from "@mui/material/styles";
 import type { SxProps, Theme } from "@mui/material";
 
 const root: SxProps<Theme> = {
@@ -8,18 +9,22 @@ const root: SxProps<Theme> = {
   background: (theme) => `
     linear-gradient(
       90deg,
-      ${theme.palette.primary.dark}E8 0%,
-      ${theme.palette.primary.main}C2 30%,
-      ${theme.palette.primary.main}73 56%,
-      ${theme.palette.primary.main}26 78%,
-      transparent 100%
+      ${alpha(theme.palette.primary.dark, 0.9)} 0%,
+      ${alpha(theme.palette.primary.dark, 0.72)} 32%,
+      ${alpha(theme.palette.primary.main, 0.46)} 58%,
+      ${alpha(theme.palette.primary.main, 0.18)} 78%,
+      ${alpha(theme.palette.primary.main, 0.04)} 100%
     ),
     linear-gradient(
       180deg,
-      rgba(0, 0, 0, 0.04) 45%,
-      rgba(35, 24, 20, 0.52) 100%
+      ${alpha(theme.palette.primary.dark, 0.2)} 0%,
+      ${alpha(theme.palette.primary.dark, 0.06)} 38%,
+      ${alpha(theme.palette.primary.dark, 0.12)} 68%,
+      ${alpha(theme.palette.primary.dark, 0.46)} 100%
     )
   `,
+
+  pointerEvents: "none",
 };
 
 export default {

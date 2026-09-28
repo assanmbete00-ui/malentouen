@@ -6,7 +6,6 @@ import MailOutlineOutlinedIcon from "@mui/icons-material/MailOutlineOutlined";
 import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
 
 import FooterSection from "../footer_section";
-import { ORGANIZATION } from "@constants/organization";
 
 import styles from "./styles";
 import type { FooterContactProps } from "./types";

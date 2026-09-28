@@ -1,20 +1,32 @@
 export const HEADER_CONFIG = {
   SHOW_TOP_BAR: true,
+
   SHOW_LANGUAGE_SELECTOR: true,
+
   SHOW_SEARCH_BUTTON: false,
+
   SHOW_ADMIN_BUTTON: true,
 
   ENABLE_STICKY: true,
+
   ENABLE_SCROLL_SHADOW: true,
+
   ENABLE_COMPACT_ON_SCROLL: true,
 
+  ENABLE_TRANSPARENT_HEADER: true,
+
+  ENABLE_SOLID_ON_HOVER: true,
+
   TOP_BAR_HEIGHT: 40,
+
   HEADER_HEIGHT: 88,
+
   COMPACT_HEADER_HEIGHT: 72,
 
   SCROLL_TRIGGER: 80,
 
   ADMIN_PATH: "/admin/login",
+
   BRAND: {
     DISPLAY_NAME: "Chefferie Traditionnelle de Malentouen",
     SHORT_NAME: "Malentouen",
