@@ -8,23 +8,24 @@ export default function LanguageSelector({
   onLanguageChange,
   frenchLabel,
   englishLabel,
+  transparent = false,
 }: LanguageSelectorProps) {
   const isFr = currentLanguage === "fr";
 
   return (
-    <Box sx={styles.container}>
+    <Box sx={styles.container(transparent)}>
       <Box
         component="button"
         type="button"
         aria-label={frenchLabel}
         aria-pressed={isFr}
         onClick={() => onLanguageChange("fr")}
-        sx={styles.button(isFr)}
+        sx={styles.button(isFr, transparent)}
       >
         FR
       </Box>
 
-      <Box component="span" aria-hidden="true" sx={styles.separator}>
+      <Box component="span" aria-hidden="true" sx={styles.separator(transparent)}>
         |
       </Box>
 
@@ -34,7 +35,7 @@ export default function LanguageSelector({
         aria-label={englishLabel}
         aria-pressed={!isFr}
         onClick={() => onLanguageChange("en")}
-        sx={styles.button(!isFr)}
+        sx={styles.button(!isFr, transparent)}
       >
         EN
       </Box>

@@ -1,29 +1,36 @@
 import type { SxProps, Theme } from "@mui/material";
 
-const button: SxProps<Theme> = {
+const button = (transparent: boolean): SxProps<Theme> => ({
   display: {
     xs: "inline-flex",
     lg: "none",
   },
+
   width: 44,
   height: 44,
   borderRadius: "50%",
-  color: "text.primary",
-  bgcolor: "background.paper",
+
+  color: transparent ? "common.white" : "text.primary",
+  bgcolor: transparent ? "rgba(255,255,255,0.12)" : "background.paper",
+
   border: "1px solid",
-  borderColor: "divider",
+  borderColor: transparent ? "rgba(255,255,255,0.28)" : "divider",
+
+  backdropFilter: transparent ? "blur(8px)" : "none",
+
+  transition: "all .25s ease",
 
   "&:hover": {
-    bgcolor: "action.hover",
-    color: "secondary.main",
+    bgcolor: transparent ? "rgba(255,255,255,0.2)" : "action.hover",
+    color: transparent ? "common.white" : "secondary.main",
   },
 
   "&:focus-visible": {
     outline: "2px solid",
-    outlineColor: "secondary.main",
+    outlineColor: transparent ? "common.white" : "secondary.main",
     outlineOffset: 2,
   },
-};
+});
 
 export default {
   button,

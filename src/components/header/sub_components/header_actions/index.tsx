@@ -9,6 +9,7 @@ import type { HeaderActionsProps } from "./types";
 
 export default function HeaderActions({
   compact = false,
+  transparent = false,
   showLanguageSelector,
   showSearchButton,
   showAdminButton,
@@ -19,11 +20,16 @@ export default function HeaderActions({
   return (
     <Box sx={styles.container}>
       {showSearchButton && (
-        <SearchTrigger compact={compact} ariaLabel={labels.search} />
+        <SearchTrigger
+          compact={compact}
+          transparent={transparent}
+          ariaLabel={labels.search}
+        />
       )}
 
       {showLanguageSelector && (
         <LanguageSelector
+          transparent={transparent}
           currentLanguage={currentLanguage}
           onLanguageChange={onLanguageChange}
           frenchLabel={labels.french}
@@ -32,7 +38,11 @@ export default function HeaderActions({
       )}
 
       {showAdminButton && (
-        <AdminButton compact={compact} label={labels.admin} />
+        <AdminButton
+          compact={compact}
+          transparent={transparent}
+          label={labels.admin}
+        />
       )}
     </Box>
   );

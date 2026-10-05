@@ -4,27 +4,33 @@ const container: SxProps<Theme> = {
   display: "flex",
   alignItems: "center",
   flexWrap: "wrap",
-  gap: 1.4,
-  mt: 1,
+  gap: 0.8,
+  mt: 0.5,
 };
 
 const button: SxProps<Theme> = {
-  width: 46,
-  height: 46,
+  width: 36,
+  height: 36,
+
   borderRadius: "50%",
+
   border: "1px solid",
-  borderColor: "divider",
-  bgcolor: "transparent",
+  borderColor: "rgba(255,255,255,0.18)",
+
+  bgcolor: "rgba(255,255,255,0.04)",
   color: "primary.contrastText",
-  opacity: 0.82,
-  transition: "all .25s ease",
+
+  opacity: 0.86,
+
+  transition:
+    "background-color .2s ease, color .2s ease, border-color .2s ease, transform .2s ease",
 
   "&:hover": {
     opacity: 1,
     bgcolor: "secondary.main",
     color: "primary.main",
     borderColor: "secondary.main",
-    transform: "translateY(-3px) scale(1.05)",
+    transform: "translateY(-2px)",
   },
 
   "&:focus-visible": {

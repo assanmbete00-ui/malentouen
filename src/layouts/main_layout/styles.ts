@@ -16,17 +16,19 @@ const content: SxProps<Theme> = {
   width: "100%",
 };
 
-const main: SxProps<Theme> = {
+const main = (overlayHeader: boolean): SxProps<Theme> => ({
   flex: 1,
   width: "100%",
   overflowX: "hidden",
   overflowY: "visible",
 
-  pt: {
-    xs: `${HEADER_CONFIG.HEADER_HEIGHT}px`,
-    md: `${HEADER_CONFIG.TOP_BAR_HEIGHT + HEADER_CONFIG.HEADER_HEIGHT}px`,
-  },
-};
+  pt: overlayHeader
+    ? 0
+    : {
+        xs: `${HEADER_CONFIG.HEADER_HEIGHT}px`,
+        md: `${HEADER_CONFIG.TOP_BAR_HEIGHT + HEADER_CONFIG.HEADER_HEIGHT}px`,
+      },
+});
 
 export default {
   root,

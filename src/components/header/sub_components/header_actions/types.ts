@@ -5,6 +5,7 @@ export type HeaderActionsProps = {
   showLanguageSelector: boolean;
   showSearchButton: boolean;
   showAdminButton: boolean;
+  transparent?: boolean;
   currentLanguage: "fr" | "en";
   onLanguageChange: (language: "fr" | "en") => void;
   labels: HeaderLabels;

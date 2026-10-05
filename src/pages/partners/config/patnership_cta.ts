@@ -7,5 +7,5 @@ export const PARTNERSHIP_CTA = {
 
   actionLabel: "PARTNERSHIP_CTA_ACTION",
 
-  actionPath: "/contact#contact-form",
+  actionPath: "/Contact",
 } as const;

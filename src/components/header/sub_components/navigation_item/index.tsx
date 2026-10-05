@@ -7,6 +7,7 @@ import type { NavigationItemProps } from "./types";
 export default function NavigationItem({
   item,
   variant = "desktop",
+  transparent = false,
   onClick,
 }: NavigationItemProps) {
   const isActive = Boolean(item.active);
@@ -20,7 +21,7 @@ export default function NavigationItem({
         rel="noopener noreferrer"
         onClick={onClick}
         aria-current={isActive ? "page" : undefined}
-        sx={styles.item(isActive, variant)}
+        sx={styles.item(isActive, variant, transparent)}
       >
         {item.label}
       </Box>
@@ -33,7 +34,7 @@ export default function NavigationItem({
       to={item.path}
       onClick={onClick}
       aria-current={isActive ? "page" : undefined}
-      sx={styles.item(isActive, variant)}
+      sx={styles.item(isActive, variant, transparent)}
     >
       {item.label}
     </Box>

@@ -7,6 +7,7 @@ import type { MobileButtonProps } from "./types";
 
 export default function MobileButton({
   open = false,
+  transparent = false,
   onClick,
   openLabel,
   closeLabel,
@@ -15,7 +16,7 @@ export default function MobileButton({
     <IconButton
       aria-label={open ? closeLabel : openLabel}
       onClick={onClick}
-      sx={styles.button}
+      sx={styles.button(transparent)}
     >
       {open ? <CloseRoundedIcon /> : <MenuRoundedIcon />}
     </IconButton>

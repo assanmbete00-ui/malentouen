@@ -11,6 +11,7 @@ import type { AdminButtonProps } from "./types";
 
 export default function AdminButton({
   compact = true,
+  transparent = false,
   label,
 }: AdminButtonProps) {
   const navigate = useNavigate();
@@ -19,7 +20,7 @@ export default function AdminButton({
     <Box sx={styles.container}>
       <Button
         startIcon={<LoginRoundedIcon />}
-        sx={styles.button(compact)}
+        sx={styles.button(compact, transparent)}
         onClick={() => navigate(HEADER_CONFIG.ADMIN_PATH)}
       >
         {label}

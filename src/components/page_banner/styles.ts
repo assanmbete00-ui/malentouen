@@ -1,9 +1,7 @@
 import { alpha } from "@mui/material/styles";
+import type { SxProps, Theme } from "@mui/material";
 
-import type {
-  SxProps,
-  Theme,
-} from "@mui/material";
+import { HEADER_CONFIG } from "@components/header/config/header_config";
 
 const root: SxProps<Theme> = {
   position: "relative",
@@ -14,18 +12,16 @@ const root: SxProps<Theme> = {
   alignItems: "flex-end",
 
   minHeight: {
-    xs: 320,
-    sm: 380,
-    md: 460,
-    lg: 500,
+    xs: 380,
+    sm: 420,
+    md: 520,
+    lg: 560,
   },
 
   bgcolor: "primary.dark",
 };
 
-const background = (
-  _position: string,
-): SxProps<Theme> => ({
+const background = (_position: string): SxProps<Theme> => ({
   position: "absolute",
   inset: 0,
   zIndex: -3,
@@ -45,18 +41,10 @@ const overlay: SxProps<Theme> = {
   background: (theme) =>
     `linear-gradient(
       90deg,
-      ${alpha(
-        theme.palette.primary.dark,
-        0.96,
-      )} 0%,
-      ${alpha(
-        theme.palette.primary.dark,
-        0.82,
-      )} 48%,
-      ${alpha(
-        theme.palette.primary.dark,
-        0.5,
-      )} 100%
+      ${alpha(theme.palette.primary.dark, 0.88)} 0%,
+      ${alpha(theme.palette.primary.dark, 0.68)} 42%,
+      ${alpha(theme.palette.primary.dark, 0.34)} 72%,
+      ${alpha(theme.palette.primary.dark, 0.12)} 100%
     )`,
 };
 
@@ -68,21 +56,22 @@ const depthOverlay: SxProps<Theme> = {
   background: (theme) =>
     `linear-gradient(
       180deg,
-      ${alpha(
-        theme.palette.primary.dark,
-        0.08,
-      )} 0%,
-      ${alpha(
-        theme.palette.primary.dark,
-        0.58,
-      )} 100%
+      ${alpha(theme.palette.primary.dark, 0.18)} 0%,
+      ${alpha(theme.palette.primary.dark, 0.06)} 38%,
+      ${alpha(theme.palette.primary.dark, 0.16)} 68%,
+      ${alpha(theme.palette.primary.dark, 0.42)} 100%
     )`,
 };
 
 const container: SxProps<Theme> = {
   width: "100%",
 
-  py: {
+  pt: {
+    xs: `calc(${HEADER_CONFIG.HEADER_HEIGHT}px + 40px)`,
+    md: `calc(${HEADER_CONFIG.TOP_BAR_HEIGHT + HEADER_CONFIG.HEADER_HEIGHT}px + 48px)`,
+  },
+
+  pb: {
     xs: 5,
     sm: 6,
     md: 8,
@@ -106,11 +95,7 @@ const breadcrumb: SxProps<Theme> = {
   },
 
   "& a": {
-    color: (theme) =>
-      alpha(
-        theme.palette.primary.contrastText,
-        0.9,
-      ),
+    color: (theme) => alpha(theme.palette.primary.contrastText, 0.9),
 
     "&:hover": {
       color: "secondary.main",
@@ -122,17 +107,12 @@ const breadcrumb: SxProps<Theme> = {
   },
 
   "& > div:last-of-type span": {
-    color: (theme) =>
-      alpha(
-        theme.palette.primary.contrastText,
-        0.96,
-      ),
+    color: (theme) => alpha(theme.palette.primary.contrastText, 0.96),
   },
 };
 
 const eyebrow: SxProps<Theme> = {
   display: "inline-block",
-
   mb: 1.5,
 
   color: "secondary.main",
@@ -171,17 +151,15 @@ const description: SxProps<Theme> = {
     md: 2.5,
   },
 
-  color: (theme) =>
-    alpha(
-      theme.palette.primary.contrastText,
-      0.82,
-    ),
+  color: (theme) => alpha(theme.palette.primary.contrastText, 0.84),
 
   fontSize: {
     xs: 15,
     sm: 16,
     md: 17,
   },
+
+  lineHeight: 1.7,
 };
 
 const children: SxProps<Theme> = {

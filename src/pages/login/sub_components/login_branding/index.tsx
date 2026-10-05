@@ -14,7 +14,7 @@ export default function LoginBranding({
 }: LoginBrandingProps) {
   return (
     <Box sx={styles.container}>
-      <Box>
+      <Box sx={styles.content}>
         <Logo variant="footer" />
 
         <Typography component="span" sx={styles.eyebrow}>

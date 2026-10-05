@@ -1,13 +1,25 @@
 import type { SxProps, Theme } from "@mui/material";
 
-const container: SxProps<Theme> = {
+const container = (transparent: boolean): SxProps<Theme> => ({
   width: "100%",
   minHeight: 40,
-  bgcolor: "primary.main",
+  bgcolor: transparent ? "transparent" : "primary.main",
   color: "primary.contrastText",
   display: { xs: "none", md: "flex" },
   alignItems: "center",
-};
+
+  borderBottom: "1px solid",
+  borderColor: transparent ? "rgba(255, 255, 255, 0.16)" : "transparent",
+
+  transition: (theme) =>
+    theme.transitions.create(
+      ["background-color", "border-color", "color"],
+      {
+        duration: 300,
+        easing: theme.transitions.easing.easeInOut,
+      },
+    ),
+});
 
 const inner: SxProps<Theme> = {
   width: "100%",
@@ -41,10 +53,11 @@ const infoItem: SxProps<Theme> = {
   whiteSpace: "nowrap",
 };
 
-const icon: SxProps<Theme> = {
+const icon = (transparent: boolean): SxProps<Theme> => ({
   fontSize: 16,
-  color: "secondary.main",
-};
+  color: transparent ? "inherit" : "secondary.main",
+  transition: "color 0.3s ease",
+});
 
 const language: SxProps<Theme> = {
   fontSize: 13,

@@ -1,62 +1,84 @@
 import type { SxProps, Theme } from "@mui/material";
+
 import type { LogoVariant } from "./types";
 
-const container = (variant: LogoVariant): SxProps<Theme> => ({
-  display: "flex",
+const container = (
+  variant: LogoVariant,
+  transparent: boolean,
+): SxProps<Theme> => ({
+  display: "inline-flex",
   alignItems: "center",
-  gap: variant === "compact" ? 1 : 1.5,
+  justifyContent: variant === "footer" ? "flex-start" : "center",
+
+  width: variant === "footer" ? "100%" : "fit-content",
+  maxWidth: "100%",
+
+  p:
+    transparent && variant !== "footer"
+      ? {
+          xs: 0.4,
+          md: 0.5,
+        }
+      : 0,
+
+  borderRadius: 1.5,
+
+  bgcolor: "transparent",
+  backdropFilter: "none",
+
   textDecoration: "none",
-  color: "inherit",
+
+  transition: (theme) =>
+    theme.transitions.create(["background-color", "opacity", "padding"], {
+      duration: 300,
+      easing: theme.transitions.easing.easeInOut,
+    }),
+
+  "&:hover": {
+    opacity: 0.94,
+  },
+
+  "&:focus-visible": {
+    outline: "2px solid",
+    outlineColor: "secondary.main",
+    outlineOffset: 3,
+  },
 });
 
-const emblem = (variant: LogoVariant): SxProps<Theme> => ({
-  width: variant === "compact" ? 42 : variant === "footer" ? 60 : 54,
-  height: variant === "compact" ? 42 : variant === "footer" ? 60 : 54,
-  borderRadius: "50%",
-  bgcolor: "secondary.main",
-  color: "primary.main",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  fontWeight: 900,
-  fontSize: variant === "compact" ? 18 : variant === "footer" ? 24 : 22,
+const image = (variant: LogoVariant): SxProps<Theme> => ({
+  display: "block",
+
+  width:
+    variant === "compact"
+      ? {
+          xs: 145,
+          md: 165,
+        }
+      : variant === "footer"
+        ? {
+            xs: 260,
+            sm: 300,
+            md: 340,
+            lg: 360,
+          }
+        : {
+            xs: 185,
+            sm: 205,
+            md: 225,
+            lg: 240,
+          },
+
+  height: "auto",
+  maxWidth: "100%",
+
+  objectFit: "contain",
+
   flexShrink: 0,
-});
-
-const textWrapper: SxProps<Theme> = {
-  display: "flex",
-  flexDirection: "column",
-  lineHeight: 1.1,
-};
-
-const eyebrow = (variant: LogoVariant): SxProps<Theme> => ({
-  fontSize: variant === "footer" ? 12 : 11,
-  fontWeight: 700,
-  letterSpacing: "0.12em",
-  textTransform: "uppercase",
-  color: "secondary.main",
-});
-
-const title = (variant: LogoVariant): SxProps<Theme> => ({
-  fontSize: variant === "compact" ? 18 : variant === "footer" ? 24 : 22,
-  fontWeight: 900,
-  color: variant === "footer" ? "primary.contrastText" : "primary.main",
-});
-
-const subtitle = (variant: LogoVariant): SxProps<Theme> => ({
-  mt: 0.4,
-  fontSize: variant === "footer" ? 13 : 12,
-  fontWeight: 500,
-  color: variant === "footer" ? "primary.contrastText" : "text.secondary",
-  opacity: variant === "footer" ? 0.9 : 1,
-  display: variant === "compact" ? "none" : "block",
+  userSelect: "none",
+  pointerEvents: "none",
 });
 
 export default {
   container,
-  emblem,
-  textWrapper,
-  eyebrow,
-  title,
-  subtitle,
+  image,
 };

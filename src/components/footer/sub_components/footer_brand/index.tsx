@@ -7,7 +7,6 @@ import styles from "./styles";
 import type { FooterBrandProps } from "./types";
 
 export default function FooterBrand({
-  slogan,
   description,
   showSocials,
   socials,
@@ -18,9 +17,9 @@ export default function FooterBrand({
         <Logo variant="footer" />
       </Box>
 
-      <Typography sx={styles.slogan}>{slogan}</Typography>
-
-      <Typography sx={styles.description}>{description}</Typography>
+      <Typography sx={styles.description}>
+        {description}
+      </Typography>
 
       {showSocials && <FooterSocials {...socials} />}
     </Box>

@@ -1,33 +1,35 @@
 import { Link as RouterLink } from "react-router-dom";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
+
+import { ORGANIZATION } from "@constants/organization";
 
 import styles from "./styles";
 import type { LogoProps } from "./types";
-import { ORGANIZATION } from "@constants/organization";
 
-export default function Logo({ variant = "default" }: LogoProps) {
+export default function Logo({
+  variant = "default",
+  transparent = false,
+}: LogoProps) {
+  const isDarkSurface = variant === "footer" || transparent;
+  const source = isDarkSurface
+    ? ORGANIZATION.brand.logoLight
+    : ORGANIZATION.brand.logo;
+
   return (
     <Box
       component={RouterLink}
       to="/"
       aria-label={ORGANIZATION.logoAlt}
-      sx={styles.container(variant)}
+      sx={styles.container(variant, transparent)}
     >
-      <Box sx={styles.emblem(variant)}>M</Box>
-
-      <Box sx={styles.textWrapper}>
-        <Typography component="span" sx={styles.eyebrow(variant)}>
-          Chefferie Traditionnelle
-        </Typography>
-
-        <Typography component="span" sx={styles.title(variant)}>
-          Malentouen
-        </Typography>
-
-        <Typography component="span" sx={styles.subtitle(variant)}>
-          Patrimoine • Tradition • Développement
-        </Typography>
-      </Box>
+      <Box
+        component="img"
+        src={source}
+        alt=""
+        aria-hidden="true"
+        draggable={false}
+        sx={styles.image(variant)}
+      />
     </Box>
   );
 }
