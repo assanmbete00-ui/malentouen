@@ -22,7 +22,9 @@ export function supportsTransparentHeader(pathname: string) {
   return NAVIGATION_ITEMS.some(
     (item) =>
       item.transparentHeader === true &&
-      pathname === item.path,
+      (item.path === "/"
+        ? pathname === "/"
+        : pathname === item.path || pathname.startsWith(`${item.path}/`)),
   );
 }
 

@@ -15,7 +15,7 @@ export default function LoginBranding({
   return (
     <Box sx={styles.container}>
       <Box sx={styles.content}>
-        <Logo variant="default" />
+        <Logo variant="footer" />
 
         <Typography component="span" sx={styles.eyebrow}>
           {eyebrow}
@@ -25,9 +25,7 @@ export default function LoginBranding({
           {title}
         </Typography>
 
-        <Typography sx={styles.description}>
-          {description}
-        </Typography>
+        <Typography sx={styles.description}>{description}</Typography>
       </Box>
 
       <TextLink to="/" sx={styles.backLink}>

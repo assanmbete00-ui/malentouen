@@ -10,6 +10,11 @@ export default function Logo({
   variant = "default",
   transparent = false,
 }: LogoProps) {
+  const isDarkSurface = variant === "footer" || transparent;
+  const source = isDarkSurface
+    ? ORGANIZATION.brand.logoLight
+    : ORGANIZATION.brand.logo;
+
   return (
     <Box
       component={RouterLink}
@@ -19,7 +24,7 @@ export default function Logo({
     >
       <Box
         component="img"
-        src={ORGANIZATION.brand.logo}
+        src={source}
         alt=""
         aria-hidden="true"
         draggable={false}

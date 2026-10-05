@@ -1,4 +1,6 @@
 import malentouenLogo from "@assets/logo/malentouen-logo.svg";
+import malentouenLogoLight from "@assets/logo/malentouen-logo-light.svg";
+
 export const ORGANIZATION = {
   // ==========================================================
   // Identité
@@ -9,6 +11,9 @@ export const ORGANIZATION = {
 
   brand: {
     logo: malentouenLogo,
+    logoLight: malentouenLogoLight,
+    mark: malentouenLogo,
+    markLight: malentouenLogoLight,
   },
 
   slogan: "Patrimoine • Culture • Unité • Développement",

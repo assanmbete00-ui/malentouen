@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-labelledby="title desc">
+  <title id="title">Malentouen — logo institutionnel clair</title>
+  <desc id="desc">Emblème circulaire de Malentouen accompagné du nom MALENTOUEN en version claire.</desc>
+
+  <g transform="translate(28 24)">
+    <circle cx="106" cy="106" r="98" fill="rgba(255,255,255,0.08)" stroke="#F4E9D1" stroke-width="8"/>
+    <circle cx="106" cy="106" r="84" fill="none" stroke="#E7C86C" stroke-width="4"/>
+
+    <path d="M58 92 L106 56 L154 92" fill="none" stroke="#F7F1E8" stroke-width="10" stroke-linecap="square" stroke-linejoin="miter"/>
+    <path d="M70 104 H142" fill="none" stroke="#E7C86C" stroke-width="9" stroke-linecap="round"/>
+
+    <path d="M72 118 V162 H88 V137 L106 155 L124 137 V162 H140 V118 H124 L106 136 L88 118 Z" fill="#F7F1E8"/>
+
+    <path d="M66 178 H146" fill="none" stroke="#E7C86C" stroke-width="8" stroke-linecap="round"/>
+    <path d="M80 194 H132" fill="none" stroke="#F7F1E8" stroke-width="6" stroke-linecap="round"/>
+
+    <circle cx="50" cy="112" r="5" fill="#E7C86C"/>
+    <circle cx="162" cy="112" r="5" fill="#E7C86C"/>
+  </g>
+
+  <rect x="274" y="44" width="4" height="172" rx="2" fill="#E7C86C"/>
+
+  <text x="326" y="137"
+        fill="#F7F1E8"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="92"
+        font-weight="700"
+        letter-spacing="7">MALENTOUEN</text>
+
+  <text x="332" y="182"
+        fill="#E7C86C"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="24"
+        font-weight="700"
+        letter-spacing="7">CHEFFERIE TRADITIONNELLE</text>
+</svg>

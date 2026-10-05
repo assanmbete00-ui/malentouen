@@ -1,4 +1,3 @@
-import { alpha } from "@mui/material/styles";
 import type { SxProps, Theme } from "@mui/material";
 
 import type { LogoVariant } from "./types";
@@ -24,26 +23,16 @@ const container = (
 
   borderRadius: 1.5,
 
-  bgcolor:
-    transparent && variant !== "footer"
-      ? (theme) => alpha(theme.palette.common.white, 0.9)
-      : "transparent",
-
-  backdropFilter:
-    transparent && variant !== "footer"
-      ? "blur(8px)"
-      : "none",
+  bgcolor: "transparent",
+  backdropFilter: "none",
 
   textDecoration: "none",
 
   transition: (theme) =>
-    theme.transitions.create(
-      ["background-color", "opacity", "padding"],
-      {
-        duration: 300,
-        easing: theme.transitions.easing.easeInOut,
-      },
-    ),
+    theme.transitions.create(["background-color", "opacity", "padding"], {
+      duration: 300,
+      easing: theme.transitions.easing.easeInOut,
+    }),
 
   "&:hover": {
     opacity: 0.94,
