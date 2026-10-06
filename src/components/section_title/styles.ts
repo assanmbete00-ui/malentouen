@@ -6,9 +6,10 @@ const container = (align: SectionTitleAlign): SxProps<Theme> => ({
   flexDirection: "column",
   gap: 2,
   mb: { xs: 4, md: 5 },
+  width: "100%",
+  maxWidth: align === "center" ? 760 : 880,
   alignItems: align === "center" ? "center" : "flex-start",
   textAlign: align === "center" ? "center" : "left",
-  maxWidth: align === "center" ? 760 : "100%",
   mx: align === "center" ? "auto" : 0,
 });
 
@@ -23,14 +24,16 @@ const top: SxProps<Theme> = {
 
 const textContent = (align: SectionTitleAlign): SxProps<Theme> => ({
   flex: 1,
-  minWidth: 280,
+  minWidth: 0,
+  width: "100%",
+  maxWidth: 880,
   textAlign: align === "center" ? "center" : "left",
 });
 
 const eyebrow: SxProps<Theme> = {
   display: "inline-block",
   color: "secondary.main",
-  fontSize: 14,
+  fontSize: { xs: 11, md: 12 },
   fontWeight: 800,
   lineHeight: 1.4,
   letterSpacing: ".18em",
@@ -40,9 +43,17 @@ const eyebrow: SxProps<Theme> = {
 
 const title = (align: SectionTitleAlign): SxProps<Theme> => ({
   position: "relative",
+  width: "100%",
+  maxWidth: 820,
   color: "text.primary",
+  fontSize: {
+    xs: "clamp(2rem, 7.5vw, 2.5rem)",
+    md: "clamp(2.4rem, 4vw, 3.2rem)",
+    lg: "clamp(2.8rem, 3vw, 3.6rem)",
+  },
   fontWeight: 900,
-  lineHeight: 1.15,
+  lineHeight: 1.18,
+  letterSpacing: "-0.025em",
 
   "&::after": {
     content: '""',
@@ -57,11 +68,11 @@ const title = (align: SectionTitleAlign): SxProps<Theme> => ({
 });
 
 const subtitle: SxProps<Theme> = {
-  maxWidth: 680,
+  maxWidth: 720,
   mt: 2,
   color: "text.secondary",
   fontSize: { xs: 15, md: 16 },
-  lineHeight: 1.8,
+  lineHeight: 1.7,
 };
 
 const action: SxProps<Theme> = {
