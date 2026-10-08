@@ -16,9 +16,10 @@ const container = (align: SectionTitleAlign): SxProps<Theme> => ({
 const top: SxProps<Theme> = {
   width: "100%",
   display: "flex",
-  justifyContent: "space-between",
-  alignItems: "flex-end",
-  gap: 3,
+  flexDirection: { xs: "column", sm: "row" },
+  justifyContent: { xs: "flex-start", sm: "space-between" },
+  alignItems: { xs: "flex-start", sm: "flex-end" },
+  gap: { xs: 2.5, sm: 3 },
   flexWrap: "wrap",
 };
 
